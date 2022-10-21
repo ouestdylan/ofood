@@ -65,3 +65,6 @@ Ensuite, pour préparer notre projet, on va rédiger les user stories :tada: !
 
 
 Vous pouvez rédiger vos _stories_ dans un fichier markdown, par exemple sous forme d'un tableau :+1:
+
+
+#TEST
