@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background-color: rgb(249, 246, 240);
+}
+header {
+    background-color: rgb(250, 208, 215);
+}
+.banner_logo {
+    
+    display: flex;
+  justify-content: center;
+}
+
+.image_logo {
+    width: 150px;
+  
+}
+
+.slogan_title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #1675C9;
+    font-weight: bold;
+}
+
+.recipe_container_popular_items {
+    display: flex;
+    height: 300px;
+}
+
+.recipe_container_recent_items {
+    display: flex;
+    height: 300px;
+}
+.title_recent_recipes {
+    font-size: 3rem;
+}
+
+.title_popular_recipes {
+    font-size: 3rem;
+}
+
+.banner_edito {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #1675C9;
+}
