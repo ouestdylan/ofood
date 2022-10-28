@@ -5,7 +5,7 @@ const dataMapper = {
     async getRecepies(req, res) {
         try{
             const result = await client.query('SELECT * FROM recipes');
-            // console.log(result.rows);
+            console.log(result.rows);
             res.json(result.rows);
         }
         catch(err){
