@@ -115,7 +115,7 @@ overflow-x: scroll;
         top: 75%;
         left: 50%; */
         /* transform: translate(-50%, -50%); */
-        background: #f9e0e0;
+        background: #f5d5d5;
         display: grid;
         grid-template: repeat(2, 100px) 50px repeat(2,100px) 80px / repeat(3, 110px);
         border-radius: 5px;
