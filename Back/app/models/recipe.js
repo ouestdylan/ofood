@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../database');
+const sequelize = require('../dbconnexion/database');
 
 //ici on crée une classe Recipe qui hérite du modèle proposé par sequelize
 class Recipe extends Model {};
@@ -17,27 +17,35 @@ Recipe.init({
 		type: DataTypes.TEXT,
 		allowNull: false
 	},
+	steps: {
+		type: DataTypes.TEXT,
+		allowNull: false
+	},
 	cookingTime: {
 		type: DataTypes.INTEGER,
-		allowNull: true
 	},
     difficulty: {
 		type: DataTypes.TEXT,
-		allowNull: true
 	},
     rate: {
 		type: DataTypes.INTEGER,
-		allowNull: true
 	},
     picture: {
 		type: DataTypes.TEXT,
-		allowNull: true
 	},
+	createdAt: {
+		type: DataTypes.DATE,
+		allowNull: false
+	},
+	updatedAt: {
+		type: DataTypes.DATE
+	}
 
 }, {
-	sequelize: sequelize,
+	sequelize,
 	tableName: 'recipe'
 });
 
+console.log(sequelize.model.Recipe);
 
 module.exports = Recipe;
