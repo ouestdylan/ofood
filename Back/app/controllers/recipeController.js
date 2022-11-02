@@ -1,14 +1,14 @@
 
-const  Recipe  = require('../models/recipe');
+const  { Recipe }  = require('../models');
 
 const controller = {
 
 	getAllRecipes: async (req, res) => {
 
 		try {
-			const recipesrecipe = await Recipe.findAll();
-			console.log(recipesrecipe);
-			res.status(200).json(recipesrecipe);
+			const recipes = await Recipe.findAll();
+			console.log(recipes);
+			res.status(200).json(recipes);
 
 		} catch (error) {
 			console.error(error);
@@ -19,15 +19,16 @@ const controller = {
 	getOneRecipeById: async (req, res) => {
 
 		try {		
-			const id = req.params.id;
-			const recipe = await Recipe.findByPk(id);
+			const recipeId = req.params.id;
+			const recipe = await Recipe.findByPk(recipeId);
 
-			if (!recipe) { // Si `card` == null || undefined || false
-				const error = new Error(`Recipe not found with id ${id}`);
+			if (!recipe) {
+				const error = new Error(`Recipe not found with id ${recipeId}`);
 				return res.status(404).json({ message: error.message });
 			}
 
 			res.status(200).json(recipe);
+			
 		} catch (error) {
 			console.error(error);
 			res.status(500).json({ message: error.message });
@@ -37,14 +38,14 @@ const controller = {
 	addNewRecipe: async (req, res) => {
 
 		try {
-			const { title, ingredientsrecipe, description, steps, cookingTime, difficulty, rate, picture } = req.body;
+			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture, userId } = req.body;
 
 			if (!title) {
 				const error = new Error(`'title' property is missing`);
 				return res.status(400).json({ message: error.message });
 			}
-			if (!ingredientsrecipe) {
-				const error = new Error(`'Ingredientsrecipe' property is missing`);
+			if (!ingredientsList) {
+				const error = new Error(`'IngredientsList' property is missing`);
 				return res.status(400).json({ message: error.message });
 			}
             if (!description) {
@@ -58,7 +59,7 @@ const controller = {
 
 			const newRecipe = Recipe.build({
 				title,
-				ingredientsrecipe,
+				ingredientsList,
                 description,
 				steps
 			});
@@ -69,12 +70,12 @@ const controller = {
             if (difficulty) {
                 newRecipe.difficulty = difficulty;
             }
-            if (rate) {
-                newRecipe.rate = rate;
-            }
             if (picture) {
                 newRecipe.picture = picture;
             }
+			if (userId) {
+				newRecipe.userId = userId;
+			}
 
 			await newRecipe.save();
 			res.status(201).json(newRecipe);
@@ -96,8 +97,9 @@ const controller = {
 				return res.status(404).json({ message: error.message });
 			}
 
-			const { title, ingredientsList, description, steps, cookingTime, difficulty, rate, picture } = req.body;
+			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture } = req.body;
 			console.log(req.body);
+			
 			if (title) {
 				recipe.title = title;
 			}
@@ -116,14 +118,11 @@ const controller = {
 			if (difficulty) {
 				recipe.difficulty = difficulty;
 			}
-			if (rate) {
-				recipe.rate = rate;
-			}
 			if (picture) {
 				recipe.picture = picture;
 			}
-			await recipe.save();
 
+			await recipe.save();
 			res.status(200).json(recipe);
 
 		} catch (error) {
@@ -138,7 +137,7 @@ const controller = {
 			const recipeId = req.params.id;
 			const recipe = await Recipe.findByPk(recipeId);
 			if (!recipe) {
-				const error = new Error(`List with id ${recipeId} does not exist.`);
+				const error = new Error(`Recipe with id ${recipeId} does not exist.`);
 				return res.status(404).json({ message: error.message });
 			}
 			await recipe.destroy();
