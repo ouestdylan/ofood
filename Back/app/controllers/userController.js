@@ -1,5 +1,5 @@
 
-const  User = require('../models/user');
+const User = require('../models/user');
 
 const userController = {
 
@@ -18,7 +18,7 @@ const userController = {
 
 	getOneRecipeById: async (req, res) => {
 
-		try {		
+		try {
 			const id = req.params.id;
 			const recipe = await Recipe.findByPk(id);
 
@@ -34,6 +34,7 @@ const userController = {
 		}
 	},
 
+
 	addNewRecipe: async (req, res) => {
 
 		try {
@@ -47,7 +48,7 @@ const userController = {
 				const error = new Error(`'IngredientsList' property is missing`);
 				return res.status(400).json({ message: error.message });
 			}
-            if (!data.description) {
+			if (!data.description) {
 				const error = new Error(`'Description' property is missing`);
 				return res.status(400).json({ message: error.message });
 			}
@@ -55,25 +56,25 @@ const userController = {
 			const newRecipe = Recipe.build({
 				title,
 				ingredientsList,
-                description
+				description
 			});
 
 			if (data.cookingTime) {
 				newRecipe.cookingTime = data.cookingTime;
 			}
-            if (data.difficulty) {
-                newRecipe.difficulty = data.difficulty;
-            }
-            if (data.rate) {
-                newRecipe.rate = data.rate;
-            }
-            if (data.picture) {
-                newRecipe.picture = data.picture;
-            }
+			if (data.difficulty) {
+				newRecipe.difficulty = data.difficulty;
+			}
+			if (data.rate) {
+				newRecipe.rate = data.rate;
+			}
+			if (data.picture) {
+				newRecipe.picture = data.picture;
+			}
 
 			await newRecipe.save();
 			res.status(201).json(newRecipe);
-			
+
 		} catch (error) {
 			console.error(error);
 			res.status(500).json({ message: error.message });

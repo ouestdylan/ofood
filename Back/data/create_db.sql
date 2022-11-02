@@ -34,5 +34,6 @@
     "updated_at" timestamptz   
  );
 
+
  COMMIT;
 
