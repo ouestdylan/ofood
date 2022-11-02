@@ -1,13 +1,12 @@
-
 BEGIN;
 
-TRUNCATE "users", "recipes" RESTART IDENTITY;
+TRUNCATE "user", "recipe" RESTART IDENTITY;
 
-INSERT INTO "users" ("email","username", "password", "is_admin") 
+INSERT INTO "user" ("email","username", "password", "is_admin") 
     VALUES ('michel@michel.fr', 'Michel', 'ilovemichel', 'true'),
             ('bernard@bernard.fr', 'Bernard', 'ilovebernard', 'false');
 
-INSERT INTO "recipes" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
+INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
     VALUES ('BIFSTECK AUX OIGNONS CARAMELISEES',
             'Sel et poivre au goût,
             1 lb (450 g) de surlonge de boeuf ou steak (environ 3/4 po/2 cm d’épaisseur),
@@ -116,7 +115,6 @@ INSERT INTO "recipes" ("title", "ingredients_list", "description", "steps", "coo
                 70g de farine,
                 50cl de lait,
                 1 pincée Noix de muscade,
-
                 Plaque de lasagnes (fraîche ou sèche spécial sans précuisson),
                 8 Tomate,
                 Pulpe de tomate en conserve (ou 500 g de tomates fraîches),
