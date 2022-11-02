@@ -93,7 +93,6 @@ INSERT INTO "recipes" ("title", "ingredients_list", "description", "steps", "coo
              3, 
              'data/img/blini-saumon.jpg'),
 
-
             ('BRUSCHETTA ITALIENNE', 
             '8 tomates,
             2 c.à.s d’huile d’olive,
