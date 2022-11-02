@@ -16,6 +16,7 @@
     "title" VARCHAR(128) NOT NULL,
     "ingredients_list" TEXT NOT NULL,
     "description" TEXT NOT NULL,
+    "steps" TEXT NOT NULL,
     "cooking_time" INT,
     "difficulty" VARCHAR(32),
     "rate" INT,
