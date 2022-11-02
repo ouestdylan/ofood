@@ -27,6 +27,7 @@
     "steps" TEXT NOT NULL,
     "cooking_time" INT,
     "difficulty" VARCHAR(32),
+    "user_id" INT NOT NULL REFERENCES "user"("id"),
     "rate" INT,
     "picture" TEXT,
     "created_at" timestamptz NOT NULL DEFAULT NOW(),
