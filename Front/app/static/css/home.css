@@ -202,10 +202,6 @@ span {
 
 
 
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .form_container {
@@ -214,11 +210,9 @@ span {
     flex-direction: columns;
     width: 100%;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-
-
 }
 
 form {
@@ -251,6 +245,8 @@ form .social-media p {
     cursor: pointer;
     color: #545454;
 }
+
+
 
 form p.choose-email {
     text-align: center;
