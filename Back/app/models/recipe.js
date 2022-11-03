@@ -33,13 +33,13 @@ Recipe.init({
     picture: {
 		type: DataTypes.TEXT,
 	},
-	createdAt: {
-		type: DataTypes.DATE,
-		allowNull: false
-	},
-	updatedAt: {
-		type: DataTypes.DATE
-	}
+	// createdAt: {
+	// 	type: DataTypes.DATE,
+	// 	allowNull: false
+	// },
+	// updatedAt: {
+	// 	type: DataTypes.DATE,
+	// }
 
 }, {
 	sequelize,
