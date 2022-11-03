@@ -1,0 +1,26 @@
+{
+  "name": "projet-09-ofood",
+  "version": "1.0.0",
+  "description": "Travaillons sur la préparation d'un nouveau projet, un site en **Responsive Web Design** qui regroupera des recettes de cuisine. Ici, il s'agit d'un **MVP** (minimum viable product), et donc les fonctionnalités à implémenter dans un premier temps sont assez peu nombreuses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Galilee/projet-09-ofood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Galilee/projet-09-ofood/issues"
+  },
+  "homepage": "https://github.com/O-clock-Galilee/projet-09-ofood#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.6.7"
+  }
+}
