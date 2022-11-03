@@ -37,7 +37,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             30, 
             'Difficile',
              8, 
-             '/data/img/bifsteak.jpg'),
+             'bifsteak.jpg'),
 
             ('BIMBIMBAP AU BOEUF', 
                 'Riz,
@@ -68,7 +68,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              45, 
              'Moyen', 
              10, 
-             '/data/img/bimbimpap.jpg'),
+             'bimbimpap.jpg'),
 
              ('BLINI AU SAUMON', 
                 'poivre,
@@ -90,7 +90,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              10, 
              'Facile', 
              3, 
-             'data/img/blini-saumon.jpg'),
+             'blini-saumon.jpg'),
 
             ('BRUSCHETTA ITALIENNE', 
             '8 tomates,
@@ -107,7 +107,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              10, 
              'Facile', 
              8, 
-             'data/img/bruschetta.jpg'),
+             'bruschetta.jpg'),
 
              ('LASAGNE BOLOGNAISE', 
             ' - Pour le bechamel ,
@@ -141,7 +141,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              60, 
              'Moyen', 
              4, 
-             'data/img/lasagne'),
+             'lasagne.jpg'),
 
              ('OSSO BUCCO', 
             ' Osso Buco 1.5 kg,
@@ -176,7 +176,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              45, 
              'Difficile', 
              6, 
-             'data/img/osso-bucco.jpg'),
+             'osso-bucco.jpg'),
 
              ('PANCAKES', 
             ' Farine 125 g,
@@ -198,7 +198,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Facile', 
              8, 
-             'data/img/pancakes'),
+             'pancakes.jpg'),
 
              ('PASTA PESTO ROSSO', 
             ' 100 g Pâtes (Rigatoni)
@@ -219,7 +219,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Très facile', 
              7, 
-             'data/img/pasta-pesto-rosso.jpg'),
+             'pasta-pesto-rosso.jpg'),
 
              ('PASTA PESTO VERDE', 
             ' Parmigiano Reggiano AOP Giovanni Ferrari : 30 g,
@@ -240,7 +240,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             15, 
              'Facile', 
              6, 
-             'data/img/pasta-pesto-verde.jpg'),
+             'pasta-pesto-verde.jpg'),
 
              ('SALADE DE PATES AU FETA', 
             ' 240 g de pâtes selon votre choix,
@@ -260,7 +260,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Facile', 
              3, 
-             'data/img/pasta-salad-feta.jpg'),
+             'pasta-salad-feta.jpg'),
 
              ('POKEBOWL SAUMON', 
             ' 1 pavé de saumon,
@@ -283,7 +283,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Moyen', 
              9, 
-             'data/img/poke-bowls-salmon.jpg'),
+             'poke-bowls-salmon.jpg'),
 
              ('SALADE COMPOSEE', 
             ' Sucrine,
@@ -314,7 +314,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Facile', 
              3, 
-             'data/img/salade-composee.jpg'),
+             'salade-composee.jpg'),
 
              ('SALADE CRISPY CHICKEN Gaulois', 
             ' 1 étui de Crousty Chicken Long Filet’s Le Gaulois,
@@ -342,7 +342,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              25, 
              'Facile', 
              7, 
-             'data/img/salade-crispy-chicken.jpg'),
+             'salade-crispy-chicken.jpg'),
 
              ('SALADE EPINARD POULET', 
             ' 3 blancs de poulet,
@@ -363,7 +363,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Facile', 
              6, 
-             'data/img/salade-epinard-poulet.jpg'),
+             'salade-epinard-poulet.jpg'),
 
              ('PAVE DE SAUMON GRILLEE', 
             ' 2 pavés de saumon frais
@@ -384,7 +384,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              7, 
              'Moyen', 
              3, 
-             'data/img/saumon_grillé.jpg'),
+             'saumon_grillé.jpg'),
 
              ('SOUPE POMMES DE TERRE', 
             ' 5 oignons
@@ -404,7 +404,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Difficile', 
              3, 
-             'data/img/soupe-potato.jpg'),
+             'soupe-potato.jpg'),
 
              ('VERRINE  DE FRAISES AUX SPECULOS', 
             '300g de fraises
@@ -419,7 +419,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Très facile', 
              9, 
-             'data/img/speculos_fraise.jpg'),
+             'speculos_fraise.jpg'),
 
 
              ('TARTE AUX POMMES', 
@@ -442,7 +442,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Facile', 
              3, 
-             'data/img/tarte-pommes.jpg'),
+             'tarte-pommes.jpg'),
 
              ('FAJITAS AU POULET', 
             ' 2 poivrons, rouge ou jaune de préférence, coupés en lanières,
@@ -478,7 +478,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Difficile', 
              8, 
-             'data/img/tortilla.jpg'),
+             'tortilla.jpg'),
 
              ('POIVRON FARCIS AU BOEUF', 
             ' 600 g Steaks hachés,
@@ -499,7 +499,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              90, 
              'Difficile', 
              3, 
-             'data/img/poivron-farci.jpg');
+             'poivron-farci.jpg');
             
 
 COMMIT;

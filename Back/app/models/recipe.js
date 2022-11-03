@@ -33,19 +33,9 @@ Recipe.init({
     picture: {
 		type: DataTypes.TEXT,
 	},
-	// createdAt: {
-	// 	type: DataTypes.DATE,
-	// 	allowNull: false
-	// },
-	// updatedAt: {
-	// 	type: DataTypes.DATE,
-	// }
-
 }, {
 	sequelize,
 	tableName: 'recipe'
 });
-
-console.log(sequelize.model.Recipe);
 
 module.exports = Recipe;
