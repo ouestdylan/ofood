@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Je vais chercher tous les controlleurs que j'ai fait jusque à présents pour lier les concepts entre eux
 
-const homeController = require('./controllers/homeController');
+const homeController = require('./controllers/Controller');
 const connexionController = require('./controllers/connexionController');
 const dashboardController = require('./controllers/dashboardController');
 
