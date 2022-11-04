@@ -1,13 +1,16 @@
-require('dotenv').config();
 
 const express = require('express');
+require('dotenv').config();
+
 const app = express();
-const router = require('./router/router');
+const PORT = process.env.PORT ?? 3001;
 
-const PORT = process.env.PORT || 3000;
+app.use(express.json());
 
+const router = require('./app/router');
 app.use(router);
 
 app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`);
+    console.log(`Run on port ${PORT}`);
 });
+
