@@ -10,9 +10,9 @@
   <div class="container">
 
 
+    <% main.forEach( (recipe) => { %>        
 
-    <% main.forEach( (recipe) => { %>
-
+      
       <% if (recipe.rate >= 8) { %>
     <div class="carte">
 
@@ -47,6 +47,7 @@
       </div>
     </div>
     <% } %>
+
     <% }) %>
 
   </div>

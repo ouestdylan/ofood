@@ -6,7 +6,7 @@ body {
     height: 100vh;
 }
 header {
-    background-color: #c7ecee;
+    background-color: #85d8b3;
 
 }
 
@@ -17,7 +17,7 @@ header {
 .banner_logo {
     
     display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .barre {
     height: 2px;
@@ -45,13 +45,16 @@ header {
 }
 
 .span_good {
-    color:#F3901F;
+    color:#cc812b;
 }
 
 .slogan_title {
+    
     font-family: 'Lobster', cursive;
-    font-size: 2.6rem;
-    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    left:510px;
+    top:15px;
     color: #1276CB;
     font-weight: bold;
 }
@@ -106,14 +109,15 @@ header {
   }
 .container{
 
-overflow-x: scroll;
+ overflow-y: hidden;
+ /* white-space: nowrap; */
+overflow-x:scroll;
   display: flex;
   height: 100vh;
-  align-items: center;
-  gap:150px;
+  align-items: center;          
+  gap:50px;
   scrollbar-width: none;  /* Firefox */
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 20px;
 }  
     .carte {
         flex-shrink: 0;
