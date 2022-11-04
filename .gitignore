@@ -1,3 +1,12 @@
+Back/node_modules
+Back/.env
+Back/package-lock.json
+Back/.DS_STORE
+
+Front/node_modules
+Front/.env
+Front/package-lock.json
+Front/.DS_STORE
+
 node_modules
-.env
 .DS_STORE
