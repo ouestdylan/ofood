@@ -1,0 +1,90 @@
+<%- include ("partials/header") %>
+
+<link rel="stylesheet" href="/css/recipe.css" />
+<script src="/JS/recipeModal.js"></script>
+
+<main class="container_recipe">
+
+    <div class="carte_recipe">
+        <div class="recipe_img">
+            <img src="img/recipes/lasagne.jpg" alt="recipes">
+        </div>
+
+        <div class="recipe_title"> Titre de la recette </div>
+
+        <div class="recipe_tab">
+            <img src="/img/sablier.svg" alt="sablier" class="recipe_icone" />
+            <span> 30 minutes </span>
+        </div>
+        <div class="recipe_tab">
+            <img src="/img/fire.png" alt="mascotte" class="recipe_icone" />
+        </div>
+        <div class="recipe_tab">
+            <img src="/img/difficulty.svg" alt="difficulty" class="recipe_icone" />
+            <span>Difficile </span>
+        </div>
+
+        <div class="recipe_ingredients">
+            <ol class="ingredients_list">
+                <li>
+                    Sel et poivre au goût,
+                    1 lb (450 g) de surlonge de boeuf ou steak (environ 3/4 po/2 cm d’épaisseur),
+                    2 c. à soupe (30 ml) de beurre,
+                    2 oignons émincés,
+                    2 gousses d’ail hachées,
+                    5 c. à thé (2 ml) de romarin séché emietté,
+                    2 c. à soupe (30 ml) de farine tout usage,
+                    1 1/2 tasse (375 ml) de lait,
+                    2 c. à soupe (30 ml) de sauce soya,
+                    1 c. à soupe (15 ml) de moutarde de Dijon,
+                    Persil frais haché
+                </li>
+            </ol>
+
+            TODO: <h2>Modal Example</h2>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card_info">
+            <ul>
+                <li>
+                    Frotter les deux côtés du bifteck avec 1/4 c. à thé (1 ml) de sel et de poivre.
+                    Dans un grand poêlon, faire fondre la moitié du beurre à feu vif; y faire revenir le bifteck des
+                    deux côtés, environ 2 min par côté.
+                    Réserver dans une assiette.
+                    Réduire la chaleur à feu moyen-doux; ajouter le reste du beurre dans le poêlon.
+                    Incorporer en remuant les oignons, l’ail et le romarin; couvrir et faire cuire en remuant souvent
+                    pendant 10 min ou jusqu’à ce que les oignons soient très tendres et caramélisés. Saupoudrer de
+                    farine; faire cuire en brassant 1 min.
+                    Incorporer graduellement le lait en remuant, puis la sauce soya et la moutarde.
+                    Augmenter la chaleur à feu moyen; laisser mijoter en remuant 5 min ou jusqu’à l’épaississement de la
+                    sauce.
+                    Remettre le bifteck et les sucs accumulés dans le poêlon; napper le bifteck de sauce avec une
+                    cuillère.
+                    Faire mijoter en retournant le bifteck une fois et en remuant la sauce pendant environ 5 min ou
+                    jusqu’à ce que le bifteck atteigne le degré de cuisson voulu.
+                    Retirer du feu.
+                    Déposer le bifteck sur une planche à découper; laisser reposer 5 min. Rectifier l’assaisonnement de
+                    la sauce avec du sel et du poivre.
+                    Couper le bifteck en fines tranches dans le sens contraire du grain et le servir nappé de sauce.
+                    Garnir de persil.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</main>
+
+<%- include ("partials/footer") %>
