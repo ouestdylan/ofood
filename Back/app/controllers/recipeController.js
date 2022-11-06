@@ -16,7 +16,7 @@ const controller = {
 		}
 	},
 
-	getOneRecipeById: async (req, res) => {
+	getRecipeById: async (req, res) => {
 
 		try {		
 			const recipeId = req.params.id;
