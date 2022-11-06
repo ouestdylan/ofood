@@ -6,7 +6,7 @@ const router = express.Router();
 const mainController = require('./controllers/mainController');
 const userController = require('./controllers/userController');
 
-router.get('/home', mainController.homePage);
+router.get('/accueil', mainController.homePage);
 
 router.get('/recettes', mainController.recipesPage);
 router.get('/recettes/:id', mainController.recipePage);
