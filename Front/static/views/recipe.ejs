@@ -1,90 +1,81 @@
 <%- include ("partials/header") %>
 
 <link rel="stylesheet" href="/css/recipe.css" />
-<script src="/JS/recipeModal.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <main class="container_recipe">
 
-    <div class="carte_recipe">
-        <div class="recipe_img">
-            <img src="img/recipes/lasagne.jpg" alt="recipes">
-        </div>
+    <div id="container">
 
-        <div class="recipe_title"> Titre de la recette </div>
+        <div class="recipe-image">
 
-        <div class="recipe_tab">
-            <img src="/img/sablier.svg" alt="sablier" class="recipe_icone" />
-            <span> 30 minutes </span>
-        </div>
-        <div class="recipe_tab">
-            <img src="/img/fire.png" alt="mascotte" class="recipe_icone" />
-        </div>
-        <div class="recipe_tab">
-            <img src="/img/difficulty.svg" alt="difficulty" class="recipe_icone" />
-            <span>Difficile </span>
-        </div>
+            <img src="../img/recipes/lasagne.jpg" alt="">
+            <div class="preparation">
+                <h2>Préparation</h2>
 
-        <div class="recipe_ingredients">
-            <ol class="ingredients_list">
-                <li>
-                    Sel et poivre au goût,
-                    1 lb (450 g) de surlonge de boeuf ou steak (environ 3/4 po/2 cm d’épaisseur),
-                    2 c. à soupe (30 ml) de beurre,
-                    2 oignons émincés,
-                    2 gousses d’ail hachées,
-                    5 c. à thé (2 ml) de romarin séché emietté,
-                    2 c. à soupe (30 ml) de farine tout usage,
-                    1 1/2 tasse (375 ml) de lait,
-                    2 c. à soupe (30 ml) de sauce soya,
-                    1 c. à soupe (15 ml) de moutarde de Dijon,
-                    Persil frais haché
-                </li>
-            </ol>
+                <ol class="information">
 
-            TODO: <h2>Modal Example</h2>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Open Modal</button>
+                    <li>Couper un oignon et une gousse d’ail en petit morceaux.</li>
+                    <li>Les faire revenir à feu doux dans une casserole ou une sauteuse avec une cuillère à soupe
+                        d’huile
+                        d’olive, jusqu’à ce que les oignons soient devenus un peu translucides.</li>
+                    <li>Afin d’exhaler les saveurs de oignon, démarrer la cuisson à feu vif pendant 1 à 2 minutes.</li>
+                    <li>Puis baisser le feu juste après pour ne pas que les oignons ne brûlent.</li>
+                    <li>Une fois que les oignons ont pris une jolie couleur dorée, ajouter 800 g de pulpe de tomate.
+                    </li>
+                    <li>Saler, poivrer et ajouter une bonne cuillère à soupe d’herbes aromatiques (au choix :
+                        origan,basilic,thym).</li>
+                    <li>Laisser réduire et mijoter à feu doux pendant 20 minutes, avant de mixer ou non selon lesgoûts.
+                    </li>
+                    <li>Contrairement aux tomates fraîches, la pulpe en conserve étant plutôt acide, penser à ajouter 2
+                        morceaux de sucre pour adoucir la sauce.</li>
+                    <li>Pendant que la sauce mijote, faire chauffer un peu d’huile d’olive dans une poêle pour y faire
+                        revenir 300 g de viande de bœuf hachée à feu moyen pendant 3 à 5 minutes. Saler et poivrer, puis
+                        la
+                        mélanger à la sauce tomate réservée.</li>
+                    <li>Penser à dégraisser la viande avant de la mélanger à la sauce tomate.</li>
+                    <li>Pour cela, retirer la viande à l’aide d’une écumoire.</li>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-
+                </ol>
             </div>
         </div>
 
-        <div class="card_info">
-            <ul>
-                <li>
-                    Frotter les deux côtés du bifteck avec 1/4 c. à thé (1 ml) de sel et de poivre.
-                    Dans un grand poêlon, faire fondre la moitié du beurre à feu vif; y faire revenir le bifteck des
-                    deux côtés, environ 2 min par côté.
-                    Réserver dans une assiette.
-                    Réduire la chaleur à feu moyen-doux; ajouter le reste du beurre dans le poêlon.
-                    Incorporer en remuant les oignons, l’ail et le romarin; couvrir et faire cuire en remuant souvent
-                    pendant 10 min ou jusqu’à ce que les oignons soient très tendres et caramélisés. Saupoudrer de
-                    farine; faire cuire en brassant 1 min.
-                    Incorporer graduellement le lait en remuant, puis la sauce soya et la moutarde.
-                    Augmenter la chaleur à feu moyen; laisser mijoter en remuant 5 min ou jusqu’à l’épaississement de la
-                    sauce.
-                    Remettre le bifteck et les sucs accumulés dans le poêlon; napper le bifteck de sauce avec une
-                    cuillère.
-                    Faire mijoter en retournant le bifteck une fois et en remuant la sauce pendant environ 5 min ou
-                    jusqu’à ce que le bifteck atteigne le degré de cuisson voulu.
-                    Retirer du feu.
-                    Déposer le bifteck sur une planche à découper; laisser reposer 5 min. Rectifier l’assaisonnement de
-                    la sauce avec du sel et du poivre.
-                    Couper le bifteck en fines tranches dans le sens contraire du grain et le servir nappé de sauce.
-                    Garnir de persil.
-                </li>
-            </ul>
+        <div class="recipe-details">
+
+            <h1>LASAGNE</h1>
+
+            <div class="info">
+                <h2> Ingrèdients</h2>
+                <br>
+                <ul>
+                    <span> Pour le bechamel</span>
+                    <li> 70g de buerre, </li>
+                    <li> 70g de farine</li>
+                    <li> 50cl de lait</li>
+                    <li> 1 pincée Noix de muscade</li>
+                    <li>Plaque de lasagnes (fraîche ou sèche spécial sans précuisson) </li>
+                    <li> 8 Tomate</li>
+                    <li> Pulpe de tomate en conserve (ou 500 g de tomates fraîches)</li>
+                    <li> 800 g Boeuf hachée</li>
+                    <li> 300 g Oignon</li>
+                    <li> 1 gousse d’Ail</li>
+                    <li> Huile d’olive</li>
+                    <li> 2 c à s Origan</li>
+                    <li> Herbes aromatiques au choix (origan thym basilic)</li>
+                    <li>1 c à s Emmental râpé </li>
+                    <li>100 g Sucre </li>
+                    <li> Sel</li>
+                    <li> Poivre</li>
+
+
+                </ul>
+            </div>
         </div>
 
     </div>
+
+
+
 </main>
 
 <%- include ("partials/footer") %>
