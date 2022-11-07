@@ -46,6 +46,7 @@ body {
 }
 
 .cinq {
+
     color: #fb0703;
 }
 
@@ -66,6 +67,24 @@ body {
     width: 330px;
     height: 530px;
     /* position: absolute;
+    color:#fb0703;
+}
+
+.container{
+overflow-x:scroll;
+  display: flex;
+  height: 100vh;
+  align-items: center;      
+  justify-content: start;    
+  gap:50px;
+  margin-left: 20px;
+}  
+    .carte {
+        flex-shrink: 0;
+        width: 330px;
+        height: 530px;
+        /* position: absolute;
+
         top: 75%;
         left: 50%; */
     /* transform: translate(-50%, -50%); */
