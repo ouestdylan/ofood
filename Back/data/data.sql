@@ -3,8 +3,8 @@ BEGIN;
 TRUNCATE "user", "recipe" RESTART IDENTITY;
 
 INSERT INTO "user" ("email","username", "password", "is_admin") 
-    VALUES ('michel@michel.fr', 'Michel', 'ilovemichel', 'true'),
-            ('bernard@bernard.fr', 'Bernard', 'ilovebernard', 'false');
+    VALUES ('michel@michel.fr', 'Michel', '$2a$10$lOFvFSSd1dfW1CMF/DtXneSwChkJImgHljYeOxaP2RReMN1nF9ZcG', 'true'),
+            ('bernard@bernard.fr', 'Bernard', '$2a$10$.k8MKv.WL0rxMkPiaruxLOdDMDkCn.3T7eq055oa2Sg2nEI/YJWmW', 'false');
 
 INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
     VALUES ('BIFSTECK AUX OIGNONS CARAMELISEES',

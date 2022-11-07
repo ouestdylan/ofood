@@ -27,7 +27,7 @@ const mainController = {
 
             console.log(recipes);
             res.send(recipes)
-            //res.render('home',{recipe});
+            //res.render('home',{recipes});
             
         } catch (error) {
             console.log(error);
@@ -41,8 +41,7 @@ const mainController = {
             let recipe = await result.json();
 
             console.log(recipe);
-            res.send(recipe)
-            //res.render('home',{recipe});
+            res.render('recipe',{recipe});
             
         } catch (error) {
             console.log(error);
