@@ -27,13 +27,15 @@
             <div class="ingredients">
                 <h2 class="subtitle"> Ingrèdients</h2>
                 <br>
-                <ul class="ingredients_list">
-
-                    <li> <%= recipe.ingredientsList%> </li>
-                    <!-- RETRAVAILLER LA LISTE-->
+                <ol class="ingredients_list">
 
 
-                </ul>
+                    <% for (const ingredient of recipe.ingredientsList.split(',')) { %>
+                        <li><%= ingredient %></li>
+                    <% } %>
+
+
+                </ol>
             </div>
 
             <div class="list_tab">

@@ -17,7 +17,6 @@ body {
 
 .title_popular_recipes {
     font-family: 'Berkshire Swash', cursive;
-
     font-size: 2.4rem;
     text-align: center;
 
@@ -53,7 +52,7 @@ body {
 .container {
     overflow-x: scroll;
     display: flex;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     gap: 50px;
     scrollbar-width: none;
