@@ -1,4 +1,9 @@
+
+
+
 header {
+    background: #DFC2F2;
+    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
     width: 100%;
     display: flex;
     margin: auto;

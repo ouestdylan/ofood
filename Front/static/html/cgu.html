@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGU</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" src="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/Front/static/css/cgu.css">
+git 
+  <link rel="stylesheet" href="/Front/static/css/header.css" />
+  <link rel="shortcut icon" type="image/svg" href="/img/ofood.svg">
+
+  <title>O'Food</title>
+
 </head>
+
+<body>
+  <header>
+    <div class="banner_logo">
+      <a href="/accueil">
+        <img class="image_logo" src="/Front/static/img/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
+
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <script>
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+      }
+    </script>
+
+  </header>
 <body>
     <h1>Conditions Générales d'Utilisation  </h1>
 <h1>Comment utiliser les recettes diffusées sur ce site</h1>
@@ -15,65 +66,20 @@ Dans tous les cas, vous ne pouvez pas les reproduire pour en faire un usage comm
 
 Les recettes diffusées sur le site sont incorporées dans une base de données appartenant à la société Marmiton, vous ne pouvez ni reproduire cette base de données, ni extraire des données contenues dans cette base autrement que pour votre usage privé.
 
-<h2>Vous êtes un particulier :</h2>
-Vous pouvez utiliser toutes les recettes diffusées sur le site pour votre usage privé : repas entre amis ou en famille.
 
-N'hésitez pas à donner votre avis sur les recettes et sur le site dans les rubriques " Votre Avis " et " Livre d'Or ".
+<h1>Code de conduite</h1>
 
-N'hésitez pas à utiliser les rubriques " Forum " et " Appel aux gourmands " pour partager votre passion.
-
-Inscrivez-vous sur la lettre hebdomadaire pour recevoir les dernières nouveautés.
-
-Si vous souhaitez diffuser une recette à un proche, vous avez deux possibilités :
-vous pouvez passer par la technologie du site marmiton.org, c'est-à-dire, cliquer sur le bouton " envoyer à un ami " figurant en-dessous de la recette choisie ;
-vous pouvez inscrire la personne de votre choix sur la lettre hebdomadaire. Ne diffusez pas la lettre hebdomadaire sur un intranet, sur un newsgroup ou toute autre listes de discussion mais inscrivez vos amis et collègues de travail sur la lettre hebdomadaire.
-
-Vous êtes un professionnel : cuisinier, restaurateur
-Vous pouvez utiliser les recettes sans droit de publier la recette elle-même sous 2 conditions :
-retour d'expérience : dans les commentaires pouvant être associés à chaque recette, ou dans la rubrique " Livre d'Or " ;
-visibilité de la source de la recette sur votre menu : " Cette recette vient du site www.marmiton.org ".
-
-Vous êtes une Ecole de formation de cuisine, un élève cuisinier ou une association culinaire
-Vous n'avez pas l'autorisation d'utiliser les recettes sauf accord préalable de Marmiton. Contactez-nous pour connaître les possibilités de partenariats : chef@marmiton.org .
-
-Vous avez des recettes, faites-les partager
-Allez dans la rubrique " Vos spécialités " et remplissez le formulaire.
-En remplissant le formulaire vous garantissez que :
-
-A votre connaissance, cette recette ne vient pas d'un ouvrage ou d'un recueil de recettes ;
-Vous autorisez MARMITON à diffuser cette recette sur son site et à l'intégrer dans sa base de données gratuitement ;
-Vous autorisez MARMITON à la diffuser, la publier et la reproduire sur le site www.marmiton.org ou sur tout autre support. Vous pouvez être cité si vous le souhaitez.
-Code de conduite
-Comment utiliser les logos figurant sur le site :
-Vous pouvez reproduire librement les logos figurant dans la rubrique " Espace Communauté " et ainsi créer un lien hypertexte vers notre site.
-
-Le reste des logos, marques, dessins, illustrations, textes et noms des rubriques figurant sur notre site ne peuvent pas être utilisés, reproduits, modifiés, diffusés, ou empruntés pour créer des œuvres dérivées sans notre autorisation.
-
-Les marques citées sont déposées par leurs propriétaires respectifs et sont protégés par le droit des marques. Le contenu des publicités sponsorisées est également protégé par le droit de la propriété intellectuelle. Ces éléments ne peuvent donc pas être utilisés, reproduits, modifiés, diffusés, ou empruntés pour créer des œuvres dérivées sans l'autorisation de leurs titulaires respectifs.
-
-Marmiton.org demande aux utilisateurs de ses services de respecter les droits de propriété intellectuelle d'autrui
-Dès lors, si vous considérez que votre marque ou votre œuvre a été copiée ou est utilisée d'une manière susceptible de porter atteinte à vos droits tels que reconnus par la législation française sur le site Marmiton.org, merci d'en informer la société Marmiton par courrier postal, télécopie ou par courrier électronique : Chef Marmiton, Marmiton.org, 8-10 rue Saint-Fiacre 75002 Paris, 01 53 57 79 00, chef@marmiton.org.
-
-<h2>Utilisation des espaces de communauté</h2>
-Vous vous engagez à ne pas vous servir du site Marmiton.org et notamment de la rubrique " Communauté " pour :
-
-Télécharger, envoyer, transmettre par e-mail ou de toute autre manière tout contenu qui soit illégal, nuisible, menaçant, abusif, constitutif de harcèlement, diffamatoire, vulgaire, obscène, menaçant pour la vie privée d'autrui, haineux, raciste, ou autrement répréhensible ;
-Porter atteinte d'une quelconque manière aux utilisateurs mineurs. Marmiton se réserve le droit, à ce titre ou lorsqu'une contribution est contraire à la ligne éditoriale de son site (sans que cela ne constitue une obligation) de supprimer tout contenu disponible via son site, notamment dans la rubrique " Communauté ".
-Le Modérateur de Marmiton ne sera présent qu'une fois par semaine. En cas d'urgence, prévenir : chef@marmiton.org.
 
 <h1>Responsabilité </h1>
-Marmiton.org ne garantit pas le résultat des recettes diffusées sur son site, ni leur qualité. Marmiton.org ne garantit pas que les recettes répondront aux attentes des internautes ou que leurs résultats seront exacts et fiables.
-En conséquence, la responsabilité de Marmiton.org ne saurait être engagée en cas d'erreur ou d'omission dans l'une de ces recettes, textes, informations ou illustrations diffusées sur son site.
 
-Toutefois, merci de nous faire connaître vos commentaires dans la rubrique " Votre Avis ? ", ainsi que dans les commentaires pouvant être associés à chaque recette.
+O'Food ne garantit pas le résultat des recettes diffusées sur son site, ni leur qualité. O'Food ne garantit pas que les recettes répondront aux attentes des internautes ou que leurs résultats seront exacts et fiables.
+En conséquence, la responsabilité de O'Food ne saurait être engagée en cas d'erreur ou d'omission dans l'une de ces recettes, textes, informations ou illustrations diffusées sur son site.
 
-Des liens hypertextes peuvent renvoyer vers d'autres sites que le site Marmiton.org.
-Marmiton.org dégage toute responsabilité dans le cas où le contenu de ces sites serait contraire à la réglementation en vigueur.
 
 Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité.
-En conséquence, Marmiton.org ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement.
+En conséquence, O'Food ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement.
 
-Tout utilisateur du site Marmiton.org s'engage à garantir et indemniser la société Marmiton.org contre tout dommage, plainte ou demande émanant de tiers consécutif à l'envoi, la diffusion ou la transmission de contenu sur le site www.marmiton.org
+Tout utilisateur du site O'Food s'engage à garantir et indemniser la société O'Food contre tout dommage, plainte ou demande émanant de tiers consécutif à l'envoi, la diffusion ou la transmission de contenu sur le site O'Food.
 
 
     

@@ -12,7 +12,8 @@
 
   <% recipes.forEach((recipe) => { %>
 
-  <% if (recipe.rate >= 8) { %>
+
+
   <div class="carte">
 
 
@@ -40,14 +41,13 @@
     </div>
 
     <div class="btnSection">
-      <a href="#">La recette</a>
+      <a href="/recettes/<%=recipe.id %>">La recette</a> 
 
 
     </div>
   </div>
-  <% } %>
-
   <% }) %>
+
 
 </div>
 
@@ -101,7 +101,7 @@
 
     <div class="tab">
       <img src="/img/sablier.svg" alt="sablier" class="icone" />
-      <span> <%= recipe.cooking_time %> </span>
+      <span> <%= recipe.cookingTime %> </span>
     </div>
     <div class="tab">
       <img src="/img/fire.png" alt="mascotte" class="icone" />

@@ -1,3 +1,4 @@
+
 # O'food, Good Mood! - Documents d'un projet
 
 Pour commencer il va falloir créer une BDD et y importer les données que vous trouverez dans /Back/data/,
@@ -81,3 +82,6 @@ Vous pouvez rédiger vos _stories_ dans un fichier markdown, par exemple sous fo
 
 
 #TEST
+=======
+# Pour lancer le projet, toujours penser aux NPM INSTALL et aussi ré importer la base de données.
+
