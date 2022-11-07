@@ -7,33 +7,14 @@
 
     <div class="container_left">
         <div class="recipe_image">
-            <img src="../img/recipes/lasagne.jpg" alt="">
+            <img src="/img/recipes/<%= recipe.picture %>" alt="">
         </div>
-        <h1 class="title">LASAGNE</h1>
+        <h1 class="title"> <%= recipe.title %> </h1>
         <div class="Steps">
             <h2 class="subtitle">Préparation</h2>
             <ol class="recipe_steps">
+                <li><%= recipe.steps %> </li>
 
-                <li>Couper un oignon et une gousse d’ailen petit morceaux.</li>
-                <li>Les faire revenir à feu doux dans une casserole ou une sauteuse avec une cuillère à soupe
-                    d’huile
-                    d’olive, jusqu’à ce que les oignons soient devenus un peu translucides.</li>
-                <li>Afin d’exhaler les saveurs de oignon, démarrer la cuisson à feu vif pendant 1 à 2 minutes.</li>
-                <li>Puis baisser le feu juste après pour ne pas que les oignons ne brûlent.</li>
-                <li>Une fois que les oignons ont pris une jolie couleur dorée, ajouter 800 g de pulpe de tomate.
-                </li>
-                <li>Saler, poivrer et ajouter une bonne cuillère à soupe d’herbes aromatiques (au choix :
-                    origan,basilic,thym).</li>
-                <li>Laisser réduire et mijoter à feu doux pendant 20 minutes, avant de mixer ou non selon lesgoûts.
-                </li>
-                <li>Contrairement aux tomates fraîches, la pulpe en conserve étant plutôt acide, penser à ajouter 2
-                    morceaux de sucre pour adoucir la sauce.</li>
-                <li>Pendant que la sauce mijote, faire chauffer un peu d’huile d’olive dans une poêle pour y faire
-                    revenir 300 g de viande de bœuf hachée à feu moyen pendant 3 à 5 minutes. Saler et poivrer, puis
-                    la
-                    mélanger à la sauce tomate réservée.</li>
-                <li>Penser à dégraisser la viande avant de la mélanger à la sauce tomate.</li>
-                <li>Pour cela, retirer la viande à l’aide d’une écumoire.</li>
             </ol>
         </div>
     </div>
@@ -47,25 +28,9 @@
                 <h2 class="subtitle"> Ingrèdients</h2>
                 <br>
                 <ul class="ingredients_list">
-                    <span> Pour la bechamel</span>
-                    <br>
-                    <li> 70g de buerre, </li>
-                    <li> 70g de farine</li>
-                    <li> 50cl de lait</li>
-                    <li> 1 pincée Noix de muscade</li>
-                    <li>Plaque de lasagnes (fraîche ou sèche spécial sans précuisson) </li>
-                    <li> 8 Tomate</li>
-                    <li> Pulpe de tomate en conserve (ou 500 g de tomates fraîches)</li>
-                    <li> 800 g Boeuf hachée</li>
-                    <li> 300 g Oignon</li>
-                    <li> 1 gousse d’Ail</li>
-                    <li> Huile d’olive</li>
-                    <li> 2 c à s Origan</li>
-                    <li> Herbes aromatiques au choix (origan thym basilic)</li>
-                    <li>1 c à s Emmental râpé </li>
-                    <li>100 g Sucre </li>
-                    <li> Sel</li>
-                    <li> Poivre</li>
+
+                    <li> <%= recipe.ingredientsList%> </li>
+                    <!-- RETRAVAILLER LA LISTE-->
 
 
                 </ul>
@@ -75,14 +40,14 @@
 
                 <div class="tab">
                     <img src="/img/sablier.svg" alt="sablier" class="icone" />
-                    <span> 30 min</span>
+                    <span><%= recipe.cookingTime %></span>
                 </div>
                 <div class="tab">
                     <img src="/img/fire.png" alt="mascotte" class="icone" />
                 </div>
                 <div class="tab">
                     <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-                    <span>Difficile</span>
+                    <span><%= recipe.difficulty %></span>
                 </div>
             </div>
         </div>
