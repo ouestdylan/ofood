@@ -41,7 +41,7 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%=recipe.id %>">La recette</a> 
+      <a href="/recettes/<%=recipe.id %>">La recette</a>
 
 
     </div>
@@ -86,12 +86,8 @@
 
 <div class="container">
 
-
-
   <% recipes.forEach((recipe) => { %>
   <div class="carte">
-
-
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
@@ -101,7 +97,7 @@
 
     <div class="tab">
       <img src="/img/sablier.svg" alt="sablier" class="icone" />
-      <span> <%= recipe.cookingTime %> </span>
+      <span> <%= recipe.cookingTime %> min</span>
     </div>
     <div class="tab">
       <img src="/img/fire.png" alt="mascotte" class="icone" />
@@ -117,10 +113,10 @@
 
     <div class="btnSection">
       <a href="#">La recette</a>
-
-
     </div>
   </div>
   <% }) %>
 
 </div>
+
+<%- include ("partials/footer") %>
