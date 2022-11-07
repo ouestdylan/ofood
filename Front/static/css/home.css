@@ -44,14 +44,8 @@
     color: #fb0703;
 }
 
-.container::-webkit-scrollbar {
-    display: none;
-}
 
 .container {
-
-    overflow-y: hidden;
-    /* white-space: nowrap; */
     overflow-x: scroll;
     display: flex;
     height: 100vh;

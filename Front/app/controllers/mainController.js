@@ -26,8 +26,7 @@ const mainController = {
             let recipes = await result.json();
 
             console.log(recipes);
-            res.send(recipes)
-            //res.render('home',{recipe});
+            res.render('recipes',{recipes});
             
         } catch (error) {
             console.log(error);
