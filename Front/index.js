@@ -1,16 +1,28 @@
 
-const express = require ('express');
 require('dotenv').config();
-const path = require ('path');
 
+const PORT = process.env.PORT ?? 3006;
+
+const express = require ('express');
+const session = require('express-session');
+const userMiddleware = require('./app/middlewares/userMiddleware');
 const app = express();
-const PORT = process.env.PORT ?? 3001;
 
-app.set("view engine", "ejs");
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
-app.set("views", path.join(__dirname, './static/views'));
+app.use(session({
+    saveUninitialized: false,
+    resave: true,
+    secret: process.env.SESSION_SECRET
+ }));
 
-app.use(express.static(path.join(__dirname, './static')));
+app.use(userMiddleware);
+
+app.set('view engine', 'ejs');
+app.set('views','static/views');
+
+app.use(express.static('static'));
 
 const router = require ('./app/router');
 app.use(router);

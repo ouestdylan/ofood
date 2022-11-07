@@ -1,59 +1,58 @@
 <%- include ("partials/header") %>
 
+<link rel="stylesheet" href="/css/home.css" />
 
 
-  <h1 class="title_popular_recipes">
-    <br>
-    Les <span class="cinq"> 5 </span>recettes les plus populaires
-    <hr class="barre2" />
-  </h1>
-  <div class="container">
+<h1 class="title_popular_recipes">
+  <br>
+  Les <span class="cinq"> 5 </span>recettes les plus populaires
+  <hr class="barre2" />
+</h1>
+<div class="container">
+
+  <% recipes.forEach((recipe) => { %>
+
+  <% if (recipe.rate >= 8) { %>
+  <div class="carte">
 
 
-    <% main.forEach( (recipe) => { %>        
+    <div class="divImg">
+      <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
-      
-      <% if (recipe.rate >= 8) { %>
-    <div class="carte">
-
-
-      <div class="divImg">
-        <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-
-      </div>  
-
-      <div class="titre"> <%= recipe.title%> </div>
-
-      <div class="tab">
-        <img src="/img/sablier.svg" alt="sablier" class="icone" />
-        <span> <%= recipe.cooking_time %> </span>
-      </div>
-      <div class="tab">
-        <img src="/img/fire.png" alt="mascotte" class="icone" />
-      </div>
-      <div class="tab">
-        <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-        <span><%= recipe.difficulty %> </span>
-      </div>
-
-      <div class="info">
-       <p> <%= recipe.description %> </p>
-      </div>
-
-      <div class="btnSection">
-        <a href="#">La recette</a>
-
-
-      </div>
     </div>
-    <% } %>
 
-    <% }) %>
+    <div class="titre"> <%= recipe.title %> </div>
 
+    <div class="tab">
+      <img src="/img/sablier.svg" alt="sablier" class="icone" />
+      <span><%= recipe.cookingTime %></span>
+    </div>
+    <div class="tab">
+      <img src="/img/fire.png" alt="mascotte" class="icone" />
+    </div>
+    <div class="tab">
+      <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
+      <span><%= recipe.difficulty %> </span>
+    </div>
+
+    <div class="info">
+      <p> <%= recipe.description %> </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="#">La recette</a>
+
+
+    </div>
   </div>
+  <% } %>
+
+  <% }) %>
+
+</div>
 
 
-      <!-- <div class="titre">Tartes aux fraises</div>
+<!-- <div class="titre">Tartes aux fraises</div>
 
       <div class="tab">
         <img src="/img/sablier.svg" alt="sablier" class="icone" />
@@ -79,50 +78,49 @@
     </div> -->
 
 
-  <h1 class="title_recent_recipes">
-    Les <span class="cinq"> 5 </span>recettes les plus récentes
-  </h1>
+<h1 class="title_recent_recipes">
+  Les <span class="cinq"> 5 </span>recettes les plus récentes
+</h1>
 
-  <hr class="barre2" />
+<hr class="barre2" />
 
-    <div class="container">
-
-  
-
-      <% main.forEach( (recipe) => { %>
-      <div class="carte">
+<div class="container">
 
 
-        <div class="divImg">
-          <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
-        </div>  
-  
-        <div class="titre"> <%= recipe.title%> </div>
-  
-        <div class="tab">
-          <img src="/img/sablier.svg" alt="sablier" class="icone" />
-          <span> <%= recipe.cooking_time %> </span>
-        </div>
-        <div class="tab">
-          <img src="/img/fire.png" alt="mascotte" class="icone" />
-        </div>
-        <div class="tab">
-          <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-          <span><%= recipe.difficulty %> </span>
-        </div>
-  
-        <div class="info">
-         <p> <%= recipe.description %> </p>
-        </div>
-  
-        <div class="btnSection">
-          <a href="#">La recette</a>
+  <% recipes.forEach((recipe) => { %>
+  <div class="carte">
 
 
-        </div>
-      </div>
-      <% }) %>
+    <div class="divImg">
+      <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
     </div>
 
+    <div class="titre"> <%= recipe.title%> </div>
+
+    <div class="tab">
+      <img src="/img/sablier.svg" alt="sablier" class="icone" />
+      <span> <%= recipe.cooking_time %> </span>
+    </div>
+    <div class="tab">
+      <img src="/img/fire.png" alt="mascotte" class="icone" />
+    </div>
+    <div class="tab">
+      <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
+      <span><%= recipe.difficulty %> </span>
+    </div>
+
+    <div class="info">
+      <p> <%= recipe.description %> </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="#">La recette</a>
+
+
+    </div>
+  </div>
+  <% }) %>
+
+</div>

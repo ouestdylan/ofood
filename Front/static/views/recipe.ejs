@@ -1,0 +1,58 @@
+<%- include ("partials/header") %>
+
+<link rel="stylesheet" href="/css/recipe.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main class="container_recipe">
+
+    <div class="container_left">
+        <div class="recipe_image">
+            <img src="/img/recipes/<%= recipe.picture %>" alt="">
+        </div>
+        <h1 class="title"> <%= recipe.title %> </h1>
+        <div class="Steps">
+            <h2 class="subtitle">Préparation</h2>
+            <ol class="recipe_steps">
+                <li><%= recipe.steps %> </li>
+
+            </ol>
+        </div>
+    </div>
+    <div class="container_right">
+
+        <div class="recipe-details">
+
+
+
+            <div class="ingredients">
+                <h2 class="subtitle"> Ingrèdients</h2>
+                <br>
+                <ul class="ingredients_list">
+
+                    <li> <%= recipe.ingredientsList%> </li>
+                    <!-- RETRAVAILLER LA LISTE-->
+
+
+                </ul>
+            </div>
+
+            <div class="list_tab">
+
+                <div class="tab">
+                    <img src="/img/sablier.svg" alt="sablier" class="icone" />
+                    <span><%= recipe.cookingTime %></span>
+                </div>
+                <div class="tab">
+                    <img src="/img/fire.png" alt="mascotte" class="icone" />
+                </div>
+                <div class="tab">
+                    <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
+                    <span><%= recipe.difficulty %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<%- include ("partials/footer") %>
