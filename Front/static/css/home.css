@@ -193,7 +193,7 @@ header .slogan_title {
 }
 
 span {
-    <br><br>font-weight: 600;
+font-weight: 600;
 }
 
 .info {
@@ -226,7 +226,6 @@ span {
 
 
 .recipe_button {
-    1.5rem;
     margin: 0%;
     background-color: #c7ecee;
 
@@ -277,7 +276,7 @@ form .social-media p {
     margin-left: 10px;
     border-radius: 100%;
     border: 1px solid #545454;
-    180px text-align: center;
+    text-align: center;
     cursor: pointer;
     color: #545454;
 }
