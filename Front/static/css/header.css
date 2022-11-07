@@ -1,11 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #85d8b3;
-    height: 100vh;
-}
+
 
 header {
+    background: #DFC2F2;
+    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
     width: 100%;
     display: flex;
     justify-content: space-around;
