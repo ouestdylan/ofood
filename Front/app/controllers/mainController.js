@@ -46,7 +46,8 @@ const mainController = {
         } catch (error) {
             console.log(error);
         }
-    }
+    },
+
 
 };
 
