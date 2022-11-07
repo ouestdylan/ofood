@@ -15,6 +15,4 @@ router.get('/connexion', userController.loginPage);
 router.post('/connexion', userController.loginAction);
 //router.get('/dashboard', userController.dashboardPage);
 
-
-
 module.exports = router;

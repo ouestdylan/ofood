@@ -1,93 +1,13 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #85d8b3;
-    height: 100vh;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    align-items: center;
-    height: 60px;
-
-}
-
-header .image_logo {
-    width: 100px;
-    border: none;
-
-}
-
-
-header .slogan_title {
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    color: #1276CB;
-    font-weight: bold;
-    position: inherit;
-    top: inherit;
-    left: inherit;
-}
-
-.banner_edito {
-    font-family: 'Roboto Slab', sans-serif;
-
-}
-
-.banner_logo {
-
-    display: flex;
-    justify-content: left;
-}
-
-.barre {
-    height: 2px;
-    width: 100%;
-    background-color: black;
-}
-
-.barre2 {
-    width: 25%;
-    background-color: black;
-    height: 2px;
-}
-
-.image_logo {
-    width: 220px;
-    border: none;
-
-}
-
-.image_mascotte {
-    width: 60px;
-    height: 60px;
-    display: block;
-    padding-left: 70px;
-}
-
-.span_good {
-    color: #cc812b;
-}
-
-.slogan_title {
-
-    font-family: 'Lobster', cursive;
-    font-size: 3rem;
-    position: absolute;
-    left: 510px;
-    top: 15px;
-    color: #1276CB;
-    font-weight: bold;
-}
-
 /* .image_container {
 
     padding: 15px;
 } */
+body {
+    background: #DFC2F2;
+    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
+   
 
+}
 .title_recent_recipes {
     font-family: 'Berkshire Swash', cursive;
     font-size: 2.4rem;
@@ -129,14 +49,8 @@ header .slogan_title {
     color: #fb0703;
 }
 
-.container::-webkit-scrollbar {
-    display: none;
-}
 
 .container {
-
-    overflow-y: hidden;
-    /* white-space: nowrap; */
     overflow-x: scroll;
     display: flex;
     height: 100vh;
@@ -193,7 +107,7 @@ header .slogan_title {
 }
 
 span {
-font-weight: 600;
+    font-weight: 600;
 }
 
 .info {
@@ -355,7 +269,7 @@ form button {
 
 }
 
-.form_container_dashboard {
+recipe .form_container_dashboard {
     display: flex;
     flex-direction: column;
     columns: 2;
@@ -414,121 +328,4 @@ form button {
     background-color: #1276CB;
     color: white;
     border-color: transparent;
-}
-
-
-@media only screen and (max-width: 600px) and (min-width:400px) {
-    body {
-        width: 100%;
-    }
-
-
-
-    header .image_logo {
-        width: 100px;
-        border: none;
-
-    }
-
-
-    header .slogan_title {
-        font-family: 'Lobster', cursive;
-        font-size: 1.5rem;
-        color: #1276CB;
-        font-weight: bold;
-        position: inherit;
-        top: inherit;
-        left: inherit;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-
-}
-
-/* -----NAVBAR------- */
-
-
-#menu {
-    z-index: 2;
-}
-
-#menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-}
-
-.bar {
-    height: 5px;
-    width: 100%;
-    background-color: #DC052D;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-#bar1 {
-    transform: translateY(-4px);
-}
-
-#bar3 {
-    transform: translateY(4px);
-}
-
-.nav {
-    transition: 0.3s ease;
-    /* display: none; */
-}
-
-.nav ul {
-    padding: 0 22px;
-}
-
-.nav li {
-    list-style: none;
-    padding: 12px 0;
-}
-
-.nav li a {
-    color: white;
-}
-
-.menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #DC052D, #DC052D);
-    border-radius: 50%;
-    transition: 0.3s ease;
-}
-
-.change {
-    display: block;
-}
-
-.change .bar {
-    background-color: white;
-}
-
-.change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-    opacity: 0;
-}
-
-.change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-}
-
-.change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(-60%, -30%);
 }
