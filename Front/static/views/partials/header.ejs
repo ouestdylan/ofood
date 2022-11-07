@@ -22,37 +22,45 @@
 
 <body>
   <header>
-    <div class="banner_logo">
-      <a href="/accueil">
-        <img class="image_logo" src="/img/logo.png" alt="Logo" />
-      </a>
-    </div>
-    <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
+    <nav>
 
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
+      <div class="banner_logo">
+        <a href="/accueil">
+          <img class="image_logo" src="/img/logo.png" alt="Logo" />
+        </a>
       </div>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
+      <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
 
-    <div class="menu-bg" id="menu-bg"></div>
+
+
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Recettes</a></li>
+        <li><a href="#">Catégories</a></li>
+        <li><a href="#">Connexion</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Qui sommes-nous</a></li>
+
+      </ul>
+    </nav>
+
+
 
     <script>
-      function menuOnClick() {
-        document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-      }
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+          link.classList.toggle("fade");
+        });
+      });
     </script>
 
   </header>
