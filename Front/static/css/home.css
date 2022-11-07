@@ -104,19 +104,14 @@ header {
 .cinq {
     color:#fb0703;
 }
-.container::-webkit-scrollbar {
-    display: none;
-  }
-.container{
 
- overflow-y: hidden;
- /* white-space: nowrap; */
+.container{
 overflow-x:scroll;
   display: flex;
   height: 100vh;
-  align-items: center;          
+  align-items: center;      
+  justify-content: start;    
   gap:50px;
-  scrollbar-width: none;  /* Firefox */
   margin-left: 20px;
 }  
     .carte {
