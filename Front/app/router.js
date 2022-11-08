@@ -13,7 +13,7 @@ router.get('/recettes/:id', mainController.recipePage);
 
 router.get('/connexion', userController.loginPage);
 router.post('/connexion', userController.loginAction);
-//router.get('/dashboard', userController.dashboardPage);
+router.get('/dashboard', userController.dashboardPage);
 
 // router.get('/presentation', mainController.presentationPage);
 // router.get('/cgu', mainController.cguPage);
