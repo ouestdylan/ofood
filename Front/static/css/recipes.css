@@ -3,8 +3,8 @@
     padding: 15px;
 } */
 body {
-    background: #DFC2F2;
-    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
+    background: #faf9fb;
+
    
 
 }
@@ -52,10 +52,11 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
     flex-wrap: wrap;
     gap: 10px;
     margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
