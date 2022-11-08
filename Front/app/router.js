@@ -15,7 +15,7 @@ router.get('/connexion', userController.loginPage);
 router.post('/connexion', userController.loginAction);
 router.get('/dashboard', userController.dashboardPage);
 
-// router.get('/presentation', mainController.presentationPage);
-// router.get('/cgu', mainController.cguPage);
+router.get('/presentation', mainController.presentationPage);
+router.get('/cgu', mainController.cguPage);
 
 module.exports = router;
