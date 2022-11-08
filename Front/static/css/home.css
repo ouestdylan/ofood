@@ -1,19 +1,16 @@
-/* .image_container {
 
-    padding: 15px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
 body {
     background: #faf9fb;
+    font-family: "Poppins";
 
 
 }
 
-.title_recent_recipes {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 2.4rem;
-    text-align: center;
 
-}
 
 .title_popular_recipes {
     font-family: 'Berkshire Swash', cursive;
@@ -22,14 +19,22 @@ body {
 
 }
 
-.link_edito {
+.title_recent_recipes {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.4rem;
+    text-align: center;
+    
+
+}
+
+/* .link_edito {
     font-family: 'Berkshire Swash', cursive;
     font-size: 13px;
     width: 50px;
     height: 24px;
     background-color: rgb(153, 189, 251);
     border-radius: 3px;
-}
+} */
 
 .banner_edito {
     font-family: 'Lobster', cursive;
@@ -40,9 +45,6 @@ body {
     color: hsl(200, 100%, 1%);
 }
 
-.recipe_random_title {
-    font-family: 'Roboto Slab', sans-serif;
-}
 
 .cinq {
 
