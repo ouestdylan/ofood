@@ -21,19 +21,13 @@
     <div class="container_right">
 
         <div class="recipe-details">
-
-
-
             <div class="ingredients">
                 <h2 class="subtitle"> Ingrèdients</h2>
                 <br>
                 <ol class="ingredients_list">
-
-
                     <% for (const ingredient of recipe.ingredientsList.split(',')) { %>
-                        <li><%= ingredient %></li>
+                    <li><%= ingredient %></li>
                     <% } %>
-
 
                 </ol>
             </div>
@@ -42,7 +36,7 @@
 
                 <div class="tab">
                     <img src="/img/sablier.svg" alt="sablier" class="icone" />
-                    <span><%= recipe.cookingTime %></span>
+                    <span><%= recipe.cookingTime %> min</span>
                 </div>
                 <div class="tab">
                     <img src="/img/fire.png" alt="mascotte" class="icone" />

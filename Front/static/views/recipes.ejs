@@ -3,48 +3,48 @@
 <link rel="stylesheet" href="/css/recipes.css" />
 
 
-  <div class="container">
+<div class="container">
 
-    <% recipes.forEach((recipe) => { %>
+  <% recipes.forEach((recipe) => { %>
 
-    <div class="carte">
-
-
-      <div class="divImg">
-        <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-
-      </div>  
-
-      <div class="titre"> <%= recipe.title %> </div>
-
-      <div class="tab">
-        <img src="/img/sablier.svg" alt="sablier" class="icone" />
-        <span><%= recipe.cookingTime %></span>
-      </div>
-      <div class="tab">
-        <img src="/img/fire.png" alt="mascotte" class="icone" />
-      </div>
-      <div class="tab">
-        <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-        <span><%= recipe.difficulty %> </span>
-      </div>
-
-      <div class="info">
-       <p> <%= recipe.description %> </p>
-      </div>
-
-      <div class="btnSection">
-        <a href="/recettes/<%=recipe.id %>">La recette</a>
+  <div class="carte">
 
 
-      </div>
+    <div class="divImg">
+      <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
+
     </div>
-    <% }) %>
 
+    <div class="titre"> <%= recipe.title %> </div>
+
+    <div class="tab">
+      <img src="/img/sablier.svg" alt="sablier" class="icone" />
+      <span><%= recipe.cookingTime %> min</span>
+    </div>
+    <div class="tab">
+      <img src="/img/fire.png" alt="mascotte" class="icone" />
+    </div>
+    <div class="tab">
+      <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
+      <span><%= recipe.difficulty %> </span>
+    </div>
+
+    <div class="info">
+      <p> <%= recipe.description %> </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="/recettes/<%=recipe.id %>">La recette</a>
+
+
+    </div>
   </div>
+  <% }) %>
+
+</div>
 
 
-      <!-- <div class="titre">Tartes aux fraises</div>
+<!-- <div class="titre">Tartes aux fraises</div>
 
       <div class="tab">
         <img src="/img/sablier.svg" alt="sablier" class="icone" />
@@ -71,6 +71,4 @@
 
 
 
-
-
-
+<%- include ("partials/footer") %>

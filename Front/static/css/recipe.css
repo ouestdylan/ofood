@@ -83,8 +83,12 @@ body {
 }
 
 .container_right {
-    flex-basis: 50%;
+    flex-basis: 40%;
     background-color: rgb(248, 229, 213);
+}
+
+.ingredients ol {
+    text-align: center;
 }
 
 .recipe-details {
@@ -134,7 +138,7 @@ body {
         flex-direction: column;
     }
 
-    .ingredients ul {
+    .ingredients ol {
         text-align: center;
     }
 
@@ -173,7 +177,7 @@ body {
     }
 
     .container_recipe {
-        box-shadow: 0 15px 30px 1px rgb(52 113 194);
+        box-shadow: 0 15px 30px 1px rgba(247, 75, 70, 0.438);
         background: rgba(255, 255, 255, 0.90);
         margin-bottom: 3rem;
         border-radius: 5px;
