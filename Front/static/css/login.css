@@ -2,11 +2,12 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-    background: #DFC2F2;
-    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
+    font-family: "Poppins";
+
+    background: #f3e6dc;
     background-attachment: fixed;
     background-size: cover;
 
@@ -20,7 +21,6 @@ body {
     align-items: center;
     margin-top: 1.8rem;
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -96,4 +96,3 @@ form button {
     cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
