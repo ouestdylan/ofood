@@ -55,6 +55,10 @@ const mainController = {
 
     cguPage: (req, res) => {
         res.render('cgu');
+    },
+
+    contactPage: (req, res) => {
+        res.render('contact');
     }
 
 
