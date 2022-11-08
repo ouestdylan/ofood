@@ -1,6 +1,5 @@
 header {
-    background: #DFC2F2;
-    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
+    background: #fece90;
     width: 100%;
     display: flex;
     margin: auto;
@@ -18,9 +17,8 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-family: 'Lobster', cursive;
     font-size: 1.5rem;
-    color: #1276CB;
+    color: #010101;
     font-weight: bold;
     position: inherit;
     top: inherit;
@@ -28,10 +26,8 @@ header .slogan_title {
     margin: auto;
 }
 
-.banner_edito {
-    font-family: 'Roboto Slab', sans-serif;
 
-}
+
 
 .banner_logo {
 
@@ -68,14 +64,12 @@ header .slogan_title {
 }
 
 .span_good {
-    color: #cc812b;
+    color: #fa3d09;
 }
 
 .slogan_title {
-
-    font-family: 'Lobster', cursive;
     font-size: 1rem;
-    color: #1276CB;
+    color: #050505;
     font-weight: bold;
     text-align: center;
 }
@@ -145,7 +139,6 @@ nav {
     opacity: 1;
     text-align: center;
     font-weight: 600;
-    font-family: 'Berkshire Swash', cursive;
     font-size: 1.4rem;
 }
 
@@ -165,7 +158,7 @@ nav {
 .line {
     width: 30px;
     height: 3px;
-    background: white;
+    background: rgb(8, 0, 0);
     margin: 5px;
 }
 
@@ -199,9 +192,8 @@ nav {
 
 
     header .slogan_title {
-        font-family: 'Lobster', cursive;
         font-size: 1.5rem;
-        color: #1276CB;
+        color: #050606;
         font-weight: bold;
         position: inherit;
         top: inherit;
@@ -215,7 +207,7 @@ nav {
     .line {
         width: 30px;
         height: 3px;
-        background: white;
+        background: rgb(8, 0, 0);
         margin: 5px;
     }
 
@@ -300,9 +292,8 @@ nav {
 
     .slogan_title {
 
-        font-family: 'Lobster', cursive;
         font-size: 0.4rem;
-        color: #1276CB;
+        color: #040404;
         font-weight: bold;
         text-align: center;
     }
@@ -311,12 +302,10 @@ nav {
 
 /*-----------FOOTER ----------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 .footer {
     position: relative;
-    background: rgb(243, 159, 159);
-    background: radial-gradient(circle, rgba(243, 159, 159, 1) 27%, rgba(255, 255, 179, 0.7077205882352942) 83%);
+    background: #fece90;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
