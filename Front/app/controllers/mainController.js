@@ -49,6 +49,14 @@ const mainController = {
         }
     },
 
+    presentationPage: (req, res) => {
+        res.render('presentation');
+    },
+
+    cguPage: (req, res) => {
+        res.render('cgu');
+    }
+
 
 };
 
