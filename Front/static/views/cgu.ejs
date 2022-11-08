@@ -1,43 +1,10 @@
 <%- include ("partials/header") %>
 
-<link rel="stylesheet" href="../css/cgu.css">
+<link rel="stylesheet" href="/css/cgu.css">
 
-<body>
-  <header>
-    <div class="banner_logo">
-      <a href="/accueil">
-        <img class="image_logo" src="/Front/static/img/logo.png" alt="Logo" />
-      </a>
-    </div>
-    <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
 
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
-      </div>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div class="menu-bg" id="menu-bg"></div>
 
-    <script>
-      function menuOnClick() {
-        document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-      }
-    </script>
-
-  </header>
 <body>
     <h1>Conditions Générales d'Utilisation  </h1>
 <h1>Comment utiliser les recettes diffusées sur ce site</h1>
@@ -66,3 +33,5 @@ Tout utilisateur du site O'Food s'engage à garantir et indemniser la société 
     
 
 <%- include ("partials/footer") %>
+<script src="/Front/static/js/aboutPage.js"></script>
+
