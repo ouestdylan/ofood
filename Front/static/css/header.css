@@ -6,7 +6,7 @@
 header {
     font-family: "Poppins";
 
-    background: #f6d4a9;
+    background: #fce7ca;
     width: 100%;
     display: flex;
     margin: auto;
@@ -312,7 +312,7 @@ nav {
 
 .footer {
     position: relative;
-    background: #f6d4a9;
+    background: #fce7ca;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
