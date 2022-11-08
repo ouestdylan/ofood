@@ -123,7 +123,7 @@ nav {
 }
 
 .nav-links.open {
-    background-color: rgba(223, 110, 18, 0.945);
+    background-color: rgba(254, 166, 2, 0.954);
     pointer-events: all;
     opacity: 1;
     right: 0;
