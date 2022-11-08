@@ -5,14 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" src="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'about.css' %}" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="{% static 'PICO-LOGO-SHORT.png' %}" type="image/gif">
   <link rel="stylesheet" href="/css/reset.css" />
-
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="shortcut icon" type="image/svg" href="/img/ofood.svg">
 
@@ -22,37 +20,41 @@
 
 <body>
   <header>
-    <div class="banner_logo">
-      <a href="/accueil">
-        <img class="image_logo" src="/img/logo.png" alt="Logo" />
-      </a>
-    </div>
-    <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
-
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
+    <nav>
+      <div class="banner_logo">
+        <a href="/accueil">
+          <img class="image_logo" src="/img/logo.png" alt="Logo" />
+        </a>
       </div>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
+      <h1 class="slogan_title">"<span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood"</h1>
 
-    <div class="menu-bg" id="menu-bg"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/accueil">Accueil</a></li>
+        <li><a href="/connexion">Connexion</a></li>
+        <li><a href="/recettes">Recettes</a></li>
+        <li><a href="/presentation">Qui sommes-nous</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- ----------JAVASCRIPT-------->
 
     <script>
-      function menuOnClick() {
-        document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-      }
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+          link.classList.toggle("fade");
+        });
+      });
     </script>
 
   </header>

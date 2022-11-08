@@ -6,13 +6,13 @@
 <h1 class="title_popular_recipes">
   <br>
   Les <span class="cinq"> 5 </span>recettes les plus populaires
-  <hr class="barre2" />
 </h1>
 <div class="container">
 
   <% recipes.forEach((recipe) => { %>
 
-  <% if (recipe.rate >= 8) { %>
+
+
   <div class="carte">
 
 
@@ -40,14 +40,13 @@
     </div>
 
     <div class="btnSection">
-      <a href="#">La recette</a>
+      <a href="/recettes/<%=recipe.id %>">La recette</a>
 
 
     </div>
   </div>
-  <% } %>
-
   <% }) %>
+
 
 </div>
 
@@ -82,16 +81,10 @@
   Les <span class="cinq"> 5 </span>recettes les plus récentes
 </h1>
 
-<hr class="barre2" />
-
 <div class="container">
-
-
 
   <% recipes.forEach((recipe) => { %>
   <div class="carte">
-
-
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
@@ -101,7 +94,7 @@
 
     <div class="tab">
       <img src="/img/sablier.svg" alt="sablier" class="icone" />
-      <span> <%= recipe.cooking_time %> </span>
+      <span> <%= recipe.cookingTime %> min</span>
     </div>
     <div class="tab">
       <img src="/img/fire.png" alt="mascotte" class="icone" />
@@ -116,11 +109,11 @@
     </div>
 
     <div class="btnSection">
-      <a href="#">La recette</a>
-
-
+      <a href="/recettes/<%=recipe.id %>">La recette</a>
     </div>
   </div>
   <% }) %>
 
 </div>
+
+<%- include ("partials/footer") %>

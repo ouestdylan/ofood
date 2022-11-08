@@ -1,36 +1,40 @@
-/* .image_container {
 
-    padding: 15px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
 body {
-    background: #DFC2F2;
-    background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
-   
+    background: #faf9fb;
+    font-family: "Poppins";
+
 
 }
-.title_recent_recipes {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 2.4rem;
-    text-align: center;
 
-}
+
 
 .title_popular_recipes {
-    font-family: 'Berkshire Swash', cursive;
-
+    font-family: "Poppins";
     font-size: 2.4rem;
     text-align: center;
 
 }
 
-.link_edito {
+.title_recent_recipes {
+    font-family: "Poppins";
+    font-size: 2.4rem;
+    text-align: center;
+    
+
+}
+
+/* .link_edito {
     font-family: 'Berkshire Swash', cursive;
     font-size: 13px;
     width: 50px;
     height: 24px;
     background-color: rgb(153, 189, 251);
     border-radius: 3px;
-}
+} */
 
 .banner_edito {
     font-family: 'Lobster', cursive;
@@ -41,9 +45,6 @@ body {
     color: hsl(200, 100%, 1%);
 }
 
-.recipe_random_title {
-    font-family: 'Roboto Slab', sans-serif;
-}
 
 .cinq {
 
@@ -54,7 +55,7 @@ body {
 .container {
     overflow-x: scroll;
     display: flex;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     gap: 50px;
     scrollbar-width: none;
@@ -166,97 +167,6 @@ span {
 
 
 
-/* --------------------CONNEXION------------------*/
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.form_container {
-    display: flex;
-    justify-content: center;
-    flex-direction: columns;
-    width: 100%;
-    align-items: center;
-    margin-top: 1.8rem;
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-}
-
-form {
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 40px 60px;
-    border-radius: 10px;
-    min-width: 300px;
-}
-
-form h1 {
-    color: #eb7371;
-    text-align: center;
-}
-
-form .social-media {
-    margin-top: -10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-form .social-media p {
-    padding: 5px;
-    width: 20px;
-    margin-left: 10px;
-    border-radius: 100%;
-    border: 1px solid #545454;
-    text-align: center;
-    cursor: pointer;
-    color: #545454;
-}
-
-
-
-form p.choose-email {
-    text-align: center;
-}
-
-form .inputs {
-    display: flex;
-    flex-direction: column;
-}
-
-form .inputs input[type='email'],
-input[type='password'] {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    outline: none;
-    margin-bottom: 15px;
-}
-
-form p.inscription {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #878787;
-}
-
-form p.inscription span {
-    color: #eb7371;
-}
-
-form button {
-    padding: 15px 25px;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    color: #fff;
-    background-color: #eb7371;
-    outline: none;
-    cursor: pointer;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 
