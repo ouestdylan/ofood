@@ -35,7 +35,14 @@
       </div>
       <ul class="nav-links">
         <li><a href="/">Accueil</a></li>
+
+        <% if (!locals.user) { %>
         <li><a href="/connexion">Connexion</a></li>
+        <% } else { %>
+        <li><a href="/dashboard">Mon profil</a></li>
+        <li><a href="/deconnexion">Déconnexion</a></li>
+        <% } %>
+
         <li><a href="/recettes">Recettes</a></li>
         <li><a href="/presentation">Qui sommes-nous</a></li>
 
