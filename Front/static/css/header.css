@@ -11,7 +11,7 @@ header {
     display: flex;
     margin: auto;
     align-items: center;
-    height: 60px;
+    height: 80px;
 
 
 }
@@ -114,7 +114,6 @@ nav {
 
 .nav-links li {
     list-style: none;
-    width: 0%;
     height: 100%;
     display: flex;
     justify-content: space-around;

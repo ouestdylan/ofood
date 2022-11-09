@@ -24,10 +24,9 @@ const userController = {
             });
             
             result = await response.json();
-            console.log(result);
 
             req.session.user = result;
-            res.redirect('/accueil');
+            res.redirect('/dashboard');
 
         } catch (error) {
             console.log(error);
@@ -36,7 +35,7 @@ const userController = {
 
     disconnect(req, res) {
         req.session.user = false;
-        res.redirect('home');
+        res.redirect('/');
     }
 };
 
