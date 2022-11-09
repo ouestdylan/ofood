@@ -48,8 +48,7 @@ body {
 
 .cinq {
 
-    color: #fb0703;
-}
+color:#ff9500;}
 
 
 .container {
@@ -63,14 +62,6 @@ body {
     margin-left: 20px;
 }
 
-.carte {
-    flex-shrink: 0;
-    width: 330px;
-    height: 530px;
-    /* position: absolute;
-    color:#fb0703;
-}
-
 .container{
 overflow-x:scroll;
   display: flex;
@@ -82,14 +73,10 @@ overflow-x:scroll;
 }  
     .carte {
         flex-shrink: 0;
-        width: 330px;
-        height: 530px;
-        /* position: absolute;
-
-        top: 75%;
-        left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    background: #f6f5e9;
+    width: 330px;
+    color: #000102;
+    height: 530px;
+    background: #eae9e8;
     display: grid;
     grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
     border-radius: 5px;
