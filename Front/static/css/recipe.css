@@ -142,6 +142,11 @@ body {
         flex-direction: column;
     }
 
+    .container_right {
+        flex-basis: 40%;
+        background-color: rgb(255, 227, 204);
+    }
+
     .ingredients ol {
         text-align: center;
     }

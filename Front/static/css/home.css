@@ -76,7 +76,7 @@ overflow-x:scroll;
     width: 330px;
     color: #000102;
     height: 530px;
-    background: #eae9e8;
+    background: #fdf4ea;
     display: grid;
     grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
     border-radius: 5px;
@@ -135,12 +135,12 @@ span {
     display: block;
     width: 200px;
     height: 30px;
-    background: rgb(134, 87, 94);
+    background: rgb(155, 25, 45);
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #e2e2e2;
+    color: #ffffff;
     border-radius: 5px;
 }
 
