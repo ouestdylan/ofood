@@ -6,7 +6,7 @@
 header {
     font-family: "Poppins";
 
-    background: #fce7ca;
+    background: #ff9500;
     width: 100%;
     display: flex;
     margin: auto;
@@ -71,7 +71,7 @@ header .slogan_title {
 }
 
 .span_good {
-    color: #fa3d09;
+    color: #fefefa;
 }
 
 .slogan_title {
@@ -123,8 +123,8 @@ nav {
 }
 
 .nav-links.open {
-    background-color: rgba(254, 166, 2, 0.954);
-    pointer-events: all;
+background-color: #ff9500fc;   
+ pointer-events: all;
     opacity: 1;
     right: 0;
     width: 100%;
@@ -312,11 +312,12 @@ nav {
 
 .footer {
     position: relative;
-    background: #fce7ca;
+    background: #ff9500;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: black;
 
     border-radius: 0.2rem;
 }
@@ -331,7 +332,7 @@ nav {
 
 .menu__link {
     font-size: 1.2rem;
-    color: #3a3a3a;
+    color: black;
     margin: 0 10px;
     /* transition: 0.5s; */
     text-decoration: none;
@@ -353,7 +354,7 @@ nav {
 @media only screen and (max-width: 600px) and (min-width:400px) {
     .menu__link {
         font-size: 0.8rem;
-        color: #3a3a3a;
+        color: black;
         margin: 0 10px;
         text-decoration: none;
         font-weight: 600;

@@ -2,9 +2,14 @@
 
 
 body {
-    background: #f1e6dc;
+    background: #ffffff;
     background-attachment: fixed;
     background-size: cover;
+
+}
+.list_tab {
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -83,7 +88,7 @@ body {
 
 .container_right {
     flex-basis: 40%;
-    background-color: rgb(248, 229, 213);
+    background-color: rgb(255, 255, 255);
 }
 
 .ingredients ol {
@@ -137,6 +142,11 @@ body {
         flex-direction: column;
     }
 
+    .container_right {
+        flex-basis: 40%;
+        background-color: rgb(255, 227, 204);
+    }
+
     .ingredients ol {
         text-align: center;
     }
@@ -176,7 +186,6 @@ body {
     }
 
     .container_recipe {
-        box-shadow: 0 15px 30px 1px rgba(247, 75, 70, 0.438);
         background: rgba(255, 255, 255, 0.90);
         margin-bottom: 3rem;
         border-radius: 5px;
