@@ -6,7 +6,7 @@ INSERT INTO "user" ("email","username", "password", "is_admin")
     VALUES ('michel@michel.fr', 'Michel', '$2a$10$lOFvFSSd1dfW1CMF/DtXneSwChkJImgHljYeOxaP2RReMN1nF9ZcG', 'true'),
             ('bernard@bernard.fr', 'Bernard', '$2a$10$.k8MKv.WL0rxMkPiaruxLOdDMDkCn.3T7eq055oa2Sg2nEI/YJWmW', 'false');
 
-INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
+INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture", "date") 
     VALUES ('BIFSTECK AUX OIGNONS CARAMELISEES',
             'Sel et poivre au goût,
             1 lb (450 g) de surlonge de boeuf ou steak (environ 3/4 po/2 cm d’épaisseur),
@@ -68,7 +68,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              45, 
              'Moyen', 
              10, 
-             'bimbimpap.jpg'),
+             'bimbimpap.jpg' ,
+             '10/12/2018'),
 
              ('BLINI AU SAUMON', 
                 'poivre,
@@ -90,7 +91,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              10, 
              'Facile', 
              3, 
-             'blini-saumon.jpg'),
+             'blini-saumon.jpg',
+             '18/12/2016'),
 
             ('BRUSCHETTA ITALIENNE', 
             '8 tomates,
@@ -107,10 +109,11 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              10, 
              'Facile', 
              8, 
-             'bruschetta.jpg'),
+             'bruschetta.jpg',
+             '03/06/2020'),
 
              ('LASAGNE BOLOGNAISE', 
-            ' - Pour le bechamel ,
+            ' - Pour la bechamel : ,
                 70g de buerre,
                 70g de farine,
                 50cl de lait,
@@ -141,7 +144,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              60, 
              'Moyen', 
              4, 
-             'lasagne.jpg'),
+             'lasagne.jpg',
+             '23/09/2020'),
 
              ('OSSO BUCCO', 
             ' Osso Buco 1.5 kg,
@@ -176,7 +180,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              45, 
              'Difficile', 
              6, 
-             'osso-bucco.jpg'),
+             'osso-bucco.jpg',
+             '07/07/2020'),
 
              ('PANCAKES', 
             ' Farine 125 g,
@@ -198,7 +203,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Facile', 
              8, 
-             'pancakes.jpg'),
+             'pancakes.jpg',
+             '20/01/2022'),
 
              ('PASTA PESTO ROSSO', 
             ' 100 g Pâtes (Rigatoni)
@@ -219,7 +225,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Très facile', 
              7, 
-             'pasta-pesto-rosso.jpg'),
+             'pasta-pesto-rosso.jpg',
+             '26/11/2021'),
 
              ('PASTA PESTO VERDE', 
             ' Parmigiano Reggiano AOP Giovanni Ferrari : 30 g,
@@ -240,7 +247,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             15, 
              'Facile', 
              6, 
-             'pasta-pesto-verde.jpg'),
+             'pasta-pesto-verde.jpg',
+             '01/06/2020'),
 
              ('SALADE DE PATES AU FETA', 
             ' 240 g de pâtes selon votre choix,
@@ -260,7 +268,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Facile', 
              3, 
-             'pasta-salad-feta.jpg'),
+             'pasta-salad-feta.jpg',
+             '01/09/2021'),
 
              ('POKEBOWL SAUMON', 
             ' 1 pavé de saumon,
@@ -283,7 +292,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Moyen', 
              9, 
-             'poke-bowls-salmon.jpg'),
+             'poke-bowls-salmon.jpg',
+             '17/02/2017'),
 
              ('SALADE COMPOSEE', 
             ' Sucrine,
@@ -314,7 +324,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              15, 
              'Facile', 
              3, 
-             'salade-composee.jpg'),
+             'salade-composee.jpg',
+             '22/09/2022'),
 
              ('SALADE CRISPY CHICKEN Gaulois', 
             ' 1 étui de Crousty Chicken Long Filet’s Le Gaulois,
@@ -342,7 +353,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              25, 
              'Facile', 
              7, 
-             'salade-crispy-chicken.jpg'),
+             'salade-crispy-chicken.jpg',
+             '23/11/2021'),
 
              ('SALADE EPINARD POULET', 
             ' 3 blancs de poulet,
@@ -363,7 +375,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Facile', 
              6, 
-             'salade-epinard-poulet.jpg'),
+             'salade-epinard-poulet.jpg',
+             '13/11/2022'),
 
              ('PAVE DE SAUMON GRILLEE', 
             ' 2 pavés de saumon frais
@@ -384,7 +397,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              7, 
              'Moyen', 
              3, 
-             'saumon_grillé.jpg'),
+             'saumon_grillé.jpg',
+             '05/02/2021'),
 
              ('SOUPE POMMES DE TERRE', 
             ' 5 oignons
@@ -404,7 +418,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Difficile', 
              3, 
-             'soupe-potato.jpg'),
+             'soupe-potato.jpg',
+             '15/01/2021'),
 
              ('VERRINE  DE FRAISES AUX SPECULOS', 
             '300g de fraises
@@ -419,7 +434,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              20, 
              'Très facile', 
              9, 
-             'speculos_fraise.jpg'),
+             'speculos_fraise.jpg',
+             '09/11/2022'),
 
 
              ('TARTE AUX POMMES', 
@@ -442,7 +458,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Facile', 
              3, 
-             'tarte-pommes.jpg'),
+             'tarte-pommes.jpg',
+             '29/10/2021'),
 
              ('FAJITAS AU POULET', 
             ' 2 poivrons, rouge ou jaune de préférence, coupés en lanières,
@@ -478,7 +495,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              35, 
              'Difficile', 
              8, 
-             'tortilla.jpg'),
+             'tortilla.jpg',
+             '15/10/2022'),
 
              ('POIVRON FARCIS AU BOEUF', 
             ' 600 g Steaks hachés,
@@ -499,7 +517,8 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              90, 
              'Difficile', 
              3, 
-             'poivron-farci.jpg');
+             'poivron-farci.jpg',
+             '02/03/2021'),
             
 
 COMMIT;
