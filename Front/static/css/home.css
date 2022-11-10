@@ -158,7 +158,7 @@ span {
     text-align:center;
     font-weight: bold;
     color: #000000;
-    background:#FF9600;
+    background:rgba(155, 25, 44, 0.639);
     border-radius:50%;
     width:30px;
     height:30px;
