@@ -29,8 +29,9 @@ const userController = {
             res.redirect('/dashboard');
 
         } catch (error) {
-            console.log(error);
-        }
+            console.trace(error);
+            res.status(404).render('404');
+          }
     },
 
     disconnect(req, res) {
