@@ -23,7 +23,7 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #010101;
     font-weight: bold;
     position: inherit;
@@ -62,8 +62,6 @@ header .slogan_title {
 
 }
 
-
-
 .span_good {
     color: #fefefa;
 }
@@ -73,6 +71,11 @@ header .slogan_title {
     color: #050505;
     font-weight: bold;
     text-align: center;
+}
+
+.name_connexion {
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 

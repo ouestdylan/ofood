@@ -26,7 +26,7 @@ const userController = {
             result = await response.json();
 
             req.session.user = result;
-            res.redirect('/dashboard');
+            res.redirect('/');
 
         } catch (error) {
             console.trace(error);
