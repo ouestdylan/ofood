@@ -23,8 +23,8 @@ router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
-// formulaire pour ajouter une recette
-router.get('/form', mainController.addRecipeForm);
+// page dashboard-a deplacer par Sami
+router.get('/dashboard', mainController.dashboard);
 
 router.get('/deconnexion', userController.disconnect);
 

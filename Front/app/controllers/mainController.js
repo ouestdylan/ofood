@@ -78,9 +78,9 @@ const mainController = {
     contactPage: (req, res) => {
         res.render('contact');
     },
-    // formulaire pour ajouter une recette
-    addRecipeForm: (req, res) => {
-        res.render('addRecipeForm');
+    // formulaire dashboard
+    dashboard: (req, res) => {
+        res.render('dashboard');
     }
 
 

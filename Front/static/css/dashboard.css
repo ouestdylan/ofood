@@ -1,0 +1,86 @@
+.container {
+    box-shadow: 0 5px 10px 1px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.90);
+    /* text-align: center; */
+    /* margin-bottom: 3rem; */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 3em auto;
+    height: auto;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.menu_dashboard {
+    position: relative;
+    height: 500px;
+    background-color: rgb(53 55 56 / 5%);
+    box-shadow: 0 10px 20px 1px rgb(41 41 41);
+}
+
+.user_name {
+    background-color: #2b2b2b;
+    padding: 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.dashboard_links {
+    padding: 8px;
+    display: block;
+}
+
+.dashboard_links li {
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    gap: 2rem;
+}
+
+.profile_link a {
+    background-color: #ffffff0d;
+    box-shadow: 0 10px 20px 1px rgb(41, 41, 41);
+    color: #ffffff0d;
+    border-radius: 0.3rem;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.add_recipe a {
+    background-color: #ffffff0d;
+    box-shadow: 0 10px 20px 1px rgb(41, 41, 41);
+    color: #ffffff0d;
+    border-radius: 0.3rem;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.right_side {
+    background-color: chartreuse;
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+.info_list {
+
+    background-color: aqua;
+    padding: 20px;
+}
+
+.manage_list {
+    background-color: beige;
+    padding: 20px;
+}
