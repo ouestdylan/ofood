@@ -65,7 +65,7 @@ color:#ff9500;}
 .container{
 overflow-x:scroll;
   display: flex;
-  height: 100vh;
+  height: 80vh;
   align-items: center;      
   justify-content: start;    
   gap:50px;
@@ -151,7 +151,6 @@ span {
     background-color: #c7ecee;
 
 }
-
 
 
 
