@@ -27,6 +27,10 @@ app.use(express.static('static'));
 const router = require ('./app/router');
 app.use(router);
 
+app.use((req, res)=>{
+    res.status(404).render('404'); // Enchainement
+  });
+
 app.listen(PORT, () => {
     console.log(`Run on port ${PORT}`);
 });
