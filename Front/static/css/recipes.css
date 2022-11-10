@@ -53,8 +53,8 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 40px;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
 
