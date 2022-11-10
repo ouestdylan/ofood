@@ -122,7 +122,7 @@ nav {
 }
 
 .nav-links.open {
-background-color: #ff9500fc;   
+background-color: rgba(155, 84, 54, 0.911);   
  pointer-events: all;
     opacity: 1;
     right: 0;
@@ -253,7 +253,7 @@ background-color: #ff9500fc;
 
 
     .nav-links.open {
-        background-color: rgba(223, 110, 18, 0.945);
+        background-color: rgba(155, 84, 54, 0.911);
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
