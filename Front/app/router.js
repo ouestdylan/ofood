@@ -23,6 +23,9 @@ router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
+// formulaire pour ajouter une recette
+router.get('/form', mainController.addRecipeForm);
+
 router.get('/deconnexion', userController.disconnect);
 
 module.exports = router;

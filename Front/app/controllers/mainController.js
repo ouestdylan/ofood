@@ -11,25 +11,25 @@ const mainController = {
             let result = await fetch(backUrl + "recipes")
             let recipes = await result.json();
             //Là tu récupéres le tableau trier par ordre décroissant.
-            let bestFivesRecipes = recipes.sort((a,b) => b.rate - a.rate);
-            bestFivesRecipes = bestFivesRecipes.slice(0,5);
-            
+            let bestFivesRecipes = recipes.sort((a, b) => b.rate - a.rate);
+            bestFivesRecipes = bestFivesRecipes.slice(0, 5);
+
 
             let difficultyRecipe = recipes.filter((recipe) => recipe.difficulty.toLowerCase() === "facile");
             difficultyRecipe = difficultyRecipe.slice(0, 5);
 
-            let aleatoireTest = recipes.sort((a,b) => b.rate - a.rate);
-            aleatoireTest = aleatoireTest.slice(0,3);
+            let aleatoireTest = recipes.sort((a, b) => b.rate - a.rate);
+            aleatoireTest = aleatoireTest.slice(0, 3);
 
-        
-//Et plus tard dans le render : 
-res.render('home', {
-    bestFivesRecipes, difficultyRecipe, aleatoireTest
-});
+
+            //Et plus tard dans le render : 
+            res.render('home', {
+                bestFivesRecipes, difficultyRecipe, aleatoireTest
+            });
         } catch (error) {
             console.trace(error);
             res.status(404).render('404');
-          }
+        }
     },
 
     recipesPage: async (req, res) => {
@@ -39,15 +39,15 @@ res.render('home', {
             let recipes = await result.json();
 
             console.log(recipes);
-            res.render('recipes', {recipes});
-            
+            res.render('recipes', { recipes });
+
 
             res.render('recipes', { recipes });
 
         } catch (error) {
             console.trace(error);
             res.status(404).render('404');
-          }
+        }
     },
 
     recipePage: async (req, res) => {
@@ -64,7 +64,7 @@ res.render('home', {
         } catch (error) {
             console.trace(error);
             res.status(404).render('404');
-          }
+        }
     },
 
     presentationPage: (req, res) => {
@@ -77,6 +77,10 @@ res.render('home', {
 
     contactPage: (req, res) => {
         res.render('contact');
+    },
+    // formulaire pour ajouter une recette
+    addRecipeForm: (req, res) => {
+        res.render('addRecipeForm');
     }
 
 
