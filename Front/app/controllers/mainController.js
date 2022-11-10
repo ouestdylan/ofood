@@ -14,20 +14,17 @@ const mainController = {
             let bestFivesRecipes = recipes.sort((a,b) => b.rate - a.rate);
             bestFivesRecipes = bestFivesRecipes.slice(0,5);
             
-            const filterRecipes = recipes.filter(recipe => recipe.rate > 7).slice(0, 5)
-
-            res.render('home', { recipes: filterRecipes });
 
             let difficultyRecipe = recipes.filter((recipe) => recipe.difficulty.toLowerCase() === "facile");
             difficultyRecipe = difficultyRecipe.slice(0, 5);
 
-            let randomRecipe = recipes.sort((a) => a - Math.random())[0];
-            // randomRecipe = randomRecipe.slice(0, 3);
+            let aleatoireTest = recipes.sort((a,b) => b.rate - a.rate);
+            aleatoireTest = aleatoireTest.slice(0,3);
 
         
 //Et plus tard dans le render : 
 res.render('home', {
-    bestFivesRecipes, difficultyRecipe, randomRecipe
+    bestFivesRecipes, difficultyRecipe, aleatoireTest
 });
         } catch (error) {
             console.trace(error);
