@@ -12,19 +12,19 @@ router.use(userMiddleware.sessionVerification);
 router.get('/', mainController.homePage);
 
 router.get('/recettes', mainController.recipesPage);
-router.get('/recettes/:id', mainController.recipePage);
+router.get('/recettes/:id/:title', mainController.recipeDetailsPage);
 
 router.get('/connexion', userController.loginPage);
 router.post('/connexion', userController.loginAction);
 
-router.get('/dashboard', userController.dashboardPage);
+//router.get('/dashboard', userController.dashboardPage);
 
 router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
-// page dashboard-a deplacer par Sami
-router.get('/dashboard', mainController.dashboard);
+router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
+router.post('/admin/ajouterunerecette', mainController.addNewRecipe);
 
 router.get('/deconnexion', userController.disconnect);
 

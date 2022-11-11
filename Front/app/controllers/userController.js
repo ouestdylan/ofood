@@ -26,12 +26,11 @@ const userController = {
             result = await response.json();
 
             req.session.user = result;
-            res.redirect('/dashboard');
+            res.redirect('/');
 
         } catch (error) {
             console.trace(error);
-            res.status(404).render('404');
-          }
+        }
     },
 
     disconnect(req, res) {

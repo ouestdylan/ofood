@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
 header {
@@ -23,7 +22,7 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #010101;
     font-weight: bold;
     position: inherit;
@@ -62,13 +61,6 @@ header .slogan_title {
 
 }
 
-.image_mascotte {
-    width: 60px;
-    height: 60px;
-    display: block;
-    padding-left: 70px;
-}
-
 .span_good {
     color: #fefefa;
 }
@@ -78,6 +70,11 @@ header .slogan_title {
     color: #050505;
     font-weight: bold;
     text-align: center;
+}
+
+.name_connexion {
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 
@@ -91,10 +88,10 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
-
 }
 
 .nav-links {
+    
 
     list-style: none;
     align-items: center;
@@ -122,8 +119,9 @@ nav {
 }
 
 .nav-links.open {
-    background-color: #ff9500fc;
-    pointer-events: all;
+background-color: #FF9500;   
+pointer-events: all;
+
     opacity: 1;
     right: 0;
     width: 100%;
@@ -134,19 +132,21 @@ nav {
     align-items: center;
     margin: auto;
     z-index: 1;
+    
 }
 
 
 .nav-links li a {
-    color: white;
+    font-family: 'Lobster', cursive;
+    
+
+    color: rgb(6, 6, 6);
     text-decoration: none;
-    font-size: 16px;
     font-weight: 600;
     opacity: 1;
     text-align: center;
     font-weight: 600;
-    font-size: 1.4rem;
-}
+    font-size: 40px;}
 
 .landing {
     height: 90vh;
@@ -164,7 +164,7 @@ nav {
 .line {
     width: 30px;
     height: 3px;
-    background: rgb(8, 0, 0);
+    background: rgb(8, 8, 8);
     margin: 5px;
 }
 
@@ -176,6 +176,7 @@ nav {
     margin-left: auto;
     transform: translate(-5%, -50%);
     z-index: 2;
+    
 }
 
 
@@ -253,7 +254,7 @@ nav {
 
 
     .nav-links.open {
-        background-color: rgba(223, 110, 18, 0.945);
+        background-color: #FF9500;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
@@ -265,7 +266,7 @@ nav {
     }
 
     .nav-links li a {
-        color: white;
+        color: rgb(8, 8, 8);
     }
 
     .landing {

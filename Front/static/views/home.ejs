@@ -8,17 +8,16 @@
   <br>
   Les <span class="cinq"> 5 </span>recettes les plus simple à faire 
 </h1>
+
+
+
+
 <div class="container">
-
-
- 
-
   <% difficultyRecipe.forEach((recipe) => { %>
 
 
+
   <div class="carte">
-
-
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
@@ -31,7 +30,7 @@
       <span><%= recipe.cookingTime %></span>
     </div>
     <div class="tab">
-      <img src="/img/fire.png" alt="mascotte" class="icone" />
+    <div id="moncercle"> <%= recipe.rate %> </div>
     </div>
     <div class="tab">
       <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
@@ -43,11 +42,12 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%=recipe.id %>">La recette</a>
-
+      <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
 
     </div>
+
   </div>
+  
   <% }) %>
 
 
@@ -79,8 +79,7 @@
       <span><%= recipe.cookingTime %></span>
     </div>
     <div class="tab">
-      <img src="/img/fire.png" alt="mascotte" class="icone" />
-    </div>
+      <div id="moncercle"> <%= recipe.rate %> </div>    </div>
     <div class="tab">
       <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
       <span><%= recipe.difficulty %> </span>
@@ -91,7 +90,7 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%=recipe.id %>">La recette</a>
+      <a href="/recettes/<%= recipe.id %><%= recipe.title %>">La recette</a>
 
 
     </div>
@@ -111,6 +110,8 @@
 
   <% aleatoireTest.forEach((recipe) => { %>
   <div class="carte">
+
+    
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
 
@@ -123,8 +124,7 @@
       <span> <%= recipe.cookingTime %> min</span>
     </div>
     <div class="tab">
-      <img src="/img/fire.png" alt="mascotte" class="icone" />
-    </div>
+      <div id="moncercle"> <%= recipe.rate %> </div>    </div>
     <div class="tab">
       <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
       <span><%= recipe.difficulty %> </span>
@@ -135,7 +135,7 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%=recipe.id %>">La recette</a>
+      <a href="/recettes/<%= recipe.id %><%= recipe.title %>">La recette</a>
     </div>
   </div>
   <% }) %>
