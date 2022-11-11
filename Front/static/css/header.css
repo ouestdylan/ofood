@@ -23,7 +23,7 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #010101;
     font-weight: bold;
     position: inherit;
@@ -62,6 +62,10 @@ header .slogan_title {
 
 }
 
+.connected_username {
+    font-size: 1.3rem;
+}
+
 .span_good {
     color: #fefefa;
 }
@@ -71,11 +75,6 @@ header .slogan_title {
     color: #050505;
     font-weight: bold;
     text-align: center;
-}
-
-.name_connexion {
-    font-size: 1.4rem;
-    margin-top: 1rem;
 }
 
 
@@ -295,9 +294,7 @@ background-color: #FF9500;
         transition: all 0.5s ease 0.6s;
     }
 
-    li.fade {
-        opacity: 1;
-    }
+   
 
     .slogan_title {
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <title>Page test</title>
+</head>
+<body>
+    <header>
+        <div class="header header_logo">
+
+        </div>
+        <div class="header header_title">
+            <h1><span class="title-span title-span_o">O'</span>Food <span class="title_span">Good</span> Mood !</h1>
+        </div>
+        <div class="header header_menu">
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+        
+                <% if (!locals.user) { %>
+                <li><a href="/connexion">Connexion</a></li>
+                <% } else { %>
+                <li><a href="/dashboard">Mon profil</a></li>
+                <li><a href="/deconnexion">Déconnexion</a></li>
+                <% } %>
+        
+                <li><a href="/recettes">Recettes</a></li>
+                <li><a href="/presentation">Qui sommes-nous</a></li>
+            </ul>
+        </nav>
+    
+        <!-- ----------JAVASCRIPT-------->
+    
+        <script>
+            const hamburger = document.querySelector(".hamburger_menu");
+            const navLinks = document.querySelector(".nav-links");
+         
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("open");
+            });
+        </script>
+
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="title_div">
+                <h2 class="title_container"></h2>
+            </div>
+            <div class="cards_container">
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

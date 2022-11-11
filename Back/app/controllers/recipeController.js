@@ -6,8 +6,9 @@ const controller = {
 	getAllRecipes: async (req, res) => {
 
 		try {
-			const recipes = await Recipe.findAll();
-			console.log(recipes);
+			const recipes = await Recipe.findAll({
+				include: ['user']
+			});
 			res.status(200).json(recipes);
 
 		} catch (error) {
@@ -20,7 +21,9 @@ const controller = {
 
 		try {		
 			const recipeId = req.params.id;
-			const recipe = await Recipe.findByPk(recipeId);
+			const recipe = await Recipe.findByPk(recipeId, {
+				include: ['user']
+			});
 
 			if (!recipe) {
 				const error = new Error(`Recipe not found with id ${recipeId}`);
@@ -38,8 +41,7 @@ const controller = {
 	addNewRecipe: async (req, res) => {
 
 		try {
-			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture, userId } = req.body;
-
+			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture} = req.body;
 			if (!title) {
 				const error = new Error(`'title' property is missing`);
 				return res.status(400).json({ message: error.message });
@@ -136,6 +138,7 @@ const controller = {
 		try {	
 			const recipeId = req.params.id;
 			const recipe = await Recipe.findByPk(recipeId);
+			
 			if (!recipe) {
 				const error = new Error(`Recipe with id ${recipeId} does not exist.`);
 				return res.status(404).json({ message: error.message });

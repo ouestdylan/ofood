@@ -5,7 +5,7 @@ body {
     background: #ffffff;
     background-attachment: fixed;
     background-size: cover;
-
+    height: 100%;
 }
 
 #moncercle{
