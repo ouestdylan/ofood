@@ -23,7 +23,6 @@ router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
-
 router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
 router.post('/admin/ajouterunerecette', mainController.addNewRecipe);
 

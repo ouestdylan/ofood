@@ -12,7 +12,6 @@ header {
     align-items: center;
     height: 80px;
 
-
 }
 
 header .image_logo {
@@ -89,7 +88,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    
 }
 
 .nav-links {
@@ -122,7 +120,7 @@ nav {
 
 .nav-links.open {
 background-color: #FF9500;   
- pointer-events: all;
+pointer-events: all;
 
     opacity: 1;
     right: 0;
