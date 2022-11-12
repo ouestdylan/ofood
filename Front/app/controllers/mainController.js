@@ -10,20 +10,9 @@ const mainController = {
         try {
             let response = await fetch(backUrl + "recipes")
             let recipes = await response.json();
-            //Là tu récupéres le tableau trier par ordre décroissant.
-            let bestFivesRecipes = recipes.sort((a, b) => b.rate - a.rate);
-            bestFivesRecipes = bestFivesRecipes.slice(0, 5);
 
-            let difficultyRecipe = recipes.filter((recipe) => recipe.difficulty.toLowerCase() === "facile");
-            difficultyRecipe = difficultyRecipe.slice(0, 5);
+            res.render('test', { recipes });
 
-            let aleatoireTest = recipes.sort((a, b) => b.rate - a.rate);
-            aleatoireTest = aleatoireTest.slice(0, 3);
-
-            //Et plus tard dans le render : 
-            res.render('test', {
-                bestFivesRecipes, difficultyRecipe, aleatoireTest
-            });
         } catch (error) {
             console.trace(error);
         }
