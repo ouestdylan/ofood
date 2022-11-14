@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3005/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./O&#39;Food_files/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link rel="stylesheet" href="./O&#39;Food_files/all.min.css">
+  <link rel="stylesheet" href="./O&#39;Food_files/css2">
+  <link rel="stylesheet" href="./O&#39;Food_files/reset.css">
+  <link rel="stylesheet" href="./O&#39;Food_files/header.css">
+  <link rel="shortcut icon" type="image/svg" href="./O&#39;Food_files/logo1.png">
+
+  <title>O'Food</title>
+
+</head>
+
+<body cz-shortcut-listen="true">
+  <header>
+    <nav>
+      <div class="banner_logo">
+
+<a href="http://localhost:3005/"><img class="imagelogo" src="./O&#39;Food_files/logo1.png"></a>          <!-- <img class="image_logo" src="/img/apple.png" alt="Logo" /> -->
+        
+      </div>
+      <h1 class="slogan_title">" <span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood "</h1>
+
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="http://localhost:3005/">Accueil</a></li>
+
+        
+        <li><a href="http://localhost:3005/connexion">Connexion</a></li>
+        
+
+        <li><a href="http://localhost:3005/recettes">Recettes</a></li>
+        <li><a href="http://localhost:3005/presentation">Qui sommes-nous</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- ----------JAVASCRIPT-------->
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+          link.classList.toggle("fade");
+        });
+      });
+    </script>
+
+  </header>
+
+
+<link rel="stylesheet" href="./O&#39;Food_files/home.css">
+
+
+<h1 class="title_popular_recipes">
+  <br>
+  Les <span class="cinq"> 5 </span>recettes les plus simple à faire 
+</h1>
+
+
+
+
+<div class="container">
+  
+
+
+
+  <div class="carte">
+    <div class="divImg">
+      <img src="./O&#39;Food_files/bruschetta.jpg" alt="recipes">
+    </div>
+    <div class="titre"> BRUSCHETTA ITALIENNE </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>10</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>8</span> ★
+        
+      </div>
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+    <div class="info">
+      <p>  La bruschetta est un plat ou antipasto issu de la cuisine italienne dite pauvre. 
+            Originaire de Naples et désormais diffuse dans toute l’Italie et en dehors de ses frontières, elle consiste à agrémenter une tranche de pain ... </p>
+    </div>
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/4/BRUSCHETTA%20ITALIENNE">La recette</a>
+    </div>
+
+  </div>
+  
+  
+
+
+
+  <div class="carte">
+    <div class="divImg">
+      <img src="./O&#39;Food_files/pancakes.jpg" alt="recipes">
+    </div>
+    <div class="titre"> PANCAKES </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>15</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>8</span> ★
+        
+      </div>
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+    <div class="info">
+      <p>  Découvrez la recette de pancakes à la japonaise au bon lait entier. Rapides à préparer, ces pancakes sont parfaits pour le petit-déjeuner, le goûter. ou un brunch. Une recette adaptée au végétariens et à petit prix.  </p>
+    </div>
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/7/PANCAKES">La recette</a>
+    </div>
+
+  </div>
+  
+  
+
+
+
+  <div class="carte">
+    <div class="divImg">
+      <img src="./O&#39;Food_files/salade-crispy-chicken.jpg" alt="recipes">
+    </div>
+    <div class="titre"> SALADE CRISPY CHICKEN Gaulois </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>25</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>7</span> ★
+        
+      </div>
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+    <div class="info">
+      <p>  Croustillante, croquante et fraîche.
+             Cette salade se distingue par ses tendres morceaux de poulet pané déposés sur un lit de salade, ses tomates et ses délicieux copeaux de fromage.  </p>
+    </div>
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/13/SALADE%20CRISPY%20CHICKEN%20Gaulois">La recette</a>
+    </div>
+
+  </div>
+  
+  
+
+
+
+  <div class="carte">
+    <div class="divImg">
+      <img src="./O&#39;Food_files/pasta-pesto-verde.jpg" alt="recipes">
+    </div>
+    <div class="titre"> PASTA PESTO VERDE </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>15</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>6</span> ★
+        
+      </div>
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+    <div class="info">
+      <p>  Les pâtes au fromage, une évidence ! Courtes ou longues, complètes ou aux œufs, les pâtes s’accommodent volontiers avec vos fromages préférés, comme dans cette recette de penne au pesto verde. Râpé ou fondu dans une sauce, le fromage a le don de twister tous vos plats de pâtes.  </p>
+    </div>
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/9/PASTA%20PESTO%20VERDE">La recette</a>
+    </div>
+
+  </div>
+  
+  
+
+
+
+  <div class="carte">
+    <div class="divImg">
+      <img src="./O&#39;Food_files/salade-epinard-poulet.jpg" alt="recipes">
+    </div>
+    <div class="titre"> SALADE EPINARD POULET </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>20</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>6</span> ★
+        
+      </div>
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+    <div class="info">
+      <p>  Une salade à la fois fraîche, croquante et fondante.  </p>
+    </div>
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/14/SALADE%20EPINARD%20POULET">La recette</a>
+    </div>
+
+  </div>
+  
+  
+
+
+</div>
+
+
+<h1 class="title_popular_recipes">
+  <br>
+  Les <span class="cinq"> 5 </span>recettes les mieux notées
+</h1>
+<div class="container">
+
+  
+
+
+
+  <div class="carte">
+
+
+    <div class="divImg">
+      <img src="./O&#39;Food_files/bimbimpap.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> BIMBIMBAP AU BOEUF </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>45</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>10</span> ★
+        
+      </div>
+      </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Moyen </span>
+    </div>
+
+    <div class="info">
+      <p>  Direction la Corée avec le fameux Bibimbap ! Un plat très populaire en Corée à base de riz, de légumes sautés (privilégiez les légumes de saison, et si vous trouvez des shiitake frais ou deshydratés c’est top), et de boeuf émincé ou haché mariné à l’ail, sucre et sauce soja. </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/2/BIMBIMBAP%20AU%20BOEUF">La recette</a>
+
+
+    </div>
+  </div>
+  
+
+
+
+  <div class="carte">
+
+
+    <div class="divImg">
+      <img src="./O&#39;Food_files/poke-bowls-salmon.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> POKEBOWL SAUMON </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>15</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>9</span> ★
+        
+      </div>
+      </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Moyen </span>
+    </div>
+
+    <div class="info">
+      <p>  Direction Hawaï pour le repas avec ce poké bowl au saumon, coloré et extra frais ! Un plat aussi facile qu’équilibré qui embellira votre journée  </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/11/POKEBOWL%20SAUMON">La recette</a>
+
+
+    </div>
+  </div>
+  
+
+
+
+  <div class="carte">
+
+
+    <div class="divImg">
+      <img src="./O&#39;Food_files/speculos_fraise.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> VERRINE  DE FRAISES AUX SPECULOS </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>20</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>9</span> ★
+        
+      </div>
+      </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Très facile </span>
+    </div>
+
+    <div class="info">
+      <p>  Délicieux, très frais avec des saveurs qui se marient très bien.  </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/17/VERRINE%20%20DE%20FRAISES%20AUX%20SPECULOS">La recette</a>
+
+
+    </div>
+  </div>
+  
+
+
+
+  <div class="carte">
+
+
+    <div class="divImg">
+      <img src="./O&#39;Food_files/bifsteak.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> BIFSTECK AUX OIGNONS CARAMELISEES </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>30</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>8</span> ★
+        
+      </div>
+      </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Difficile </span>
+    </div>
+
+    <div class="info">
+      <p> Ce plat digne du menu d’un restaurant est pourtant tout simple à préparer et sûr de plaire. Régalez-vous en le servant avec des pommes de terre à l’eau et des légumes croquants ! </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/1/BIFSTECK%20AUX%20OIGNONS%20CARAMELISEES">La recette</a>
+
+
+    </div>
+  </div>
+  
+
+
+
+  <div class="carte">
+
+
+    <div class="divImg">
+      <img src="./O&#39;Food_files/bruschetta.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> BRUSCHETTA ITALIENNE </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span>10</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>8</span> ★
+        
+      </div>
+      </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Facile </span>
+    </div>
+
+    <div class="info">
+      <p>  La bruschetta est un plat ou antipasto issu de la cuisine italienne dite pauvre. 
+            Originaire de Naples et désormais diffuse dans toute l’Italie et en dehors de ses frontières, elle consiste à agrémenter une tranche de pain ... </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/4/BRUSCHETTA%20ITALIENNE">La recette</a>
+
+
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+
+<h1 class="title_recent_recipes">
+   <span class="cinq"> 3 </span>recettes aléatoire
+</h1>
+
+<div class="container">
+
+  
+  <div class="carte">
+
+    
+    <div class="divImg">
+      <img src="./O&#39;Food_files/bimbimpap.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> BIMBIMBAP AU BOEUF </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span> 45 min</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>10</span> ★
+        
+      </div>  
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Moyen </span>
+    </div>
+
+    <div class="info">
+      <p>  Direction la Corée avec le fameux Bibimbap ! Un plat très populaire en Corée à base de riz, de légumes sautés (privilégiez les légumes de saison, et si vous trouvez des shiitake frais ou deshydratés c’est top), et de boeuf émincé ou haché mariné à l’ail, sucre et sauce soja. </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/2%20/BIMBIMBAP%20AU%20BOEUF">La recette</a>
+    </div>
+  </div>
+  
+  <div class="carte">
+
+    
+    <div class="divImg">
+      <img src="./O&#39;Food_files/poke-bowls-salmon.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> POKEBOWL SAUMON </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span> 15 min</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>9</span> ★
+        
+      </div>  
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Moyen </span>
+    </div>
+
+    <div class="info">
+      <p>  Direction Hawaï pour le repas avec ce poké bowl au saumon, coloré et extra frais ! Un plat aussi facile qu’équilibré qui embellira votre journée  </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/11%20/POKEBOWL%20SAUMON">La recette</a>
+    </div>
+  </div>
+  
+  <div class="carte">
+
+    
+    <div class="divImg">
+      <img src="./O&#39;Food_files/speculos_fraise.jpg" alt="recipes">
+
+    </div>
+
+    <div class="titre"> VERRINE  DE FRAISES AUX SPECULOS </div>
+
+    <div class="tab">
+      <img src="./O&#39;Food_files/sablier.svg" alt="sablier" class="icone">
+      <span> 20 min</span>
+    </div>
+    <div class="tab">
+      <div id="rate"><span>9</span> ★
+        
+      </div>  
+    </div>
+    <div class="tab">
+      <img src="./O&#39;Food_files/difficulty.svg" alt="difficulty" class="icone">
+      <span>Très facile </span>
+    </div>
+
+    <div class="info">
+      <p>  Délicieux, très frais avec des saveurs qui se marient très bien.  </p>
+    </div>
+
+    <div class="btnSection">
+      <a href="http://localhost:3005/recettes/17%20/VERRINE%20%20DE%20FRAISES%20AUX%20SPECULOS">La recette</a>
+    </div>
+  </div>
+  
+
+</div>
+
+<footer class="footer">
+
+    <ul class="menu_footer">
+        <li class="menu__item"><a class="menu__link" href="http://localhost:3005/recettes">Recettes</a></li>
+        <li class="menu__item"><a class="menu__link" href="http://localhost:3005/presentation">Qui sommes-nous</a></li>
+        <li class="menu__item"><a class="menu__link" href="http://localhost:3005/cgu">Conditions Générales</a></li>
+    </ul>
+    <img class="image_logo" src="./O&#39;Food_files/footer.png" alt="Footer">
+</footer>
+
+
+
+</body></html>
