@@ -30,15 +30,6 @@ body {
 
 }
 
-/* .link_edito {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 13px;
-    width: 50px;
-    height: 24px;
-    background-color: rgb(153, 189, 251);
-    border-radius: 3px;
-} */
-
 
 
 
@@ -59,15 +50,7 @@ color:#ff9500;}
     margin-left: 20px;
 }
 
-.container{
-overflow-x:scroll;
-  display: flex;
-  height: 80vh;
-  align-items: center;      
-  justify-content: start;    
-  gap:50px;
-  margin-left: 20px;
-}  
+
     .carte {
         flex-shrink: 0;
     width: 330px;
