@@ -35,7 +35,6 @@ header .slogan_title {
 
 
 .banner_logo {
-
     display: flex;
     margin: auto;
     margin-left: 20px;
@@ -55,8 +54,8 @@ header .slogan_title {
     height: 2px;
 }
 
-.image_logo {
-    width: 220px;
+.imagelogo {
+    width: 70px;
     border: none;
 
 }
