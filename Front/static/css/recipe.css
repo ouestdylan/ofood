@@ -2,6 +2,7 @@
 
 
 body {
+    
     background: #FFFFFE;
     background-attachment: fixed;
     background-size: cover;
@@ -27,13 +28,13 @@ body {
 }
 
 .container_recipe {
+    
     box-shadow: 0 15px 30px 1px rgb(52, 113, 194);
     background: rgba(255, 255, 255, 0.90);
     text-align: center;
-    margin-bottom: 3rem;
     border-radius: 5px;
     overflow: hidden;
-    margin: 3em auto;
+    margin: 10em auto;
     height: auto;
     width: 80%;
     border: 1px solid black;
