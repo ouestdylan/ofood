@@ -324,7 +324,7 @@ pointer-events: all;
     display: flex;
     margin: auto;
     align-items: center;
-    height: 60px;
+    height: 70px;
     justify-content: space-around;
 }
 
