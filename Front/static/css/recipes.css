@@ -8,6 +8,16 @@ body {
    
 
 }
+
+
+#rate {
+    color: rgb(155, 25, 45);
+    font-size: 2rem;
+}
+
+#rate span {
+    font-size: 1.5rem;
+}
 .title_recent_recipes {
     font-family: 'Berkshire Swash', cursive;
     font-size: 2.4rem;

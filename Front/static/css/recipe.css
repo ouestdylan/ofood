@@ -8,18 +8,15 @@ body {
     background-size: cover;
 
 }
+#rate {
+    color: rgb(155, 25, 45);
+    font-size: 2rem;
+}
 
-#moncercle{
-    margin: 4px 0 0 0;
-    text-align:center;
-    font-weight: bold;
-    color: #000000;
-    background:rgba(155, 25, 44, 0.639);
-    border-radius:50%;
-    width:30px;
-    height:30px;
-    
-  }
+#rate span {
+    font-size: 1.5rem;
+}
+
 
 .list_tab {
     display: flex;
