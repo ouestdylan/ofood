@@ -157,13 +157,15 @@ span {
     
     
     
+    
     }
     
     
     .title_popular_recipes {
         font-family: 'Acme', sans-serif;
     
-        margin: 31px;
+    
+        margin: 20px;
         font-size: 2.3rem;
         text-align: center;
     
@@ -171,6 +173,8 @@ span {
     
     .title_recent_recipes {
         font-family: 'Acme', sans-serif;
+    
+    
     
         font-size: 2.3rem;
         text-align: center;
@@ -203,7 +207,7 @@ span {
         flex-shrink: 0;
         width: 330px;
         color: #000102;
-        height: 450px;
+        height: 470px;
         background: #fdf4ea;
         display: grid;
         grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);

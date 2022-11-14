@@ -65,10 +65,6 @@ header .slogan_title {
 
 }
 
-.connected_username {
-    font-size: 1.3rem;
-}
-
 .span_good {
     color: #fefefa;
 }
@@ -80,13 +76,16 @@ header .slogan_title {
     text-align: center;
 }
 
+.name_connexion {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
 
 /* -----NAVBAR------- */
 
 
 nav {
-    font-family: 'Acme', sans-serif;
-
     height: 10vh;
     /* background: #5b78c7; */
     width: 100%;
@@ -144,7 +143,7 @@ pointer-events: all;
 
 
 .nav-links li a {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Lobster', cursive;
     
 
     color: rgb(6, 6, 6);
@@ -188,11 +187,12 @@ pointer-events: all;
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-  
-    header {
-        font-family: 'Acme', sans-serif;
-
+    body {
+        width: 100%;
     }
+
+
+
     header .image_logo {
         width: 100px;
         border: none;
@@ -311,11 +311,10 @@ pointer-events: all;
 
 }
 @media only screen and (max-width: 397px)  {
-    
-    header {
-        font-family: 'Acme', sans-serif;
-
+    body {
+        width: 100%;
     }
+
 
 
     header .image_logo {
@@ -423,7 +422,9 @@ pointer-events: all;
         transition: all 0.5s ease 0.6s;
     }
 
-   
+    li.fade {
+        opacity: 1;
+    }
 
     .slogan_title {
 

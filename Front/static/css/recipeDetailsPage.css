@@ -2,23 +2,22 @@
 
 
 body {
-    background: #ffffff;
+    
+    background: #FFFFFE;
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+
+}
+#rate {
+    color: rgb(155, 25, 45);
+    font-size: 2rem;
 }
 
-#moncercle{
-    margin: 4px 0 0 0;
-    text-align:center;
-    font-weight: bold;
-    color: #000000;
-    background:rgba(155, 25, 44, 0.639);
-    border-radius:50%;
-    width:30px;
-    height:30px;
-    
-  }
+#rate span {
+    font-size: 1.5rem;
+}
+
+
 
 .list_tab {
     display: flex;
@@ -27,13 +26,13 @@ body {
 }
 
 .container_recipe {
+    margin-top: 30px;
     box-shadow: 0 15px 30px 1px rgb(52, 113, 194);
     background: rgba(255, 255, 255, 0.90);
     text-align: center;
-    margin-bottom: 3rem;
     border-radius: 5px;
     overflow: hidden;
-    margin: 3em auto;
+    margin: 10em auto;
     height: auto;
     width: 80%;
     border: 1px solid black;
@@ -110,12 +109,10 @@ body {
 
 .recipe-details {
 
-    position: relative;
-    font-family: 'EB Garamond', serif;
+    font-family: "Poppins";
     text-align: left;
     font-size: 15px;
     color: #344055;
-    overflow: hidden;
     padding: 30px;
     height: 100%;
     float: left;
@@ -149,11 +146,7 @@ body {
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-    .container_recipe {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-    }
+   
 
     .container_right {
         flex-basis: 40%;
@@ -199,11 +192,15 @@ body {
     }
 
     .container_recipe {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
         background: rgba(255, 255, 255, 0.90);
         margin-bottom: 3rem;
         border-radius: 5px;
         overflow: hidden;
         margin: 3em auto;
+        margin-top: 60px;
         height: auto;
         width: 80%;
         border: 1px solid black;
