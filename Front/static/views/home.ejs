@@ -20,30 +20,26 @@
   <div class="carte">
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-
     </div>
-
     <div class="titre"> <%= recipe.title %> </div>
-
     <div class="tab">
       <img src="/img/sablier.svg" alt="sablier" class="icone" />
       <span><%= recipe.cookingTime %></span>
     </div>
     <div class="tab">
-    <div id="moncercle"><%= recipe.rate %>&#x2605;</div>
+      <div id="rate"><span><%= recipe.rate %></span> &#x2605;
+        
+      </div>
     </div>
     <div class="tab">
       <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
       <span><%= recipe.difficulty %> </span>
     </div>
-
     <div class="info">
       <p> <%= recipe.description %> </p>
     </div>
-
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
-
     </div>
 
   </div>
@@ -90,7 +86,7 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%= recipe.id %><%= recipe.title %>">La recette</a>
+      <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
 
 
     </div>
@@ -135,7 +131,7 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%= recipe.id %><%= recipe.title %>">La recette</a>
+      <a href="/recettes/<%= recipe.id %> /<%= recipe.title %>">La recette</a>
     </div>
   </div>
   <% }) %>

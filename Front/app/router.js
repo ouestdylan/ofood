@@ -19,12 +19,11 @@ router.get('/recettes/:id/:title', mainController.recipeDetailsPage);
 router.get('/connexion', userController.loginPage);
 router.post('/connexion', userController.loginAction);
 
-//router.get('/dashboard', userController.dashboardPage);
+router.get('/dashboard', userController.dashboardPage);
 
 router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
-
 
 router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
 router.post('/admin/ajouterunerecette', mainController.addNewRecipe);

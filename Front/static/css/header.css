@@ -5,13 +5,15 @@
 header {
     font-family: "Poppins";
 
-    background: #ff9500;
-    width: 100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    background: #FF8001;
     display: flex;
     margin: auto;
     align-items: center;
-    height: 80px;
-
+    height: 50px;
 
 }
 
@@ -23,8 +25,8 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-size: 1.5rem;
-    color: #010101;
+    font-size: 2rem;
+    color: #fffdfd;
     font-weight: bold;
     position: inherit;
     top: inherit;
@@ -36,7 +38,6 @@ header .slogan_title {
 
 
 .banner_logo {
-
     display: flex;
     margin: auto;
     margin-left: 20px;
@@ -56,9 +57,10 @@ header .slogan_title {
     height: 2px;
 }
 
-.image_logo {
-    width: 220px;
+.imagelogo {
+    width: 70px;
     border: none;
+    margin-bottom: 10px;
 
 }
 
@@ -88,7 +90,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    
 }
 
 .nav-links {
@@ -119,9 +120,11 @@ nav {
     opacity: 1;
 }
 
+
 .nav-links.open {
-background-color: #FF9500;   
- pointer-events: all;
+background-color: #FF8001;   
+pointer-events: all;
+
 
     opacity: 1;
     right: 0;
@@ -202,7 +205,6 @@ background-color: #FF9500;
     header .slogan_title {
         font-size: 1.5rem;
         color: #050606;
-        font-weight: bold;
         position: inherit;
         top: inherit;
         left: inherit;
@@ -255,7 +257,7 @@ background-color: #FF9500;
 
 
     .nav-links.open {
-        background-color: #FF9500;
+        background-color: #FF8001;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
@@ -300,7 +302,6 @@ background-color: #FF9500;
 
         font-size: 0.4rem;
         color: #040404;
-        font-weight: bold;
         text-align: center;
     }
 
@@ -310,16 +311,18 @@ background-color: #FF9500;
 
 
 .footer {
-    position: relative;
-    background: #ff9500;
-    min-height: 100px;
+    
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background: #FF8001;
     display: flex;
-    justify-content: space-around;
+    margin: auto;
     align-items: center;
-    color: black;
-
-    border-radius: 0.2rem;
+    height: 70px;
+    justify-content: space-around;
 }
+
 
 .menu_footer {
 
@@ -346,8 +349,9 @@ background-color: #FF9500;
 
 
 .image_logo {
-    width: 130px;
+    width: 90px;
     border: none;
+margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
@@ -369,6 +373,4 @@ background-color: #FF9500;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-    }
-
-}
+    } }

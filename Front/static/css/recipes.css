@@ -3,7 +3,7 @@
     padding: 15px;
 } */
 body {
-    background: #faf9fb;
+    background: #FFFFFE;
 
    
 
@@ -50,13 +50,16 @@ body {
 }
 
 
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+
 
 }
 
@@ -127,7 +130,7 @@ span {
     display: block;
     width: 200px;
     height: 30px;
-    background: rgb(134, 87, 94);
+    background: rgb(155, 25, 45);
     text-decoration: none;
     display: flex;
     justify-content: center;

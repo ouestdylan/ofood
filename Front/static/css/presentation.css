@@ -74,7 +74,6 @@ body {
 
 .card {
   display: flex;
-  position: relative;
   background: #fff;
   max-width: 350px;
   height: 200px;
@@ -112,7 +111,6 @@ body {
 }
 
 .card-info {
-  position: relative;
   color: #222;
   padding: 20px;
 }
@@ -139,7 +137,6 @@ body {
 }
 
 .card-info .card-mediaIcons {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +165,6 @@ body {
 }
 
 .loading {
-  position: relative;
   background: #e2e2e2;
   overflow: hidden;
 }
