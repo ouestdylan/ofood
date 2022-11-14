@@ -5,12 +5,15 @@
 header {
     font-family: "Poppins";
 
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
     background: #FF8001;
-    width: 100%;
     display: flex;
     margin: auto;
     align-items: center;
-    height: 80px;
+    height: 50px;
 
 }
 
@@ -57,6 +60,7 @@ header .slogan_title {
 .imagelogo {
     width: 70px;
     border: none;
+    margin-bottom: 10px;
 
 }
 
@@ -310,16 +314,18 @@ pointer-events: all;
 
 
 .footer {
-    position: relative;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
     background: #FF8001;
-    min-height: 100px;
     display: flex;
-    justify-content: space-around;
+    margin: auto;
     align-items: center;
-    color: black;
-
-    border-radius: 0.2rem;
+    height: 35px;
+    justify-content: space-around;
 }
+
 
 .menu_footer {
 
@@ -346,8 +352,9 @@ pointer-events: all;
 
 
 .image_logo {
-    width: 130px;
+    width: 70px;
     border: none;
+margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
@@ -369,6 +376,4 @@ pointer-events: all;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-    }
-
-}
+    } }
