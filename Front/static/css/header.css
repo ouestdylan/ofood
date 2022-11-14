@@ -121,9 +121,11 @@ nav {
     opacity: 1;
 }
 
+
 .nav-links.open {
 background-color: #FF8001;   
 pointer-events: all;
+
 
     opacity: 1;
     right: 0;
@@ -304,7 +306,6 @@ pointer-events: all;
 
         font-size: 0.4rem;
         color: #040404;
-        font-weight: bold;
         text-align: center;
     }
 
@@ -314,6 +315,7 @@ pointer-events: all;
 
 
 .footer {
+    
     position:fixed;
     left:0px;
     bottom:0px;
@@ -322,7 +324,7 @@ pointer-events: all;
     display: flex;
     margin: auto;
     align-items: center;
-    height: 35px;
+    height: 60px;
     justify-content: space-around;
 }
 
@@ -352,7 +354,7 @@ pointer-events: all;
 
 
 .image_logo {
-    width: 70px;
+    width: 90px;
     border: none;
 margin-bottom: 20px;
 }

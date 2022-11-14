@@ -111,12 +111,10 @@ body {
 
 .recipe-details {
 
-    position: relative;
-    font-family: 'EB Garamond', serif;
+    font-family: "Poppins";
     text-align: left;
     font-size: 15px;
     color: #344055;
-    overflow: hidden;
     padding: 30px;
     height: 100%;
     float: left;
