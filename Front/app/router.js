@@ -1,7 +1,19 @@
 
 const express = require('express');
-
 const router = express.Router();
+
+const multer = require('multer');
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './static/img/recipes/')
+    },
+    filename: function (req, file, cb) {
+      const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+      cb(null, Date.now() + "--" + file.originalname)
+    }
+  })
+  
+const upload = multer({ storage: storage })
 
 const mainController = require('./controllers/mainController');
 const userController = require('./controllers/userController');
@@ -26,7 +38,7 @@ router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
 router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
-router.post('/admin/ajouterunerecette', mainController.addNewRecipe);
+router.post('/admin/ajouterunerecette', upload.single('uploaded_file'), mainController.addNewRecipe);
 
 router.get('/deconnexion', userController.disconnect);
 

@@ -55,7 +55,7 @@ const controller = {
 				return res.status(400).json({ message: error.message });
 			}
 			if (!steps) {
-				const error = new Error(`'Description' property is missing`);
+				const error = new Error(`'Steps' property is missing`);
 				return res.status(400).json({ message: error.message });
 			}
 
@@ -75,9 +75,9 @@ const controller = {
             if (picture) {
                 newRecipe.picture = picture;
             }
-			if (userId) {
-				newRecipe.userId = userId;
-			}
+			// if (userId) {
+			// 	newRecipe.userId = userId;
+			// }
 
 			await newRecipe.save();
 			res.status(201).json(newRecipe);

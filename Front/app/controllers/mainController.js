@@ -73,11 +73,12 @@ const mainController = {
         res.render('addRecipeForm')
     },
 
-
     async addNewRecipe(req, res) {
-        
+
         let data = req.body;
+        data.picture = req.file.filename;
         let recipe;
+
         try {
             const response = await fetch(backUrl + "recipes", {
                 method:"POST",
@@ -86,8 +87,8 @@ const mainController = {
             });
 
             recipe = await response.json()
-
-            res.render('recipe', { recipe });
+            console.log(recipe);
+            res.redirect(`/recettes/${recipe.id}/${recipe.title}`);
 
         } catch (error) {
             console.log(error);
