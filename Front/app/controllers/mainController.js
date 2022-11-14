@@ -11,6 +11,7 @@ const mainController = {
             let response = await fetch(backUrl + "recipes")
             let recipes = await response.json();
             //Là tu récupéres le tableau trier par ordre décroissant.
+            
             let bestFivesRecipes = recipes.sort((a, b) => b.rate - a.rate);
             bestFivesRecipes = bestFivesRecipes.slice(0, 5);
 
@@ -54,6 +55,7 @@ const mainController = {
             console.trace(error);
         }
     },
+
     recipeFormPage(req, res) {
         res.render('recipeForm')
     },
