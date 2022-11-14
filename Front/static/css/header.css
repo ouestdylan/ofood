@@ -5,7 +5,7 @@
 header {
     font-family: "Poppins";
 
-    background: #ff9500;
+    background: #FF8001;
     width: 100%;
     display: flex;
     margin: auto;
@@ -23,7 +23,7 @@ header .image_logo {
 
 header .slogan_title {
     font-size: 2rem;
-    color: #010101;
+    color: #fffdfd;
     font-weight: bold;
     position: inherit;
     top: inherit;
@@ -118,7 +118,7 @@ nav {
 }
 
 .nav-links.open {
-background-color: #FF9500;   
+background-color: #FF8001;   
 pointer-events: all;
 
     opacity: 1;
@@ -253,7 +253,7 @@ pointer-events: all;
 
 
     .nav-links.open {
-        background-color: #FF9500;
+        background-color: #FF8001;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
@@ -311,7 +311,7 @@ pointer-events: all;
 
 .footer {
     position: relative;
-    background: #ff9500;
+    background: #FF8001;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
