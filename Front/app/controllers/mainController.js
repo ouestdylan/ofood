@@ -5,6 +5,19 @@ const backUrl = "http://localhost:3000/";
 
 const mainController = {
 
+    testPage: async (req, res) => {
+
+        try {
+            let response = await fetch(backUrl + "recipes")
+            let recipes = await response.json();
+
+            res.render('test', { recipes });
+
+        } catch (error) {
+            console.trace(error);
+        }
+    },
+
     homePage: async (req, res) => {
 
         try {
@@ -49,7 +62,7 @@ const mainController = {
         try {
             let response = await fetch(backUrl + "recipes/" + recipeId)
             let recipe = await response.json();
-            res.render('recipe', { recipe });
+            res.render('recipeDetailsPage', { recipe });
 
         } catch (error) {
             console.trace(error);
@@ -57,13 +70,15 @@ const mainController = {
     },
 
     recipeFormPage(req, res) {
-        res.render('recipeForm')
+        res.render('addRecipeForm')
     },
 
-
     async addNewRecipe(req, res) {
-        const data = req.body;
+
+        let data = req.body;
+        data.picture = req.file.filename;
         let recipe;
+
         try {
             const response = await fetch(backUrl + "recipes", {
                 method:"POST",
@@ -72,8 +87,8 @@ const mainController = {
             });
 
             recipe = await response.json()
-
-            res.render('recipe', { recipe });
+            console.log(recipe);
+            res.redirect(`/recettes/${recipe.id}/${recipe.title}`);
 
         } catch (error) {
             console.log(error);
