@@ -42,7 +42,8 @@ const controller = {
 	addNewRecipe: async (req, res) => {
 
 		try {
-			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture} = req.body;
+			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture, userId} = req.body;
+
 			if (!title) {
 				const error = new Error(`'title' property is missing`);
 				return res.status(400).json({ message: error.message });
@@ -76,9 +77,9 @@ const controller = {
             if (picture) {
                 newRecipe.picture = picture;
             }
-			// if (userId) {
-			// 	newRecipe.userId = userId;
-			// }
+			if (userId) {
+				newRecipe.userId = userId;
+			}
 
 			await newRecipe.save();
 			res.status(201).json(newRecipe);

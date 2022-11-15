@@ -5,26 +5,13 @@ const backUrl = "http://localhost:3000/";
 
 const mainController = {
 
-    testPage: async (req, res) => {
-
-        try {
-            let response = await fetch(backUrl + "recipes")
-            let recipes = await response.json();
-
-            res.render('test', { recipes });
-
-        } catch (error) {
-            console.trace(error);
-        }
-    },
-
     homePage: async (req, res) => {
 
         try {
             let response = await fetch(backUrl + "recipes")
             let recipes = await response.json();
-            //Là tu récupéres le tableau trier par ordre décroissant.
-            
+
+            //Là tu récupéres le tableau trier par ordre décroissant.   
             let bestFivesRecipes = recipes.sort((a, b) => b.rate - a.rate);
             bestFivesRecipes = bestFivesRecipes.slice(0, 5);
 
@@ -77,6 +64,7 @@ const mainController = {
 
         let data = req.body;
         data.picture = req.file.filename;
+
         let recipe;
 
         try {
@@ -87,7 +75,6 @@ const mainController = {
             });
 
             recipe = await response.json()
-            console.log(recipe);
             res.redirect(`/recettes/${recipe.id}/${recipe.title}`);
 
         } catch (error) {

@@ -23,8 +23,6 @@ router.use(userMiddleware.sessionVerification);
 
 router.get('/', mainController.homePage);
 
-router.get('/test', mainController.testPage);
-
 router.get('/recettes', mainController.recipesPage);
 router.get('/recettes/:id/:title', mainController.recipeDetailsPage);
 

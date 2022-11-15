@@ -14,14 +14,13 @@ const userController = {
                     email: req.body.email
                 }
             })
-            console.log(foundUser);
             // si il existe
             if (foundUser) {
                // comparer son mdp
                 bcrypt.compare(req.body.password, foundUser.password).then(function(result) {
                     if (result) {
-                        console.log(11111111111111111111);
                         const userData = {
+                            id: foundUser.dataValues.id,
                             username: foundUser.dataValues.username,
                             email: foundUser.dataValues.email,
                             isAdmin: foundUser.dataValues.isAdmin
