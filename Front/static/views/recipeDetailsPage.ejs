@@ -7,8 +7,7 @@
 
     <div class="container_left">
         <div class="divImg">
-            <img src="/img/recipes/<%= recipe.picture %>" alt="">
-
+            <img class="img" src="/img/recipes/<%= recipe.picture %>" alt="recipe picture">
         </div>
         <div id="rate"><span><%= recipe.rate %></span> &#x2605; </div>
         <h1 class="title"> <%= recipe.title %> </h1>
@@ -48,6 +47,11 @@
                     <span><%= recipe.difficulty %></span>
                 </div>
             </div>
+
+            <% if (recipe.user.username) { %>
+                <p class="author">Recette proposée par <%= recipe.user.username %></p>
+            <% } %>
+
         </div>
     </div>
 </main>

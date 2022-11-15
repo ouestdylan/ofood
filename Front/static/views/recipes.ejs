@@ -36,9 +36,12 @@
 
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
-
-
     </div>
+
+    <% if (recipe.user.username) { %>
+      <p class="author">Recette proposée par <%= recipe.user.username %></p>
+    <% } %>
+
   </div>
   <% }) %>
 
