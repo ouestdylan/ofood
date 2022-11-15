@@ -3,8 +3,8 @@ BEGIN;
 TRUNCATE "user", "recipe" RESTART IDENTITY;
 
 INSERT INTO "user" ("email","username", "password", "is_admin") 
-    VALUES  ('admin@test.fr', 'Admin', '$2y$10$sVFmrgo2mRRReWf8Nvm6KOkb4lEiViBp2eUYLila4NdvnTzOffgTm', 'true'),
-            ('user@test.fr', 'User', '$2y$10$REw0CIT8WGtpf407nwVCEulqU0RDnYy0Jy3xkYs9gT4Gc1EgeumhW', 'false');
+    VALUES  ('admin@test.fr', 'Admin', '$2a$10$3ncnTtiyg959A9NHM/vvgeXh2e44mS.ofyyB7JMW0QqVJgyoa0mNi', 'true'),
+            ('user@test.fr', 'User', '$2a$10$DPy.aIQLYOoUphojbL1xder6nnSLSvvOWRaA5FfgqH2OJ750Gw4aW', 'false');
 
 INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
     VALUES ('BIFSTECK AUX OIGNONS CARAMELISEES',
