@@ -22,7 +22,7 @@
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
     </div>
-    <div class="titre"> <%= recipe.title %> </div>
+    <div class="titre"><%= recipe.title %></div>
     <div class="tab">
       <img src="/img/sablier.svg" alt="sablier" class="icone" />
       <span><%= recipe.cookingTime %></span>
@@ -42,7 +42,9 @@
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
     </div>
-
+    <% if (recipe.user.username) { %>
+    <p class="author">Recette proposée par <%= recipe.user.username %></p>
+    <% } %>
   </div>
   
   <% }) %>
@@ -91,9 +93,10 @@
 
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
-
-
     </div>
+    <% if (recipe.user.username) { %>
+    <p class="author">Recette proposée par <%= recipe.user.username %></p>
+    <% } %>
   </div>
   <% }) %>
 
@@ -140,6 +143,10 @@
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %> /<%= recipe.title %>">La recette</a>
     </div>
+    <% if (recipe.user.username) { %>
+    <p class="author">Recette proposée par <%= recipe.user.username %></p>
+    <% } %>
+
   </div>
   <% }) %>
 

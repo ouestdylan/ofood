@@ -61,7 +61,7 @@ const mainController = {
     },
 
     async addNewRecipe(req, res) {
-
+        
         let data = req.body;
         data.picture = req.file.filename;
 
