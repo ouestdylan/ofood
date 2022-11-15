@@ -18,12 +18,24 @@ const mainController = {
             let difficultyRecipe = recipes.filter((recipe) => recipe.difficulty.toLowerCase() === "facile");
             difficultyRecipe = difficultyRecipe.slice(0, 5);
 
-            let aleatoireTest = recipes.sort((a, b) => b.rate - a.rate);
-            aleatoireTest = aleatoireTest.slice(0, 3);
-
+            // feature servant a générer les recettes aléatoires
+            const RANDOM_RECIPES_NUMBER = 5
+            let randomRecipes = []
+            for (let index = 0; index < RANDOM_RECIPES_NUMBER ; index++) {
+                const recipe = recipes[Math.floor(Math.random() * recipes.length)];
+                const isAlreadySelected = randomRecipes.findIndex(element => element.id === recipe.id);
+                 
+                if (isAlreadySelected === -1) {
+                    randomRecipes.push(recipe);
+                } else {
+                    index--
+                }
+                
+            }
+        
             //Et plus tard dans le render : 
             res.render('home', {
-                bestFivesRecipes, difficultyRecipe, aleatoireTest
+                bestFivesRecipes, difficultyRecipe, randomRecipes
             });
         } catch (error) {
             console.trace(error);
