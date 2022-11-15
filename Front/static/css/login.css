@@ -131,10 +131,7 @@ footer {
 @keyframes btn-anim2 {
     0% {
         top: -100%;
-    }
 
-    .login-box button 50%,
-    100% {
         top: 100%;
     }
 }

@@ -12,6 +12,13 @@
 
 }
 
+footer {
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;}
+
+
 .menu_dashboard {
     position: relative;
     background-color: #222222;
@@ -167,7 +174,6 @@
         flex-direction: column;
     }
 
-    .profile_link {}
 
     .dashboard_links {
         padding: 0;
