@@ -30,10 +30,8 @@ body {
     box-shadow: 0 15px 30px 1px rgb(52, 113, 194);
     background: rgba(255, 255, 255, 0.90);
     text-align: center;
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 0.5%;
     margin: 10em auto;
-    height: auto;
     width: 80%;
     border: 1px solid black;
     display: flex;
@@ -62,7 +60,7 @@ body {
 
     overflow: hidden;
     height: auto;
-    width: auto;
+    width: 80%;
     margin-right: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
@@ -72,7 +70,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #344055;
     margin: 0;
     border-bottom: 1px solid grey;
@@ -85,7 +83,7 @@ body {
     justify-content: center;
     font-family: 'EB Garamond', serif;
     text-align: left;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: #2f3031;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -94,30 +92,29 @@ body {
 .recipe_steps {
     font-family: 'EB Garamond', serif;
     text-align: left;
-    font-size: 14px;
+    font-size: 1rem;
     color: #344055;
 }
 
 .container_right {
-    flex-basis: 40%;
+    width: 40%;
+    padding: 2rem;
     background-color: rgb(255, 255, 255);
 }
 
-.ingredients ol {
-    text-align: center;
+.ingredient {
+    text-align: left;
+    max-width: 100%;
 }
 
 .recipe-details {
 
     font-family: "Poppins";
     text-align: left;
-    font-size: 15px;
+    font-size: 1rem;
     color: #344055;
-    padding: 30px;
     height: 100%;
-    float: left;
-    width: auto;
-
+    width: 100%;
 }
 
 .recipe-details span {

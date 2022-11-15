@@ -75,7 +75,10 @@ const mainController = {
     async addNewRecipe(req, res) {
         
         let data = req.body;
-        data.picture = req.file.filename;
+        data.userId = req.session.user.id;
+        if (req.file) {
+            data.picture = req.file.filename;
+        }
 
         let recipe;
 

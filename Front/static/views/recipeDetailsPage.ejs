@@ -3,55 +3,56 @@
 <link rel="stylesheet" href="/css/recipeDetailsPage.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<main class="container_recipe">
-
-    <div class="container_left">
-        <div class="divImg">
-            <img class="img" src="/img/recipes/<%= recipe.picture %>" alt="recipe picture">
-        </div>
-        <div id="rate"><span><%= recipe.rate %></span> &#x2605; </div>
-        <h1 class="title"> <%= recipe.title %> </h1>
-
-        <div class="Steps">
-            <h2 class="subtitle">Préparation</h2>
-            <ol class="recipe_steps">
-                <li><%= recipe.steps %> </li>
-            </ol>
-        </div>
-    </div>
-    <div class="container_right">
-
-        <div class="recipe-details">
-            <div class="ingredients">
-                <h2 class="subtitle"> Ingrèdients</h2>
-                <br>
-                <ol class="ingredients_list">
-                    <% for (const ingredient of recipe.ingredientsList.split(',')) { %>
-                    <li><%= ingredient %></li>
-                    <% } %>
-
-                </ol>
+<main>
+    <div class="container_recipe">
+        <div class="container_left">
+            <div class="divImg">
+                <img class="img" src="/img/recipes/<%= recipe.picture %>" alt="recipe picture">
             </div>
+            <div id="rate"><span><%= recipe.rate %></span> &#x2605; </div>
+            <h1 class="title"> <%= recipe.title %> </h1>
 
-            <div class="list_tab">
-
-                <div class="tab">
-                    <img src="/img/sablier.svg" alt="sablier" class="icone" />
-                    <span><%= recipe.cookingTime %> min</span>
-                </div>
-                <div class="tab">
-                    <img src="/img/fire.png" alt="mascotte" class="icone" />
-                </div>
-                <div class="tab">
-                    <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-                    <span><%= recipe.difficulty %></span>
-                </div>
+            <div class="Steps">
+                <h2 class="subtitle">Préparation</h2>
+                <p class="recipe_steps"> <%= recipe.steps %> </p>
             </div>
+        </div>
+        <div class="container_right">
 
-            <% if (recipe.user.username) { %>
-                <p class="author">Recette proposée par <%= recipe.user.username %></p>
-            <% } %>
+            <div class="recipe-details">
+                <div class="ingredients">
+                    <h2 class="subtitle"> Ingrèdients</h2>
+                    <br>
+                    <ol class="ingredients_list">
 
+                        <% for (const ingredient of recipe.ingredientsList.split(',')) { %>
+                        <li class="ingredient"><%= ingredient %></li>
+                        <% } %>
+
+                    </ol>
+                </div>
+
+                <div class="list_tab">
+
+                    <div class="tab">
+                        <img src="/img/sablier.svg" alt="sablier" class="icone" />
+                        <span><%= recipe.cookingTime %> min</span>
+                    </div>
+                    <div class="tab">
+                        <img src="/img/fire.png" alt="mascotte" class="icone" />
+                    </div>
+                    <div class="tab">
+                        <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
+                        <span><%= recipe.difficulty %></span>
+                    </div>
+                </div>
+
+                <% if (recipe.user.username) { %>
+                    <p class="author">Recette proposée par <%= recipe.user.username %></p>
+                <% } %>
+
+
+            </div>
         </div>
     </div>
 </main>
