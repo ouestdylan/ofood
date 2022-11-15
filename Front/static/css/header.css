@@ -447,6 +447,7 @@ pointer-events: all;
     align-items: center;
     height: 70px;
     justify-content: space-around;
+    z-index: -1;
 }
 
 

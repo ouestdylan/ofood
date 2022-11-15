@@ -25,6 +25,7 @@ footer {
     box-sizing: border-box;
     box-shadow: 0 10px 9px rgba(138, 134, 134, 0.6);
     border-radius: 10px;
+    z-index: -1;
 
 }
 
