@@ -4,16 +4,17 @@
 
 header {
     font-family: 'Acme', sans-serif;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
+
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
     background: #FF8001;
     display: flex;
     margin: auto;
     align-items: center;
     height: 50px;
-    z-index: 1;
+
 }
 
 header .image_logo {
@@ -64,6 +65,10 @@ header .slogan_title {
 
 }
 
+.connected_username {
+    font-size: 1.3rem;
+}
+
 .span_good {
     color: #fefefa;
 }
@@ -75,16 +80,13 @@ header .slogan_title {
     text-align: center;
 }
 
-.name_connexion {
-    font-size: 1.4rem;
-    margin-top: 1rem;
-}
-
 
 /* -----NAVBAR------- */
 
 
 nav {
+    font-family: 'Acme', sans-serif;
+
     height: 10vh;
     /* background: #5b78c7; */
     width: 100%;
@@ -94,7 +96,7 @@ nav {
 }
 
 .nav-links {
-
+    
 
     list-style: none;
     align-items: center;
@@ -123,8 +125,8 @@ nav {
 
 
 .nav-links.open {
-    background-color: #FF8001;
-    pointer-events: all;
+background-color: #FF8001;   
+pointer-events: all;
 
 
     opacity: 1;
@@ -137,13 +139,13 @@ nav {
     align-items: center;
     margin: auto;
     z-index: 1;
-
+    
 }
 
 
 .nav-links li a {
-    font-family: 'Lobster', cursive;
-
+    font-family: 'Acme', sans-serif;
+    
 
     color: rgb(6, 6, 6);
     text-decoration: none;
@@ -151,8 +153,7 @@ nav {
     opacity: 1;
     text-align: center;
     font-weight: 600;
-    font-size: 40px;
-}
+    font-size: 40px;}
 
 .landing {
     height: 90vh;
@@ -182,17 +183,16 @@ nav {
     margin-left: auto;
     transform: translate(-5%, -50%);
     z-index: 2;
-
+    
 }
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-    body {
-        width: 100%;
+  
+    header {
+        font-family: 'Acme', sans-serif;
+
     }
-
-
-
     header .image_logo {
         width: 100px;
         border: none;
@@ -205,8 +205,8 @@ nav {
 
 
     header .slogan_title {
-        font-size: 1.5rem;
-        color: #050606;
+        font-size: 1.2rem;
+        color: #010101;
         position: inherit;
         top: inherit;
         left: inherit;
@@ -310,21 +310,143 @@ nav {
     }
 
 }
+@media only screen and (max-width: 397px)  {
+    
+    header {
+        font-family: 'Acme', sans-serif;
+
+    }
+
+
+    header .image_logo {
+        width: 100px;
+        border: none;
+
+    }
+
+    .banner_logo a img {
+        width: 64px;
+    }
+
+
+    header .slogan_title {
+        font-size: 1rem;
+        color: #fffdfd;
+        position: inherit;
+        top: inherit;
+        left: inherit;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: rgb(8, 0, 0);
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        height: 100px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-right: 20px;
+        margin-left: auto;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .nav-links.open {
+        background-color: #FF8001;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+
+    }
+
+    .nav-links li a {
+        color: rgb(8, 8, 8);
+    }
+
+    .landing {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+   
+
+    .slogan_title {
+
+        font-size: 0.4rem;
+        color: #040404;
+        text-align: center;
+    }
+
+}
 
 /*-----------FOOTER ----------- */
 
 
 .footer {
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
+    left:0px;
+    bottom:0px;
+    width:100%;
     background: #FF8001;
     display: flex;
     margin: auto;
     align-items: center;
     height: 70px;
     justify-content: space-around;
-    position: fixed;
 }
 
 
@@ -376,5 +498,4 @@ nav {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-    }
-}
+    } }
