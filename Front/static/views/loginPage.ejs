@@ -1,22 +1,27 @@
 <%- include ("partials/header") %>
 <link rel="stylesheet" href="/css/login.css" />
 
-<link rel="stylesheet" href="/css/home.css" />
-
-<div class="form_container">
-  <form method="POST" class="form_connexion">
-    <h1>Se connecter</h1>
-
-    <div class="inputs">
-      <input type="email" placeholder="Email" name="email" />
-      <input type="password" placeholder="Mot de passe" name="password">
+<div class="login-box">
+  <h2>Connexion</h2>
+  <form method="POST">
+    <div class="user-box">
+      <input type="email" name="email" required="">
+      <label>Email</label>
     </div>
-
-    <p class="inscription"> <span>Créer un compte</span>. <span>Mot de passe oublié</span> .</p>
-    <div align="center">
-
-      <button type="submit">Se connecter</button>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label>Mot de passe</label>
     </div>
+    <button class="login_btn" type="submit">
+
+      <!--Les span servent a l'animation css-->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      SE CONNECTER
+    </button>
+
   </form>
 </div>
 
