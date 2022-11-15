@@ -29,7 +29,7 @@
       <h1 class="slogan_title">" <span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood "</h1>
 
       <% if (locals.user) { %>
-        <span class="connected_username"><%= locals.user.username %></span>
+      <span class="connected_username"><%= locals.user.username %></span>
       <% } %>
       <div class="hamburger">
         <div class="line"></div>
@@ -42,7 +42,7 @@
         <% if (!locals.user) { %>
         <li><a href="/connexion">Connexion</a></li>
         <% } else { %>
-        <li><a href="/dashboard">Mon profil</a></li>
+        <li><a href="/admin/dashboard">Mon profil</a></li>
         <li><a href="/deconnexion">Déconnexion</a></li>
         <% } %>
 

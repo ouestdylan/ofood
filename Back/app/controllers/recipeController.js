@@ -24,6 +24,7 @@ const controller = {
 			const recipe = await Recipe.findByPk(recipeId, {
 				include: ['user']
 			});
+			console.log(recipe);
 
 			if (!recipe) {
 				const error = new Error(`Recipe not found with id ${recipeId}`);

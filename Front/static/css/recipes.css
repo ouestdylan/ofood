@@ -5,8 +5,6 @@
 body {
     background: #FFFFFE;
 
-   
-
 }
 
 
@@ -92,11 +90,14 @@ body {
 
 .divImg {
     /* debut rangée / debut col / fin rang / fin col */
-
     grid-area: 1 / 1 / 3 / 4;
     background-size: cover;
     /* background-position: 20% 20%;
         filter: brightness(90%); */
+}
+
+.recipe-picture {
+
 }
 
 .titre {
