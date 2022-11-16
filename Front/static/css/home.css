@@ -46,13 +46,14 @@ body {
     margin-bottom: 60px;
     overflow-x: scroll;
     display: flex;
-    height: 75vh;
+    height: 90vh;
     align-items: center;
     gap: 50px;
     scrollbar-width: none;
     /* Firefox */
     margin-left: 20px;
 }
+
 
 
 .carte {
@@ -187,12 +188,13 @@ span {
         margin-bottom: 60px;
         overflow-x: scroll;
         display: flex;
-        height: 80vh;
+        height: 100vh;
         align-items: center;
         gap: 50px;
         scrollbar-width: none;
         /* Firefox */
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-right: 35px;
     }
 
 
