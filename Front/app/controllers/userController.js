@@ -24,19 +24,18 @@ const userController = {
             });
             
             result = await response.json();
-            console.log(result);
 
             req.session.user = result;
-            res.redirect('/accueil');
+            res.redirect('/');
 
         } catch (error) {
-            console.log(error);
+            console.trace(error);
         }
     },
 
     disconnect(req, res) {
         req.session.user = false;
-        res.redirect('home');
+        res.redirect('/');
     }
 };
 

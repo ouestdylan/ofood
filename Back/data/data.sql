@@ -3,10 +3,10 @@ BEGIN;
 TRUNCATE "user", "recipe" RESTART IDENTITY;
 
 INSERT INTO "user" ("email","username", "password", "is_admin") 
-    VALUES ('michel@michel.fr', 'Michel', '$2a$10$lOFvFSSd1dfW1CMF/DtXneSwChkJImgHljYeOxaP2RReMN1nF9ZcG', 'true'),
-            ('bernard@bernard.fr', 'Bernard', '$2a$10$.k8MKv.WL0rxMkPiaruxLOdDMDkCn.3T7eq055oa2Sg2nEI/YJWmW', 'false');
+    VALUES  ('admin@test.fr', 'Admin', '$2a$10$3ncnTtiyg959A9NHM/vvgeXh2e44mS.ofyyB7JMW0QqVJgyoa0mNi', 'true'),
+            ('user@test.fr', 'User', '$2a$10$DPy.aIQLYOoUphojbL1xder6nnSLSvvOWRaA5FfgqH2OJ750Gw4aW', 'false');
 
-INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "rate", "picture") 
+INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cooking_time", "difficulty", "user_id", "rate", "picture") 
     VALUES ('BIFSTECK AUX OIGNONS CARAMELISEES',
             'Sel et poivre au goût,
             1 lb (450 g) de surlonge de boeuf ou steak (environ 3/4 po/2 cm d’épaisseur),
@@ -35,7 +35,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Déposer le bifteck sur une planche à découper; laisser reposer 5 min. Rectifier l’assaisonnement de la sauce avec du sel et du poivre. 
             Couper le bifteck en fines tranches dans le sens contraire du grain et le servir nappé de sauce. Garnir de persil.', 
             30, 
-            'Difficile',
+            'Difficile', 1,
              8, 
              'bifsteak.jpg'),
 
@@ -66,7 +66,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Faire cuire 2 minutes les lamelles de boeuf dans un peu d’huile bien chaude, et faire frire les oeufs (oeufs au plat)
             Servir dans des bols avec du riz au fond, des légumes tout autour, un peu de pâte de piment, et le boeuf et/ou l’oeuf au milieu!',
              45, 
-             'Moyen', 
+             'Moyen', 1,
              10, 
              'bimbimpap.jpg'),
 
@@ -88,7 +88,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Garnir les autres, puis poser dans un plat de service avec des rondelles de citron joliment découpées, et les minis tomates.
             Peut se déguster en entrée, ou en plat de résistance avec une salade à l’huile de noix, ou à l’apéro.',
              10, 
-             'Facile', 
+             'Facile', 1,
              3, 
              'blini-saumon.jpg'),
 
@@ -105,12 +105,12 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Faire griller les tranches de pain de campagne, puis les frotter d’ail.
             Disposer le mélange tomate/huile d’olive généreusement sur la tartine, à déguster aussitôt (tiède).',
              10, 
-             'Facile', 
+             'Facile', 1,
              8, 
              'bruschetta.jpg'),
 
              ('LASAGNE BOLOGNAISE', 
-            ' - Pour le bechamel ,
+            ' - Pour la bechamel : ,
                 70g de buerre,
                 70g de farine,
                 50cl de lait,
@@ -139,7 +139,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Penser à dégraisser la viande avant de la mélanger à la sauce tomate. 
             Pour cela, retirer la viande à l’aide d’une écumoire.',
              60, 
-             'Moyen', 
+             'Moyen', 1,
              4, 
              'lasagne.jpg'),
 
@@ -174,7 +174,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Ajouter les champignons de Paris.
             Remettre les morceaux de viandes, recouvrir le faitout du couvercle et laisser cuire à feu moyen pendant 1 heure.',
              45, 
-             'Difficile', 
+             'Difficile', 1,
              6, 
              'osso-bucco.jpg'),
 
@@ -196,7 +196,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Versez une demi-louche de préparation et faites cuire 2 à 3 minutes le temps que des bulles se forment à la surface. 
             Retournez et faites cuire 2 minutes sur l’autre face.',
              15, 
-             'Facile', 
+             'Facile', 2,
              8, 
              'pancakes.jpg'),
 
@@ -217,7 +217,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Servez les pâtes avec le pesto, ajoutez le parmesan et les pignons de pin que vous aviez mis de côté. 
             Salez, poivrez!',
              15, 
-             'Très facile', 
+             'Très facile', 2,
              7, 
              'pasta-pesto-rosso.jpg'),
 
@@ -238,7 +238,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Une fois le pesto terminé, le mélanger aux pâtes chaudes. 
             Disposer dans deux assiettes à pâtes creuses et saupoudrer les penne au pesto verde de fromage râpé, à votre goût, et d’une demi-cuillère à soupe de pignons de pin torréfiés.',
             15, 
-             'Facile', 
+             'Facile', 2,
              6, 
              'pasta-pesto-verde.jpg'),
 
@@ -258,7 +258,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Ajoutez l’huile d’olives, les morceaux de féta, la persillade. 
             Salez, poivrez et mélangez délicatement pour ne pas écraser les morceaux fromage.',
              20, 
-             'Facile', 
+             'Facile', 1,
              3, 
              'pasta-salad-feta.jpg'),
 
@@ -281,7 +281,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Placez le riz au fond d’un bol, ajoutez des graines de sésame, des tranches de concombre, des radis émincés, des tranches d’avocat, le saumon assaisonné, 1 cuil. à soupe de ciboulette ciselée et de la coriandre émincée. 
             Servez.',
              15, 
-             'Moyen', 
+             'Moyen', 2,
              9, 
              'poke-bowls-salmon.jpg'),
 
@@ -297,7 +297,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Grosse tomate 3,
             Roquefort 60 g,
             Ciboulette 1 botte,
-            Sel 3 pincées,
+            Sel 3 pincées,student@yasmina-movileanu-oclock-student:/var/www/html/APOTHEOSE/projet-09-ofood/Back$ psql -U ofood -d ofood -f /data/data.sql
             Poivre,
             Moutarde forte 1 c à s,
             Vinaigre de cidre 3 c à s,
@@ -312,7 +312,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Saler et poivrer les blancs de poulet et les faire cuire dans cette même poêle dans un peu de beurre mousseux pendant 12 minutes environ. 
             Laisser refroidir puis tailler en tranches.',
              15, 
-             'Facile', 
+             'Facile', 2,
              3, 
              'salade-composee.jpg'),
 
@@ -340,7 +340,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Disposez la salade dans des coupelles. 
             Émincez les Crousty Chicken Long Filet’s Le Gaulois et disposez-les sur la salade.',
              25, 
-             'Facile', 
+             'Facile', 2,
              7, 
              'salade-crispy-chicken.jpg'),
 
@@ -361,7 +361,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Mélangez 200 g de pousses d’épinards avec 1 mangue bien mûre coupée en lamelles, 50 g de noix de cajou dorées à la poêle, quelques feuilles de basilic et de coriandre, ainsi que le poulet.
             Mélangez 2 c. à soupe d’huile, le jus de 1 citron vert, sel, piment selon votre goût et assaisonnez-en la salade.',
              20, 
-             'Facile', 
+             'Facile', 1,
              6, 
              'salade-epinard-poulet.jpg'),
 
@@ -382,7 +382,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Une fois les pavés de saumon prêts, retirez-les de la poêle ou planche, et déposez chacun sur une assiette.
             Coupez le citron et exprimez chaque moitié sur chaque pavé, pour l’asperger avec le jus, de manière généreuse.',
              7, 
-             'Moyen', 
+             'Moyen', 2,
              3, 
              'saumon_grillé.jpg'),
 
@@ -402,7 +402,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Ajoutez les pommes de terre, le bouillon de légumes, le bouillon de légumes, salez et poivrez puis lancez la cuisson sous pression pour 8 min.
             Placez la soupe dans des assiettes creuses, servez avec le fromage râpé.',
              35, 
-             'Difficile', 
+             'Difficile', 1,
              3, 
              'soupe-potato.jpg'),
 
@@ -417,7 +417,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Recouvrez avec le reste des spéculos puis terminez par 1/2 fraise.
             Mettez au frais avant de servir.',
              20, 
-             'Très facile', 
+             'Très facile', 1,
              9, 
              'speculos_fraise.jpg'),
 
@@ -440,7 +440,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Mettez au four à 210°C (thermostat 7) pour 40 minutes environ. 
             Vers la fin de la cuisson, répartissez sur la tarte le sucre vanillé et remettez au four pour caramélisé.',
              35, 
-             'Facile', 
+             'Facile', 2,
              3, 
              'tarte-pommes.jpg'),
 
@@ -476,7 +476,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Retirer la poêle du four. 
             Y verser la préparation à fajitas.',
              35, 
-             'Difficile', 
+             'Difficile', 2,
              8, 
              'tortilla.jpg'),
 
@@ -497,7 +497,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Agrémenté d’herbes fraîches, d’oignon, d’échalote et d’ail, le bœuf haché se parfumera délicatement. ',
             'etapes',
              90, 
-             'Difficile', 
+             'Difficile', 2,
              3, 
              'poivron-farci.jpg');
             

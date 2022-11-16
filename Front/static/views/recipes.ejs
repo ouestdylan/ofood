@@ -1,6 +1,6 @@
 <%- include ("partials/header") %>
 
-<link rel="stylesheet" href="/css/recipes.css" />
+<link rel="stylesheet" href="css/recipes.css" />
 
 
 <div class="container">
@@ -12,7 +12,6 @@
 
     <div class="divImg">
       <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-
     </div>
 
     <div class="titre"> <%= recipe.title %> </div>
@@ -22,8 +21,10 @@
       <span><%= recipe.cookingTime %> min</span>
     </div>
     <div class="tab">
-      <img src="/img/fire.png" alt="mascotte" class="icone" />
-    </div>
+      <div id="rate"><span><%= recipe.rate %></span> &#x2605;
+        
+      </div> 
+        </div>
     <div class="tab">
       <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
       <span><%= recipe.difficulty %> </span>
@@ -34,10 +35,13 @@
     </div>
 
     <div class="btnSection">
-      <a href="/recettes/<%=recipe.id %>">La recette</a>
-
-
+      <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
     </div>
+
+    <% if (recipe.user) { %>
+      <p class="author">Recette proposée par <%= recipe.user.username %></p>
+    <% } %>
+
   </div>
   <% }) %>
 

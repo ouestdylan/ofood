@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 
 header {
-    font-family: "Poppins";
+    font-family: 'Acme', sans-serif;
 
-    background: #fce7ca;
-    width: 100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    background: #FF8001;
     display: flex;
     margin: auto;
     align-items: center;
-    height: 60px;
-
+    height: 50px;
 
 }
 
@@ -24,20 +25,20 @@ header .image_logo {
 
 
 header .slogan_title {
-    font-size: 1.5rem;
-    color: #010101;
+    font-size: 2rem;
+    color: #fffdfd;
     font-weight: bold;
     position: inherit;
     top: inherit;
     left: inherit;
-    margin: auto;
+    margin-bottom: 1px;
+    margin-top: 6px;
 }
 
 
 
 
 .banner_logo {
-
     display: flex;
     margin: auto;
     margin-left: 20px;
@@ -57,21 +58,19 @@ header .slogan_title {
     height: 2px;
 }
 
-.image_logo {
-    width: 220px;
+.imagelogo {
+    width: 70px;
     border: none;
+    margin-bottom: 10px;
 
 }
 
-.image_mascotte {
-    width: 60px;
-    height: 60px;
-    display: block;
-    padding-left: 70px;
+.connected_username {
+    font-size: 1.3rem;
 }
 
 .span_good {
-    color: #fa3d09;
+    color: #fefefa;
 }
 
 .slogan_title {
@@ -86,6 +85,8 @@ header .slogan_title {
 
 
 nav {
+    font-family: 'Acme', sans-serif;
+
     height: 10vh;
     /* background: #5b78c7; */
     width: 100%;
@@ -95,6 +96,7 @@ nav {
 }
 
 .nav-links {
+    
 
     list-style: none;
     align-items: center;
@@ -114,7 +116,6 @@ nav {
 
 .nav-links li {
     list-style: none;
-    width: 0%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -122,9 +123,12 @@ nav {
     opacity: 1;
 }
 
+
 .nav-links.open {
-    background-color: rgba(223, 110, 18, 0.945);
-    pointer-events: all;
+background-color: #FF8001;   
+pointer-events: all;
+
+
     opacity: 1;
     right: 0;
     width: 100%;
@@ -135,19 +139,21 @@ nav {
     align-items: center;
     margin: auto;
     z-index: 1;
+    
 }
 
 
 .nav-links li a {
-    color: white;
+    font-family: 'Acme', sans-serif;
+    
+
+    color: rgb(6, 6, 6);
     text-decoration: none;
-    font-size: 16px;
     font-weight: 600;
     opacity: 1;
     text-align: center;
     font-weight: 600;
-    font-size: 1.4rem;
-}
+    font-size: 40px;}
 
 .landing {
     height: 90vh;
@@ -165,7 +171,7 @@ nav {
 .line {
     width: 30px;
     height: 3px;
-    background: rgb(8, 0, 0);
+    background: rgb(8, 8, 8);
     margin: 5px;
 }
 
@@ -177,16 +183,16 @@ nav {
     margin-left: auto;
     transform: translate(-5%, -50%);
     z-index: 2;
+    
 }
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-    body {
-        width: 100%;
+  
+    header {
+        font-family: 'Acme', sans-serif;
+
     }
-
-
-
     header .image_logo {
         width: 100px;
         border: none;
@@ -199,9 +205,8 @@ nav {
 
 
     header .slogan_title {
-        font-size: 1.5rem;
-        color: #050606;
-        font-weight: bold;
+        font-size: 1.2rem;
+        color: #010101;
         position: inherit;
         top: inherit;
         left: inherit;
@@ -254,7 +259,7 @@ nav {
 
 
     .nav-links.open {
-        background-color: rgba(223, 110, 18, 0.945);
+        background-color: #FF8001;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
@@ -266,7 +271,7 @@ nav {
     }
 
     .nav-links li a {
-        color: white;
+        color: rgb(8, 8, 8);
     }
 
     .landing {
@@ -301,7 +306,129 @@ nav {
 
         font-size: 0.4rem;
         color: #040404;
-        font-weight: bold;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 397px)  {
+    
+    header {
+        font-family: 'Acme', sans-serif;
+
+    }
+
+
+    header .image_logo {
+        width: 100px;
+        border: none;
+
+    }
+
+    .banner_logo a img {
+        width: 64px;
+    }
+
+
+    header .slogan_title {
+        font-size: 1rem;
+        color: #fffdfd;
+        position: inherit;
+        top: inherit;
+        left: inherit;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: rgb(8, 0, 0);
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        height: 100px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-right: 20px;
+        margin-left: auto;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .nav-links.open {
+        background-color: #FF8001;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+
+    }
+
+    .nav-links li a {
+        color: rgb(8, 8, 8);
+    }
+
+    .landing {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+   
+
+    .slogan_title {
+
+        font-size: 0.4rem;
+        color: #040404;
         text-align: center;
     }
 
@@ -311,15 +438,18 @@ nav {
 
 
 .footer {
-    position: relative;
-    background: #fce7ca;
-    min-height: 100px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background: #FF8001;
     display: flex;
-    justify-content: space-around;
+    margin: auto;
     align-items: center;
-
-    border-radius: 0.2rem;
+    height: 70px;
+    justify-content: space-around;
+    z-index: -1;
 }
+
 
 .menu_footer {
 
@@ -330,13 +460,12 @@ nav {
 }
 
 .menu__link {
-    font-size: 1.2rem;
-    color: #3a3a3a;
+    font-size: 1.6rem;
+    color: black;
     margin: 0 10px;
     /* transition: 0.5s; */
     text-decoration: none;
     /* opacity: 0.75; */
-    font-weight: 600;
 }
 
 .menu__link:hover {
@@ -346,14 +475,15 @@ nav {
 
 
 .image_logo {
-    width: 130px;
+    width: 90px;
     border: none;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
     .menu__link {
         font-size: 0.8rem;
-        color: #3a3a3a;
+        color: black;
         margin: 0 10px;
         text-decoration: none;
         font-weight: 600;
@@ -369,6 +499,4 @@ nav {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-    }
-
-}
+    } }

@@ -19,8 +19,8 @@ const userController = {
                // comparer son mdp
                 bcrypt.compare(req.body.password, foundUser.password).then(function(result) {
                     if (result) {
-                        console.log(foundUser.dataValues);
                         const userData = {
+                            id: foundUser.dataValues.id,
                             username: foundUser.dataValues.username,
                             email: foundUser.dataValues.email,
                             isAdmin: foundUser.dataValues.isAdmin

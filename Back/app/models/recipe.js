@@ -27,6 +27,9 @@ Recipe.init({
     difficulty: {
 		type: DataTypes.TEXT,
 	},
+	userId: {
+		type: DataTypes.INTEGER,
+	},
     rate: {
 		type: DataTypes.INTEGER,
 	},

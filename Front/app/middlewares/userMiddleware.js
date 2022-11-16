@@ -1,5 +1,7 @@
 
-const userMiddleware = (req, res, next) => {
+const userMiddleware = {
+    
+    sessionVerification(req, res, next) {
 
     if (req.session.user) {
         res.locals.user = req.session.user;
@@ -7,6 +9,7 @@ const userMiddleware = (req, res, next) => {
         res.locals.user = false;
     }
     next();
+    }
 };
 
 module.exports = userMiddleware;

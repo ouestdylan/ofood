@@ -1,38 +1,163 @@
 <%- include ("partials/header") %>
+<link rel="stylesheet" href="/css/dashboard.css" />
 
-<link rel="stylesheet" href="/css/home.css" />
-
-<div class="title_dashboard">
-    <h1>Gestion admin</h1>
-    <h3>Ajouter des recettes</h3>
-</div>
 <div class="container_dashboard">
 
-    <section class="form_container_dashboard">
-        <form class="form_recipe_dashboard">
-            <input type="text" name="title" placeholder="Titre de la recette" required /> <br>
-            <textarea name="description" rows="5" placeholder="Dèscription" required></textarea><br>
-            <textarea name="message" rows="5" placeholder="Les ètapes de ta recette" required></textarea><br>
-            <textarea name="message" rows="5" placeholder="La liste des ingrédients" required></textarea><br>
-            <input class="picture" type="file" name="name" placeholder="picture" required />
-        </form>
-    </section>
 
-    <main class="right_container_dashboard">
+    <div class="menu_dashboard">
+        <h2 class="user_name">( User Name )</h2>
 
-        <select class="option" name="difficulty" id="difficulty">
-            <option value="">Choisir la difficulté</option>
-            <option value="easy">Facile</option>
-            <option value="medium">Moyen</option>
-            <option value="hard">Difficile</option>
+        <ul class="dashboard_links">
+            <!-- <li class="profile_link">
+               
+                    <span class="material-symbols-outlined">person</span>
+                    Profil
+                </a>
+            </li> -->
+            <li class="add_recipe">
 
-            <input class="option" type="text" name="time" placeholder="Temps de préparation en minutes" required />
-        </select>
+                <a href="/admin/ajouterunerecette">
+                    <span class="material-symbols-outlined">add</span>
+                    Ajouter une recette
+                </a>
 
-    </main>
-    <button class="button" type="submit">PUBLIER LA RECETTE</button>
+            </li>
+        </ul>
+    </div>
 
+    <div class="right_side">
+        <h2 class="subtitle"> Gestion des recettes</h2>
+        <div class="info_list">
+
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+            <div class="manage_list">
+                <div class="list_mobile">
+                    <div class="user">
+                        User Name
+                    </div>
+                    <div class="recipe_title">
+                        Titre de la recette...........
+                    </div>
+                    <div class="date">
+                        <!-- recuperer le updatedAt de la BDD-->
+                        10/11/2022 (heure locale)
+                    </div>
+                </div>
+                <div class="mobile_button">
+                    <button class="edit_button" type="submit">Modifier</button>
+                    <button class="delete_button" type="submit">Supprimer</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
-
 
 <%- include ("partials/footer") %>
