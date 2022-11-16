@@ -8,10 +8,14 @@ body {
 }
 
 .author {
-    margin-left: 145px;
-    font-weight:600;
+    width: 200px;
+margin-left: 85px;
+font-weight: 600;
+margin-bottom: 5px;
+
 
 }
+
 
 
 #rate {
