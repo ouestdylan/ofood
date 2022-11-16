@@ -7,7 +7,7 @@
 <h1 class="title_popular_recipes">
   <br>
   <br>
-    Les<span class="cinq"> 5 </span>au hasard pour votre plaisir !
+    Les<span class="cinq"> 5 </span>recettes au hasard pour votre plaisir !
 </h1>
 
 <div class="container">
@@ -37,7 +37,7 @@
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
     </div>
 
-    <% if (recipe.user.username) { %>
+    <% if (recipe.user) { %>
       <p class="author">Recette proposée par <%= recipe.user.username %></p>
     <% } %>
 
@@ -86,7 +86,7 @@
     <div class="btnSection">
       <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
     </div>
-    <% if (recipe.user.username) { %>
+    <% if (recipe.user) { %>
     <p class="author">Recette proposée par <%= recipe.user.username %></p>
     <% } %>
   </div>
@@ -127,7 +127,7 @@
       <a href="/recettes/<%= recipe.id %> /<%= recipe.title %>">La recette</a>
     </div>
 
-    <% if (recipe.user.username) { %>
+    <% if (recipe.user) { %>
       <p class="author">Recette proposée par <%= recipe.user.username %></p>
     <% } %>
 
