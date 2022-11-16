@@ -2,15 +2,19 @@
 
 
 body {
-    
+
     background: #FFFFFE;
     background-attachment: fixed;
     background-size: cover;
 
 }
+
 #rate {
     color: rgb(155, 25, 45);
+    margin: auto;
     font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #rate span {
@@ -22,37 +26,45 @@ body {
 .list_tab {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 2.5rem;
 }
 
 .container_recipe {
     margin-top: 30px;
-    box-shadow: 0 15px 30px 1px rgb(52, 113, 194);
-    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 15px 30px 1px rgb(52 113 194);
+    background: rgba(255, 227, 176, 0.9);
     text-align: center;
     border-radius: 0.5%;
-    margin: 10em auto;
-    width: 80%;
+    margin: 11rem auto;
+    width: 50%;
     border: 1px solid black;
     display: flex;
-    /*justify-content: flex-start;
-    align-items: stretch; par défaut les deux*/
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
 
 
+.ingredients {
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 1px 6px 1px rgb(108 108 108);
+    padding: 1rem;
+    text-align: center;
 }
 
 .container_left {
-    padding: 1rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-basis: 70%;
-    /* par rapport à la box */
-    box-sizing: border-box;
-    /* padding donc la taille prends pas en compte si on est en content-box */
-
-
+    flex-basis: 50%;
+    /* box-sizing: border-box; */
+    align-items: center;
+    /* margin: auto; */
 }
+
 
 .divImg {
     display: flex;
@@ -74,9 +86,15 @@ body {
     color: #344055;
     margin: 0;
     border-bottom: 1px solid grey;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
 }
+
+
+.author {
+    text-align: center;
+}
+
 
 .subtitle {
     display: flex;
@@ -97,9 +115,12 @@ body {
 }
 
 .container_right {
-    width: 40%;
-    padding: 2rem;
+    /* height: 100%; */
+    padding: 7rem;
     background-color: rgb(255, 255, 255);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    /* margin-right: -12rem; */
 }
 
 .ingredient {
@@ -143,18 +164,37 @@ body {
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-   
+
 
     .container_right {
-        flex-basis: 40%;
-        background-color: rgb(255, 227, 204);
+        width: 90%;
+        padding: 2rem;
+        background-color: rgb(255 242 197);
+    }
+
+    .ingredients {
+        /* border: 1px solid black; */
+        border-radius: 1rem;
+        box-shadow: 0 1px 6px 1px rgb(108 108 108);
+        padding: 1rem;
+        text-align: center;
     }
 
     .ingredients ol {
         text-align: center;
     }
 
-
+    .container_left {
+        margin: auto;
+        margin-top: 0.5rem;
+        /* padding: 2rem; */
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        /* box-sizing: border-box; */
+        align-items: center;
+        /* margin: auto; */
+    }
 
     .container_left h1 {
         margin-top: 20px;
@@ -171,6 +211,7 @@ body {
     .container_left .Steps {
         margin-bottom: 20px;
         margin-top: 0;
+        padding: 1rem;
     }
 
 
@@ -189,19 +230,21 @@ body {
     }
 
     .container_recipe {
-        width: 70%;
-        display: flex;
+
         flex-direction: column;
         background: rgba(255, 255, 255, 0.90);
-        margin-bottom: 3rem;
         border-radius: 5px;
         overflow: hidden;
         margin: 3em auto;
-        margin-top: 60px;
+        margin-top: 6rem;
         height: auto;
         width: 80%;
         border: 1px solid black;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .container_recipe .ingredients {
@@ -211,14 +254,29 @@ body {
     }
 
     .recipe-details {
-        position: inherit;
-        float: none;
+        font-family: "Poppins";
+        text-align: center;
+        font-size: 1rem;
+        color: #344055;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .recipe_steps {
+        margin-left: 2rem;
+        font-family: 'EB Garamond', serif;
+        /* text-align: left; */
+        font-size: 1rem;
+        color: #344055;
     }
 
     .list_tab {
         display: flex;
         justify-content: space-between;
-
+        margin-bottom: 1rem;
     }
 
     .tab {
