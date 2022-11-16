@@ -15,6 +15,7 @@ body {
 .author {
     width: 200px;
 margin-left: 85px;
+margin-bottom: 5px;
 }
 
 .title_popular_recipes {
