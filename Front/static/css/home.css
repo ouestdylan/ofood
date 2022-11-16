@@ -12,6 +12,10 @@ body {
 }
 
 
+.author {
+margin-left: 145px;
+}
+
 .title_popular_recipes {
     font-family: 'Acme', sans-serif;
 
@@ -52,6 +56,7 @@ body {
     scrollbar-width: none;
     /* Firefox */
     margin-left: 20px;
+    margin-right: 15px;
 }
 
 
@@ -64,6 +69,7 @@ body {
     grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
     border-radius: 5px;
     overflow: hidden;
+    font-size: 15px;
 
     border: solid #000102;
 }
