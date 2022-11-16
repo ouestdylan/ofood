@@ -47,8 +47,8 @@
                     </div>
                 </div>
 
-                <% if (recipe.user.username) { %>
-                    <p class="author">Recette proposée par <%= recipe.user.username %></p>
+                <% if (recipe.user) { %>
+                <p class="author">Recette proposée par <%= recipe.user.username %></p>
                 <% } %>
 
 
