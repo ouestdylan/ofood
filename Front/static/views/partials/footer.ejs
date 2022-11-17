@@ -8,6 +8,27 @@
     <img class="image_logo" src="/img/footer.png" alt="Footer" />
 </footer>
 
+<script>
+
+const href = new URL(window.location.href);
+
+const getToken = href.searchParams.get('token');
+if(getToken) {
+    sessionStorage.setItem("token", getToken);
+}
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const logoutLink = document.getElementById('logout');
+    if(logoutLink){
+        logoutLink.addEventListener('click' , function(event) {
+            sessionStorage.removeItem("token");
+            window.location = "/" ;
+        })
+    }
+})
+
+</script>
+
 </body>
 
 </html>

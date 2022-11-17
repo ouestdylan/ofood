@@ -30,12 +30,12 @@ const mainController = {
                 } else {
                     index--
                 }
-                
             }
-        
+            
+            const token = null;
             //Et plus tard dans le render : 
             res.render('home', {
-                bestFivesRecipes, difficultyRecipe, randomRecipes
+                bestFivesRecipes, difficultyRecipe, randomRecipes, token
             });
         } catch (error) {
             console.trace(error);

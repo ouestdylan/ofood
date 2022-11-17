@@ -17,9 +17,6 @@ const upload = multer({ storage: storage })
 
 const mainController = require('./controllers/mainController');
 const userController = require('./controllers/userController');
-const userMiddleware = require('./middlewares/userMiddleware');
-
-router.use(userMiddleware.sessionVerification);
 
 router.get('/', mainController.homePage);
 
