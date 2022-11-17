@@ -272,7 +272,7 @@ body {
     .recipe_steps {
 
         font-family: 'EB Garamond', serif;
-
+        margin-right: 35px;
         font-size: 1rem;
         color: #344055;
     }
