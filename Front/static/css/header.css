@@ -9,7 +9,7 @@ header {
     left:0px;
     top:0px;
     width:100%;
-    background: #ff8001d6;
+    background: #ff8001;
     display: flex;
     margin: auto;
     align-items: center;
@@ -125,7 +125,7 @@ nav {
 
 
 .nav-links.open {
-background-color: #FF8001;   
+background-color: #e37a17fe;   
 pointer-events: all;
 
 
