@@ -495,11 +495,19 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
             Poivre', 
             ' Changez des traditionnelles tomates farcies au porc. Confectionnez de beaux poivrons farcis à la viande de bœuf. 
             Agrémenté d’herbes fraîches, d’oignon, d’échalote et d’ail, le bœuf haché se parfumera délicatement. ',
-            'etapes',
-             90, 
-             'Difficile', 2,
-             3, 
-             'poivron-farci.jpg');
-            
+        'Préchauffez le four à th.6 (180 °C).
+        Dorez la viande hachée avec les oignons et les ailes dans une poêle anti-adhésive.
+        Tailler un oignon
+        En même temps, lavez et enlevez l’intérieur des poivrons.
+        N’abîmez pas les couvercles.
+        Remplissez les poivrons de viande hachée.
+        Refermez-les avec les couvercles.
+        Graissez un plat à four et disposez-les dessus.
+        Enfournez pendant 25 min.',
+        60, 
+        'Difficile', 2,
+        3, 
+        'poivron-farci.jpg');
+                    
 
 COMMIT;

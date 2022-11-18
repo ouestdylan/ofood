@@ -12,6 +12,12 @@ body {
 }
 
 
+.author {
+    width: 200px;
+margin-left: 85px;
+margin-bottom: 5px;
+}
+
 .title_popular_recipes {
     font-family: 'Acme', sans-serif;
 
@@ -46,13 +52,15 @@ body {
     margin-bottom: 60px;
     overflow-x: scroll;
     display: flex;
-    height: 75vh;
+    height: 90vh;
     align-items: center;
     gap: 50px;
     scrollbar-width: none;
     /* Firefox */
     margin-left: 20px;
+    margin-right: 2px;
 }
+
 
 
 .carte {
@@ -63,6 +71,7 @@ body {
     grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
     border-radius: 5px;
     overflow: hidden;
+    font-size: 15px;
 
     border: solid #000102;
 }
@@ -187,12 +196,13 @@ span {
         margin-bottom: 60px;
         overflow-x: scroll;
         display: flex;
-        height: 80vh;
+        height: 100vh;
         align-items: center;
         gap: 50px;
         scrollbar-width: none;
         /* Firefox */
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-right: 35px;
     }
 
 

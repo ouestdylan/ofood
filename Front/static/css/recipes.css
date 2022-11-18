@@ -7,6 +7,16 @@ body {
 
 }
 
+.author {
+    width: 200px;
+margin-left: 85px;
+font-weight: 600;
+margin-bottom: 5px;
+
+
+}
+
+
 
 #rate {
     color: rgb(155, 25, 45);
@@ -82,7 +92,7 @@ body {
     grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
     border-radius: 5px;
     overflow: hidden;
-
+    font-size: 15px;
     border: solid #000102;
 }
 

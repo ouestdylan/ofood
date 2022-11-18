@@ -3,7 +3,7 @@
 
 body{
     font-family: "Poppins";
-
+    font-size: 14px;
     background: #f2dbc2;
    
 }
@@ -21,3 +21,30 @@ h1{
     margin-left: 10px;
 }
 
+@media only screen and (max-width: 600px) and (min-width:400px) {
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+    body{
+        font-family: "Poppins";
+        margin: 0;
+        font-size: 13px;
+        background: #f2dbc2;
+       
+    }
+    h1{
+        color: #FE6F61;
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        align-items: center;
+        /* Firefox */
+        margin-left: 10px;
+    }
+
+
+}
