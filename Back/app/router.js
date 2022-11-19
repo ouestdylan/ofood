@@ -11,6 +11,7 @@ router.post('/recipes', recipeController.addNewRecipe);
 router.patch('/recipes/:id', recipeController.updateRecipeById);
 router.delete('/recipes/:id', recipeController.deleteRecipeById);
 
+router.post('/user', userController.isAdmin);
 router.post('/login', userController.loginAction);
 router.post('/signup', userController.signupAction);
 

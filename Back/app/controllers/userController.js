@@ -22,7 +22,6 @@ const userController = {
                         const userData = {
                             id: foundUser.dataValues.id,
                             username: foundUser.dataValues.username,
-                            email: foundUser.dataValues.email,
                             isAdmin: foundUser.dataValues.isAdmin
                         }
 
@@ -41,6 +40,31 @@ const userController = {
         }
         
     },
+
+    async isAdmin(req, res) {
+
+        try {
+            const foundUser = await User.findOne({
+                where: {
+                    id: req.body.userId
+                }
+            })
+
+            if (foundUser) {
+                const userData = {
+                    isAdmin: foundUser.dataValues.isAdmin
+                }
+                res.status(200).json(userData)
+
+            } else {
+                throw new Error('500, user not found');
+            }
+
+        } catch (error) {
+            res.json(error.message)
+        }
+    },
+
     async signupAction(req, res) {
 
         try {

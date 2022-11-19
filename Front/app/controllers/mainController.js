@@ -1,12 +1,12 @@
 
 const fetch = require('node-fetch');
 
-const backUrl = "http://localhost:3000/";
+const backUrl = "http://localhost:5000/";
 
 const mainController = {
 
     homePage: async (req, res) => {
-
+        
         try {
             let response = await fetch(backUrl + "recipes")
             let recipes = await response.json();
@@ -31,11 +31,10 @@ const mainController = {
                     index--
                 }
             }
-            
-            const token = null;
+
             //Et plus tard dans le render : 
             res.render('home', {
-                bestFivesRecipes, difficultyRecipe, randomRecipes, token
+                bestFivesRecipes, difficultyRecipe, randomRecipes
             });
         } catch (error) {
             console.trace(error);

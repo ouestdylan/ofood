@@ -2,7 +2,7 @@
 const jsonwebtoken = require('jsonwebtoken');
 const fetch = require('node-fetch');
 
-const backUrl = "http://localhost:3000/";
+const backUrl = "http://localhost:5000/";
 
 const userController = {
 
@@ -39,9 +39,10 @@ const userController = {
                 token: jsonwebtoken.sign(jwtContent, jwtSecret, jwtOptions)
             };
             
-            //res.header("token", JSON.stringify(token)).redirect('/');
-            let formatToken = encodeURIComponent(JSON.stringify(token));
-            res.redirect(`/?token=${formatToken}`)
+            req.session.user = token;
+            req.session.user.username = result.username;
+
+            res.redirect(`/`)
             
         } catch (error) {
             console.trace(error);
@@ -49,6 +50,7 @@ const userController = {
     },
 
     disconnect(req, res) {
+        req.session.destroy();
         res.redirect('/');
     }
 };

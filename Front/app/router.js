@@ -17,6 +17,10 @@ const upload = multer({ storage: storage })
 
 const mainController = require('./controllers/mainController');
 const userController = require('./controllers/userController');
+const sessionMd = require('./middlewares/session');
+const authorizationMd = require('./middlewares/jwt')
+
+router.use(sessionMd);
 
 router.get('/', mainController.homePage);
 
@@ -31,10 +35,12 @@ router.get('/presentation', mainController.presentationPage);
 router.get('/cgu', mainController.cguPage);
 router.get('/contact', mainController.contactPage);
 
+router.get('/deconnexion', userController.disconnect);
+
+router.use('/admin', authorizationMd);
 router.get('/admin/dashboard', userController.dashboardPage);
 router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
 router.post('/admin/ajouterunerecette', upload.single('uploaded_file'), mainController.addNewRecipe);
 
-router.get('/deconnexion', userController.disconnect);
 
 module.exports = router;
