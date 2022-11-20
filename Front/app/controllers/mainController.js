@@ -1,12 +1,12 @@
 
 const fetch = require('node-fetch');
 
-const backUrl = "http://localhost:3000/";
+const backUrl = "http://localhost:5000/";
 
 const mainController = {
 
     homePage: async (req, res) => {
-
+        
         try {
             let response = await fetch(backUrl + "recipes")
             let recipes = await response.json();
@@ -30,9 +30,8 @@ const mainController = {
                 } else {
                     index--
                 }
-                
             }
-        
+
             //Et plus tard dans le render : 
             res.render('home', {
                 bestFivesRecipes, difficultyRecipe, randomRecipes
@@ -81,7 +80,6 @@ const mainController = {
         }
 
         let recipe;
-
         try {
             const response = await fetch(backUrl + "recipes", {
                 method:"POST",
@@ -96,6 +94,10 @@ const mainController = {
             console.log(error);
         }
     },
+
+    // async deleteRecipe(res, res) {
+        
+    // }
 
     presentationPage: (req, res) => {
         res.render('presentation');
