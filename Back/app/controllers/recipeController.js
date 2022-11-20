@@ -90,50 +90,50 @@ const controller = {
 		}
 	},
 
-	updateRecipeById: async (req, res) => {
+	// updateRecipeById: async (req, res) => {
 
-		try {
-			const recipeId = req.params.id;
-			const recipe = await Recipe.findByPk(recipeId);
+	// 	try {
+	// 		const recipeId = req.params.id;
+	// 		const recipe = await Recipe.findByPk(recipeId);
 
-			if (!recipe) {
-				const error = new Error(`Recipe with id ${recipeId} does not exist.`);
-				return res.status(404).json({ message: error.message });
-			}
+	// 		if (!recipe) {
+	// 			const error = new Error(`Recipe with id ${recipeId} does not exist.`);
+	// 			return res.status(404).json({ message: error.message });
+	// 		}
 
-			const { title, ingredientsList, description, steps, cookingTime, difficulty, picture } = req.body;
-			console.log(req.body);
+	// 		const { title, ingredientsList, description, steps, cookingTime, difficulty, picture } = req.body;
+	// 		console.log(req.body);
 			
-			if (title) {
-				recipe.title = title;
-			}
-			if (ingredientsList) {
-				recipe.ingredientsList = ingredientsList;
-			}
-			if (description) {
-				recipe.description = description;
-			}
-			if (steps) {
-				recipe.steps = steps;
-			}
-			if (cookingTime) {
-				recipe.cookingTime = cookingTime;
-			}
-			if (difficulty) {
-				recipe.difficulty = difficulty;
-			}
-			if (picture) {
-				recipe.picture = picture;
-			}
+	// 		if (title) {
+	// 			recipe.title = title;
+	// 		}
+	// 		if (ingredientsList) {
+	// 			recipe.ingredientsList = ingredientsList;
+	// 		}
+	// 		if (description) {
+	// 			recipe.description = description;
+	// 		}
+	// 		if (steps) {
+	// 			recipe.steps = steps;
+	// 		}
+	// 		if (cookingTime) {
+	// 			recipe.cookingTime = cookingTime;
+	// 		}
+	// 		if (difficulty) {
+	// 			recipe.difficulty = difficulty;
+	// 		}
+	// 		if (picture) {
+	// 			recipe.picture = picture;
+	// 		}
 
-			await recipe.save();
-			res.status(200).json(recipe);
+	// 		await recipe.save();
+	// 		res.status(200).json(recipe);
 
-		} catch (error) {
-			console.error(error);
-			res.status(500).json({ message: error.message });
-		}
-	},
+	// 	} catch (error) {
+	// 		console.error(error);
+	// 		res.status(500).json({ message: error.message });
+	// 	}
+	// },
 
 	deleteRecipeById: async (req, res) => {
 
