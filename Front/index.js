@@ -4,28 +4,26 @@ require('dotenv').config();
 const PORT = process.env.PORT ?? 3006;
 
 const express = require ('express');
-const session = require('express-session');
-const cookieParser = require('cookie-parser')
 const app = express();
+const session = require('express-session')
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-
-app.use(cookieParser(process.env.SESSION_SECRET));
-app.use(session({
-    saveUninitialized: true,
-    resave: true,
-    secret: process.env.SESSION_SECRET,
-    cookie: {secure: false},
-    cookie : {
-        maxAge: 1000* 60 * 60
-    }
-}));
 
 app.set('view engine', 'ejs');
 app.set('views','static/views');
 
 app.use(express.static('static'));
+
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    saveUninitialized: true,
+    resave: true,
+    cookie: { 
+        secure: false,
+        maxAge: 60*60*1000
+    }
+}));
 
 const router = require ('./app/router');
 app.use(router);
