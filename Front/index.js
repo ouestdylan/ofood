@@ -16,9 +16,13 @@ app.set('views','static/views');
 app.use(express.static('static'));
 
 app.use(session({
-    secret: 'secret_session',
+    secret: process.env.SESSION_SECRET,
     saveUninitialized: true,
-    resave: true
+    resave: true,
+    cookie: { 
+        secure: false,
+        maxAge: 60*60*1000
+    }
 }));
 
 const router = require ('./app/router');

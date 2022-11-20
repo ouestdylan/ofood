@@ -80,7 +80,6 @@ const mainController = {
         }
 
         let recipe;
-
         try {
             const response = await fetch(backUrl + "recipes", {
                 method:"POST",
@@ -95,6 +94,10 @@ const mainController = {
             console.log(error);
         }
     },
+
+    // async deleteRecipe(res, res) {
+        
+    // }
 
     presentationPage: (req, res) => {
         res.render('presentation');
