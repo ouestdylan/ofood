@@ -1,4 +1,5 @@
 
+const { where } = require('sequelize');
 const  { Recipe }  = require('../models');
 
 const controller = {
@@ -22,10 +23,9 @@ const controller = {
 		try {		
 			const recipeId = req.params.id;
 			const recipe = await Recipe.findByPk(recipeId, {
-				include: ['user']
-			});
+				include: "user"
+			})
 			console.log(recipe);
-
 			if (!recipe) {
 				const error = new Error(`Recipe not found with id ${recipeId}`);
 				return res.status(404).json({ message: error.message });
@@ -146,7 +146,26 @@ const controller = {
 				return res.status(404).json({ message: error.message });
 			}
 			await recipe.destroy();
-			res.status(200).json(recipe);
+			return res.status(200).json({ message: `La recette \'${recipe.title}\' a bien été supprimée`});
+
+		} catch (error) {
+			console.error(error);
+			res.status(500).json({ message: error.message });
+		}
+	},
+
+	dashboradRecipes: async (req, res) => {
+
+		try {
+			const recipes = await Recipe.findAll({
+				order: [
+					['createdAt', 'DESC']
+				],
+				include: ['user'],
+				limit: 10
+			});
+
+			res.status(200).json(recipes);
 
 		} catch (error) {
 			console.error(error);

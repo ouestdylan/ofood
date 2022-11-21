@@ -5,7 +5,7 @@ const backUrl = "http://localhost:5000/";
 
 const mainController = {
 
-    homePage: async (req, res) => {
+    async homePage(req, res) {
         
         try {
             let response = await fetch(backUrl + "recipes")
@@ -41,7 +41,7 @@ const mainController = {
         }
     },
 
-    recipesPage: async (req, res) => {
+    async recipesPage(req, res) {
 
         try {
             let response = await fetch(backUrl + "recipes")
@@ -54,7 +54,7 @@ const mainController = {
         }
     },
 
-    recipeDetailsPage: async (req, res) => {
+    async recipeDetailsPage(req, res) {
 
         const recipeId = req.params.id
         try {
@@ -95,9 +95,37 @@ const mainController = {
         }
     },
 
-    // async deleteRecipe(res, res) {
-        
-    // }
+    async dashboardPage(req, res) {
+
+        try {
+            let response = await fetch(backUrl + "dashboardRecipes")
+            let dashboardRecipes = await response.json();
+
+            res.render('dashboard', {dashboardRecipes});
+
+        } catch (error) {
+            console.trace(error);
+        }
+    },
+
+    async deleteRecipeById(req, res) {
+
+        const recipeId = req.params.id;
+        try {
+            let response = await fetch(backUrl + "recipes/" + recipeId, {
+                method: "DELETE"
+            });
+
+            let responseMessage= await response.json();
+            console.log(responseMessage);
+            req.session.message = responseMessage.message;
+
+            res.redirect('/admin/dashboard');
+
+        } catch (error) {
+            console.trace(error);
+        }
+    },
 
     presentationPage: (req, res) => {
         res.render('presentation');

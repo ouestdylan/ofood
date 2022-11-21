@@ -8,8 +8,16 @@
     border-radius: 5px;
     overflow: hidden;
     margin: 6em 1rem;
-    height: auto;
 
+
+}
+
+.message {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: red;
 }
 
 footer {
@@ -137,11 +145,6 @@ footer {
 }
 
 .edit_button {
-
-    font-weight: bold;
-}
-
-.delete_button {
     background-color: #ff2c2c8a;
     font-weight: bold;
 }
