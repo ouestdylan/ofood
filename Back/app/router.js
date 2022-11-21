@@ -6,6 +6,7 @@ const userController = require('./controllers/userController');
 
 router.get('/recipes', recipeController.getAllRecipes);
 router.get('/recipes/:id', recipeController.getRecipeById);
+router.get('/dashboardRecipes', recipeController.dashboradRecipes);
 
 router.post('/recipes', recipeController.addNewRecipe);
 //router.patch('/recipes/:id', recipeController.updateRecipeById);

@@ -21,24 +21,24 @@ const userController = {
                     if (result) {
                         const userData = {
                             id: foundUser.dataValues.id,
-                            username: foundUser.dataValues.username,
-                            isAdmin: foundUser.dataValues.isAdmin
+                            username: foundUser.dataValues.username
                         }
 
-                        res.status(200).json(userData)
+                        return res.status(200).json(userData)
 
                     } else {
-                        throw new Error('401, invalid email or password');
+                        return res.status(401).json({ errorMessage: "Email ou mot de passe invalide"});
                     }
                 })
+
             } else {
-                throw new Error('500, user not found');
+                return res.status(401).json({ errorMessage: "Email ou mot de passe invalide"});
             }
             
         } catch(error) {
-            res.json(error.message)
+            res.json(error)
         }
-        
+    
     },
 
     async isAdmin(req, res) {
@@ -54,14 +54,14 @@ const userController = {
                 const userData = {
                     isAdmin: foundUser.dataValues.isAdmin
                 }
-                res.status(200).json(userData)
+                return res.status(200).json(userData)
 
             } else {
-                throw new Error('500, user not found');
+                return res.status(401).json({ errorMessage: "Utilisateur non trouvé"});
             }
 
         } catch (error) {
-            res.json(error.message)
+            res.json(error);
         }
     },
 

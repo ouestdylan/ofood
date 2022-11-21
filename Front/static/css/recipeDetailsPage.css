@@ -92,6 +92,11 @@ body {
 
 }
 
+.edit_button {
+    background-color: #ff2c2c8a;
+    font-weight: bold;
+}
+
 
 .author {
     text-align: center;

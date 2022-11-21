@@ -10,10 +10,6 @@ const userController = {
         res.render('loginPage');
     },
 
-    dashboardPage(req, res) {
-        res.render('dashboard');
-    },
-
     async loginAction(req, res) {
 
         const jwtSecret = process.env.JWT_SECRET;
@@ -28,21 +24,26 @@ const userController = {
 
             const result = await response.json();
 
-            const jwtContent = { userId: result.id};
-            const jwtOptions = {
-                algorithm: 'HS256',
-                expiresIn: '1h'
-            };
+            if (result.errorMessage) {
+                req.session.message = result.errorMessage;
+                return res.redirect('/connexion');
 
-            const token = {
-                logged: true,
-                token: jsonwebtoken.sign(jwtContent, jwtSecret, jwtOptions)
-            };
-            
-            req.session.user = token;
-            req.session.user.username = result.username;
+            } else {
+                const jwtContent = { userId: result.id};
+                const jwtOptions = {
+                    algorithm: 'HS256',
+                    expiresIn: '1h'
+                };
+                const token = {
+                    logged: true,
+                    token: jsonwebtoken.sign(jwtContent, jwtSecret, jwtOptions)
+                };
 
-            res.redirect(`/`)
+                req.session.user = token;
+                req.session.user.username = result.username;
+    
+                res.redirect('/');
+            }
             
         } catch (error) {
             console.trace(error);

@@ -38,9 +38,10 @@ router.get('/contact', mainController.contactPage);
 router.get('/deconnexion', userController.disconnect);
 
 router.use('/admin', authorizationMd);
-router.get('/admin/dashboard', userController.dashboardPage);
+router.get('/admin/dashboard', mainController.dashboardPage);
 router.get('/admin/ajouterunerecette', mainController.recipeFormPage);
 router.post('/admin/ajouterunerecette', upload.single('uploaded_file'), mainController.addNewRecipe);
+router.get('/admin/supprimerunerecette/:id', mainController.deleteRecipeById);
 
 
 module.exports = router;
