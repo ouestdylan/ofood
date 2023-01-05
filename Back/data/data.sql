@@ -242,7 +242,7 @@ INSERT INTO "recipe" ("title", "ingredients_list", "description", "steps", "cook
              6, 
              'pasta-pesto-verde.jpg'),
 
-             ('SALADE DE PATES AU FETA', 
+             ('SALADE DE PATES À LA FETA', 
             ' 240 g de pâtes selon votre choix,
             3 concombres,
             1 oignon rouge,
