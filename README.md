@@ -1,6 +1,8 @@
 
 # O'food, Good Mood! - Documents d'un projet
 
+Projet à finir, en cours de finition.
+
 ## Présentation
 
 
@@ -26,3 +28,7 @@ npm i
 Une fois ces étapes réalisées vous pouvez lancer vos deux servers, coté Back et coté Front, et vous pourrez ensuite accéder au site.
 À savoir : le dossier "assets" a été crée uniquement pour pouvoir lancer la page netlify. Vous n'avez absolument pas besoin de le faire, je vous recommande même de placer le dossier "Back" et celui "Front" à la racine de votre projet.
 
+
+## Technologies utilisées
+
+JWT - Express - Node - CSS - HTML - JS - Sequelize 
