@@ -3,7 +3,7 @@
 
 
 body {
-    background: #FFFFFE;
+    background: #fffefe;
     font-family: 'Acme', sans-serif;
 
 
@@ -11,8 +11,8 @@ body {
 
 .author {
     width: 200px;
-margin-left: 85px;
-margin-bottom: 5px;
+    margin-left: 85px;
+    margin-bottom: 5px;
 }
 
 .title_popular_recipes {
@@ -156,7 +156,7 @@ span {
 
 
 
-@media only screen and (max-width: 600px) and (min-width:400px) {
+@media only screen and (max-width: 1400px) {
 
     body {
         background: #FFFFFE;

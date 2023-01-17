@@ -5,11 +5,11 @@
 header {
     font-family: 'Acme', sans-serif;
 
-    position:fixed;
-    left:0px;
-    top:0px;
-    width:100%;
-    background: #ff8001;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: #ff8000;
     display: flex;
     margin: auto;
     align-items: center;
@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-links {
-    
+
 
     list-style: none;
     align-items: center;
@@ -125,8 +125,8 @@ nav {
 
 
 .nav-links.open {
-background-color: #e37a17fe;   
-pointer-events: all;
+    background-color: #e37a17fe;
+    pointer-events: all;
 
 
     opacity: 1;
@@ -139,13 +139,13 @@ pointer-events: all;
     align-items: center;
     margin: auto;
     z-index: 1;
-    
+
 }
 
 
 .nav-links li a {
     font-family: 'Acme', sans-serif;
-    
+
 
     color: rgb(6, 6, 6);
     text-decoration: none;
@@ -153,7 +153,8 @@ pointer-events: all;
     opacity: 1;
     text-align: center;
     font-weight: 600;
-    font-size: 40px;}
+    font-size: 40px;
+}
 
 .landing {
     height: 90vh;
@@ -183,16 +184,17 @@ pointer-events: all;
     margin-left: auto;
     transform: translate(-5%, -50%);
     z-index: 2;
-    
+
 }
 
 
 @media only screen and (max-width: 600px) and (min-width:400px) {
-  
+
     header {
         font-family: 'Acme', sans-serif;
 
     }
+
     header .image_logo {
         width: 100px;
         border: none;
@@ -310,8 +312,9 @@ pointer-events: all;
     }
 
 }
-@media only screen and (max-width: 397px)  {
-    
+
+@media only screen and (max-width: 397px) {
+
     header {
         font-family: 'Acme', sans-serif;
 
@@ -423,7 +426,7 @@ pointer-events: all;
         transition: all 0.5s ease 0.6s;
     }
 
-   
+
 
     .slogan_title {
 
@@ -438,10 +441,10 @@ pointer-events: all;
 
 
 .footer {
-    left:0px;
-    bottom:0px;
-    width:100%;
-    background: #FF8001;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #ff8000;
     display: flex;
     margin: auto;
     align-items: center;
@@ -499,4 +502,5 @@ pointer-events: all;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-    } }
+    }
+}
