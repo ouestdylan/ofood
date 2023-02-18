@@ -25,7 +25,7 @@ app.use(session({
     }
 }));
 
-const router = require ('./app/router');
+const router = require ('./static/js/router');
 app.use(router);
 
 app.use((req, res) => {
