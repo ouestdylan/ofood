@@ -1,172 +1,84 @@
 <%- include ("partials/header") %>
+  <link rel="stylesheet" href="/css/components/HomePage/index.css" />
 
 
-  <link rel="stylesheet" href="/css/home.css" />
-
-  <h1 class="title_popular_recipes">
-    <br>
-    <br>
-    Les<span class="cinq"> 5 </span>recettes au hasard pour votre plaisir !
-  </h1>
-
-
-  <div class="container">
-
-    <% randomRecipes.forEach((recipe)=> { %>
-
-      <div class="carte">
-        <div class="divImg">
-          <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-        </div>
-        <div class="titre">
-          <%= recipe.title %>
-        </div>
-        <div class="tab">
-          <img src="/img/sablier.svg" alt="sablier" class="icone" />
-          <span>
-            <%= recipe.cookingTime %>
-          </span>
-        </div>
-        <div class="tab">
-          <div id="rate"><span>
-              <%= recipe.rate %>
-            </span> &#x2605; </div>
-        </div>
-        <div class="tab">
-          <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-          <span>
-            <%= recipe.difficulty %>
-          </span>
-        </div>
-        <div class="info">
-          <p>
-            <%= recipe.description %>
-          </p>
-        </div>
-        <div class="btnSection">
-          <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
-        </div>
-
-        <% if (recipe.user) { %>
-          <p class="author">Recette proposée par <%= recipe.user.username %>
-          </p>
-          <% } %>
-
-      </div>
-
-      <% }) %>
-
+  <div class="title-feature">
+    <h1> 5 recettes aléatoires pour votre <span> plaisir </span> !</h1>
   </div>
 
 
-  <h1 class="title_popular_recipes">
-    <br>
-    Les <span class="cinq"> 5 </span>recettes les mieux notées
-  </h1>
-  <div class="container">
+  <section>
 
-    <% bestFivesRecipes.forEach((recipe)=> { %>
 
-      <div class="carte">
+    <div class="swiper mySwiper container">
 
-        <div class="divImg">
-          <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+
+          <% randomRecipes.forEach((recipe)=> { %>
+            <div class="card-content">
+
+
+              <div class="image">
+
+
+                <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
+
+
+
+
+              </div>
+
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Ally Pearson</span>
+                <span class="profession">Web Developer</span>
+              </div>
+
+
+
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
 
         </div>
 
-        <div class="titre">
-          <%= recipe.title %>
-        </div>
-
-        <div class="tab">
-          <img src="/img/sablier.svg" alt="sablier" class="icone" />
-          <span>
-            <%= recipe.cookingTime %>
-          </span>
-        </div>
-        <div class="tab">
-          <div id="rate"><span>
-              <%= recipe.rate %>
-            </span> &#x2605;
-
-          </div>
-        </div>
-        <div class="tab">
-          <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-          <span>
-            <%= recipe.difficulty %>
-          </span>
-        </div>
-
-        <div class="info">
-          <p>
-            <%= recipe.description %>
-          </p>
-        </div>
-
-        <div class="btnSection">
-          <a href="/recettes/<%= recipe.id %>/<%= recipe.title %>">La recette</a>
-        </div>
-        <% if (recipe.user) { %>
-          <p class="author">Recette proposée par <%= recipe.user.username %>
-          </p>
-          <% } %>
-      </div>
-      <% }) %>
-
-  </div>
 
 
-  <h1 class="title_recent_recipes">
-    Les <span class="cinq"> 5 </span>recettes les plus simple à faire
-  </h1>
-
-  <div class="container">
-
-    <% difficultyRecipe.forEach((recipe)=> { %>
-
-      <div class="carte">
-        <div class="divImg">
-          <img src="img/recipes/<%= recipe.picture %>" alt="recipes">
-        </div>
-        <div class="titre">
-          <%= recipe.title%>
-        </div>
-        <div class="tab">
-          <img src="/img/sablier.svg" alt="sablier" class="icone" />
-          <span>
-            <%= recipe.cookingTime %> min
-          </span>
-        </div>
-        <div class="tab">
-          <div id="rate"><span>
-              <%= recipe.rate %>
-            </span> &#x2605;
-          </div>
-        </div>
-        <div class="tab">
-          <img src="/img/difficulty.svg" alt="difficulty" class="icone" />
-          <span>
-            <%= recipe.difficulty %>
-          </span>
-        </div>
-        <div class="info">
-          <p>
-            <%= recipe.description %>
-          </p>
-        </div>
-        <div class="btnSection">
-          <a href="/recettes/<%= recipe.id %> /<%= recipe.title %>">La recette</a>
-        </div>
-
-        <% if (recipe.user) { %>
-          <p class="author">Recette proposée par <%= recipe.user.username %>
-          </p>
-          <% } %>
 
       </div>
-      <% }) %>
 
-  </div>
+
+    </div>
+
+    </div>
+    <% }) %>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-pagination"></div>
+
+  </section>
+
+
+
+
 
   <%- include ("partials/footer") %>
+    <script src="/js/Swiper.js"></script>

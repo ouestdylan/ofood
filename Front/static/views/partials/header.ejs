@@ -9,36 +9,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <link rel="stylesheet" href="/css/reset.css" />
-  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/components/NavbarHeader/index.css" />
   <link rel="shortcut icon" type="image/svg" href="/img/logo1.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>O'Food</title>
 
 </head>
 
 <body>
+  <header>
+
+    <nav class="navbar">
+
+      <a href="/">
+        <img class="imagelogo" src="/img/logo1.png">
+
+      </a>
 
 
-  <nav class="navbar">
+      <div class=" nav-links">
 
-    <a href="/">
-      <img class="imagelogo" src="/img/logo1.png">
+        <ul>
+          <li> <a href="/"> Accueil </a> </li>
+          <li> <a href="/connexion"> Connexion </a> </li>
+          <li> <a href="/recettes"> Recettes </a> </li>
+          <li> <a href="/presentation">Qui sommes-nous ?</a></li>
+        </ul>
+      </div>
+      <img src="../img/menu-hamburger.png" alt="menu hamburger for mobile size" class="menu-hamburger">
 
-    </a>
-
-
-    <div class=" nav-links">
-
-      <ul>
-        <li> <a href="/"> Accueil </a> </li>
-        <li> <a href="/connexion"> Connexion </a> </li>
-        <li> <a href="/recettes"> Recettes </a> </li>
-        <li> <a href="/presentation">Qui sommes-nous ?</a></li>
-      </ul>
-    </div>
-    <img src="../img/menu-hamburger.png" alt="menu hamburger for mobile size" class="menu-hamburger">
-
-  </nav>
+    </nav>
+  </header>
   <!-- ----------JAVASCRIPT-------->
 
   <script>
