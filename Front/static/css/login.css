@@ -1,28 +1,11 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: white;
-}
-footer {
-    position: fixed;
-    left:0px;
-    bottom:0px;
-    width:100%;
-}
 
-.message {
-    position: static;
-    margin-top: 10rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    color: red;
-    text-align: center;
-}
+
+
+
 
 .login-box {
     position: absolute;
