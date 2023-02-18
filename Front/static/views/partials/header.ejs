@@ -5,11 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="shortcut icon" type="image/svg" href="/img/logo1.png">
@@ -19,51 +17,34 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="banner_logo">
 
-<a href="/"><img class="imagelogo" src="/img/logo1.png" /></a>          <!-- <img class="image_logo" src="/img/apple.png" alt="Logo" /> -->
-        
-      </div>
-      <h1 class="slogan_title">" <span class="span_good">O</span>'Food, <span class="span_good">Good</span> Mood "</h1>
 
-      <% if (locals.user) { %>
-      <span class="connected_username"><%= locals.user.username %></span>
-      <% } %>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="/">Accueil</a></li>
+  <nav class="navbar">
 
-        <% if (!locals.user) { %>
-        <li><a href="/connexion">Connexion</a></li>
-        <% } else { %>
-        <li><a href="/admin/dashboard">Mon profil</a></li>
-        <li><a id="logout" href="/deconnexion">Déconnexion</a></li>
-        <% } %>
+    <a href="#" class="logo"> O'Food </a>
+    <div class="nav-links">
 
-        <li><a href="/recettes">Recettes</a></li>
-        <li><a href="/presentation">Qui sommes-nous</a></li>
+      <ul>
+        <li> <a href="#"> Home </a> </li>
+        <li> <a href="#"> Courses </a> </li>
+        <li> <a href="#"> Sign up </a> </li>
+        <li> <button> <a href="#"> Register</a> </button> </li>
       </ul>
-    </nav>
+    </div>
+    <img src="../img/menu-hamburger.png" alt="menu hamburger for mobile size" class="menu-hamburger">
 
-    <!-- ----------JAVASCRIPT-------->
+  </nav>
+  <!-- ----------JAVASCRIPT-------->
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-        links.forEach(link => {
-          link.classList.toggle("fade");
-        });
-      });
-    </script>
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
 
-  </header>
+      const openStyle = document.querySelector("body");
+      openStyle.classList.toggle("overflow");
+    });
+
+  </script>
